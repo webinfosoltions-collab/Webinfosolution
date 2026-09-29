@@ -9,7 +9,7 @@ import Process from "../components/home/Process/Process";
 import WhyChooseUs from "../components/home/WhyChooseUs/WhyChooseUs";
 import Stats from "../components/home/Stats/Stats";
 import Testimonials from "../components/home/Testimonials/Testimonials";
-import OurTeam from "../components/home/OurTeam/OurTeam";
+// import OurTeam from "../components/home/OurTeam/OurTeam";
 import FAQs from "../components/home/FAQs/FAQs";
 import FinalCTA from "../components/home/FinalCTA/FinalCTA";
 
@@ -41,7 +41,7 @@ export default function Home() {
       <Testimonials />
 
       {/* OUR TEAM */}
-      <OurTeam />
+      {/* <OurTeam /> */}
 
       <FAQs />
 
