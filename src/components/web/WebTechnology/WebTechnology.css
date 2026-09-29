@@ -1,0 +1,663 @@
+
+/* =========================================================
+   WEB TECHNOLOGY
+   Dual Continuous Technology Carousel
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.web-technology {
+  position: relative;
+
+  width: 100%;
+
+  padding: 110px 0 105px;
+
+  background: #f8faff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.web-technology__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.web-technology__header {
+  max-width: 730px;
+
+  margin: 0 auto 48px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.web-technology__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.65rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.web-technology__eyebrow::before,
+.web-technology__eyebrow::after {
+  content: "";
+
+  width: 22px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.web-technology__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.web-technology__title span {
+  color: #ff8500;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.web-technology__intro {
+  max-width: 660px;
+
+  margin: 15px auto 0;
+
+  color: #68738a;
+
+  font-size: 0.92rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+.web-technology__marquee {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 8px 0 10px;
+
+  touch-action: pan-y;
+}
+
+.web-technology__marquee--second {
+  margin-top: 2px;
+}
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+.web-technology__track {
+  display: flex;
+
+  width: max-content;
+
+  gap: 16px;
+
+  will-change: transform;
+
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+
+  user-select: none;
+}
+
+/*
+   LEFT → RIGHT
+*/
+
+.web-technology__track--forward {
+  animation-name: webTechnologyForward;
+
+  animation-duration: 34s;
+
+  transform: translateX(-50%);
+}
+
+/*
+   RIGHT → LEFT
+*/
+
+.web-technology__track--reverse {
+  animation-name: webTechnologyReverse;
+
+  animation-duration: 38s;
+}
+
+/* =========================================================
+   CONTINUOUS ANIMATIONS
+========================================================= */
+
+@keyframes webTechnologyForward {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes webTechnologyReverse {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* =========================================================
+   TECHNOLOGY CARD
+========================================================= */
+
+.web-technology-card {
+  position: relative;
+
+  flex: 0 0 250px;
+
+  min-height: 128px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 19px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 7px 26px rgba(7, 27, 74, 0.045);
+
+  cursor: pointer;
+
+  user-select: none;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+/* =========================================================
+   HOVER / TOUCH HIGHLIGHT
+========================================================= */
+
+.web-technology-card:hover,
+.web-technology-card:active {
+  transform: translateY(-5px);
+
+  border-color: #ff8500;
+
+  background: #fffaf5;
+
+  box-shadow:
+    0 15px 35px rgba(255, 133, 0, 0.13);
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.web-technology-card__icon {
+  width: 51px;
+  height: 51px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: #f7f9fd;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  color: #071b4a;
+
+  font-size: 1.55rem;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.web-technology-card:hover .web-technology-card__icon,
+.web-technology-card:active .web-technology-card__icon {
+  color: #ff8500;
+
+  background: rgba(255, 133, 0, 0.08);
+
+  border-color: rgba(255, 133, 0, 0.25);
+
+  transform: scale(1.06);
+}
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.web-technology-card__content {
+  min-width: 0;
+
+  padding-right: 13px;
+}
+
+.web-technology-card__content h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.91rem;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: -0.01em;
+
+  white-space: nowrap;
+}
+
+.web-technology-card__content p {
+  margin: 6px 0 0;
+
+  color: #788398;
+
+  font-size: 0.65rem;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.web-technology-card__arrow {
+  position: absolute;
+
+  top: 14px;
+  right: 15px;
+
+  color: #ff8500;
+
+  font-size: 0.75rem;
+
+  opacity: 0;
+
+  transform: translate(-4px, 4px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.web-technology-card:hover .web-technology-card__arrow,
+.web-technology-card:active .web-technology-card__arrow {
+  opacity: 1;
+
+  transform: translate(0, 0);
+}
+
+/* =========================================================
+   SIDE FADE
+========================================================= */
+
+.web-technology__fade {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 100px;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+.web-technology__fade--left {
+  left: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      #f8faff,
+      rgba(248, 250, 255, 0)
+    );
+}
+
+.web-technology__fade--right {
+  right: 0;
+
+  background:
+    linear-gradient(
+      to left,
+      #f8faff,
+      rgba(248, 250, 255, 0)
+    );
+}
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.web-technology__bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 17px;
+
+  max-width: 650px;
+
+  margin: 42px auto 0;
+}
+
+.web-technology__bottom-line {
+  width: 55px;
+  height: 1px;
+
+  flex: 0 0 auto;
+
+  background: rgba(255, 133, 0, 0.25);
+}
+
+.web-technology__bottom p {
+  margin: 0;
+
+  color: #6d788d;
+
+  font-size: 0.7rem;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/* =========================================================
+   DESKTOP HOVER PAUSE
+========================================================= */
+
+.web-technology__marquee:hover
+.web-technology__track {
+  animation-play-state: paused;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .web-technology {
+    padding: 90px 0 95px;
+  }
+
+  .web-technology__header {
+    margin-bottom: 40px;
+  }
+
+  .web-technology-card {
+    flex-basis: 225px;
+
+    min-height: 120px;
+  }
+
+  .web-technology__track {
+    gap: 13px;
+  }
+
+  .web-technology__fade {
+    width: 70px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .web-technology {
+    padding: 72px 0 78px;
+  }
+
+  .web-technology__container {
+    width: calc(100% - 28px);
+  }
+
+  .web-technology__header {
+    margin-bottom: 34px;
+  }
+
+  .web-technology__eyebrow {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .web-technology__eyebrow::before,
+  .web-technology__eyebrow::after {
+    width: 17px;
+  }
+
+  /* REQUIRED HEADING SIZE */
+
+  .web-technology__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.15;
+  }
+
+  .web-technology__intro {
+    margin-top: 13px;
+
+    font-size: 0.84rem;
+
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+     MOBILE CARDS
+  ===================================================== */
+
+  .web-technology__marquee {
+    padding: 6px 0 8px;
+  }
+
+  .web-technology__marquee--second {
+    margin-top: 1px;
+  }
+
+  .web-technology__track {
+    gap: 10px;
+  }
+
+  .web-technology__track--forward {
+    animation-duration: 27s;
+  }
+
+  .web-technology__track--reverse {
+    animation-duration: 31s;
+  }
+
+  .web-technology-card {
+    flex-basis: 220px;
+
+    min-height: 112px;
+
+    gap: 11px;
+
+    padding: 16px;
+
+    border-radius: 12px;
+  }
+
+  .web-technology-card__icon {
+    width: 43px;
+    height: 43px;
+
+    border-radius: 10px;
+
+    font-size: 1.35rem;
+  }
+
+  .web-technology-card__content h3 {
+    font-size: 0.81rem;
+  }
+
+  .web-technology-card__content p {
+    margin-top: 5px;
+
+    font-size: 0.59rem;
+  }
+
+  .web-technology-card__arrow {
+    top: 11px;
+    right: 12px;
+  }
+
+  .web-technology__fade {
+    width: 42px;
+  }
+
+  .web-technology__bottom {
+    gap: 9px;
+
+    margin-top: 28px;
+  }
+
+  .web-technology__bottom-line {
+    width: 25px;
+  }
+
+  .web-technology__bottom p {
+    font-size: 0.61rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .web-technology__container {
+    width: calc(100% - 24px);
+  }
+
+  .web-technology-card {
+    flex-basis: 205px;
+
+    min-height: 105px;
+
+    padding: 14px;
+  }
+
+  .web-technology-card__icon {
+    width: 40px;
+    height: 40px;
+
+    font-size: 1.2rem;
+  }
+
+  .web-technology-card__content h3 {
+    font-size: 0.77rem;
+  }
+
+  .web-technology-card__content p {
+    font-size: 0.56rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .web-technology__track {
+    animation: none !important;
+  }
+
+  .web-technology-card,
+  .web-technology-card__icon,
+  .web-technology-card__arrow {
+    transition: none !important;
+  }
+ 

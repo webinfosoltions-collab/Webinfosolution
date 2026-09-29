@@ -1,0 +1,625 @@
+
+/* =========================================================
+   MARKETING TECHNOLOGY
+   Premium Marketing Tools Showcase
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.marketing-technology {
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+.marketing-technology__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marketing-technology__header {
+  max-width: 720px;
+
+  margin: 0 auto 52px;
+
+  text-align: center;
+}
+
+.marketing-technology__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.marketing-technology__eyebrow::before,
+.marketing-technology__eyebrow::after {
+  content: "";
+
+  width: 21px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+}
+
+.marketing-technology__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.marketing-technology__title span {
+  color: #ff8500;
+}
+
+.marketing-technology__intro {
+  max-width: 640px;
+
+  margin: 15px auto 0;
+
+  color: #718097;
+
+  font-size: 0.87rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   SHOWCASE
+========================================================= */
+
+.marketing-technology__showcase {
+  position: relative;
+
+  max-width: 1120px;
+
+  margin: 0 auto;
+
+  padding: 22px 0 26px;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 17px;
+
+  background: #f8faff;
+
+  box-shadow:
+    0 18px 55px rgba(7, 27, 74, 0.045);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   SHOWCASE HEADER
+========================================================= */
+
+.marketing-technology__showcase-top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding: 0 24px 20px;
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.06);
+}
+
+.marketing-technology__showcase-top > div:first-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.marketing-technology__showcase-top span {
+  color: #ff8500;
+
+  font-size: 0.47rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.marketing-technology__showcase-top strong {
+  color: #071b4a;
+
+  font-size: 0.75rem;
+
+  font-weight: 800;
+}
+
+.marketing-technology__live {
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 6px 10px;
+
+  border: 1px solid rgba(7, 27, 74, 0.06);
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #778398 !important;
+
+  font-size: 0.45rem !important;
+
+  letter-spacing: 0 !important;
+
+  white-space: nowrap;
+}
+
+.marketing-technology__live i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+}
+
+/* =========================================================
+   MARQUEE
+========================================================= */
+
+.marketing-technology__marquee {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  padding: 17px 0 0;
+}
+
+.marketing-technology__marquee::before,
+.marketing-technology__marquee::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 80px;
+
+  z-index: 3;
+
+  pointer-events: none;
+}
+
+.marketing-technology__marquee::before {
+  left: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f8faff,
+      rgba(248, 250, 255, 0)
+    );
+}
+
+.marketing-technology__marquee::after {
+  right: 0;
+
+  background:
+    linear-gradient(
+      270deg,
+      #f8faff,
+      rgba(248, 250, 255, 0)
+    );
+}
+
+.marketing-technology__track {
+  display: flex;
+
+  width: max-content;
+
+  gap: 11px;
+
+  padding: 0 11px;
+
+  animation:
+    marketingTechnologyLeft
+    32s linear infinite;
+}
+
+.marketing-technology__marquee--right
+.marketing-technology__track {
+  animation:
+    marketingTechnologyRight
+    36s linear infinite;
+}
+
+/* =========================================================
+   TECHNOLOGY CARD
+========================================================= */
+
+.marketing-technology__card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  width: 175px;
+
+  min-height: 61px;
+
+  padding: 10px 13px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 22px rgba(7, 27, 74, 0.035);
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.marketing-technology__card:hover {
+  transform: translateY(-4px);
+
+  border-color: rgba(255, 133, 0, 0.35);
+
+  box-shadow:
+    0 12px 28px rgba(7, 27, 74, 0.07);
+}
+
+.marketing-technology__icon {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 8px;
+
+  background: #fff7ef;
+
+  color: #ff8500;
+
+  font-size: 0.78rem;
+}
+
+.marketing-technology__card-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+
+  min-width: 0;
+}
+
+.marketing-technology__card-content strong {
+  overflow: hidden;
+
+  color: #071b4a;
+
+  font-size: 0.57rem;
+
+  font-weight: 800;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+}
+
+.marketing-technology__card-content span {
+  color: #9aa3b2;
+
+  font-size: 0.43rem;
+
+  line-height: 1.3;
+}
+
+/* =========================================================
+   ANIMATION
+========================================================= */
+
+@keyframes marketingTechnologyLeft {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marketingTechnologyRight {
+  from {
+    transform: translateX(-50%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.marketing-technology__bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  max-width: 690px;
+
+  margin: 23px auto 0;
+
+  padding: 14px 20px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 10px 30px rgba(7, 27, 74, 0.035);
+}
+
+.marketing-technology__bottom-icon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 7px;
+
+  background: #fff7ef;
+
+  color: #ff8500;
+
+  font-size: 0.72rem;
+}
+
+.marketing-technology__bottom strong {
+  color: #071b4a;
+
+  font-size: 0.58rem;
+
+  font-weight: 800;
+}
+
+.marketing-technology__bottom p {
+  margin: 4px 0 0;
+
+  color: #8993a4;
+
+  font-size: 0.5rem;
+
+  line-height: 1.5;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .marketing-technology {
+    padding: 90px 0 100px;
+  }
+
+  .marketing-technology__showcase {
+    max-width: 720px;
+  }
+
+  .marketing-technology__card {
+    width: 165px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .marketing-technology {
+    padding: 72px 0 78px;
+  }
+
+  .marketing-technology__container {
+    width: calc(100% - 28px);
+  }
+
+  .marketing-technology__header {
+    margin-bottom: 38px;
+  }
+
+  .marketing-technology__eyebrow {
+    font-size: 0.56rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .marketing-technology__eyebrow::before,
+  .marketing-technology__eyebrow::after {
+    width: 17px;
+  }
+
+  .marketing-technology__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .marketing-technology__intro {
+    font-size: 0.79rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-technology__showcase {
+    padding: 16px 0 20px;
+
+    border-radius: 12px;
+  }
+
+  .marketing-technology__showcase-top {
+    padding: 0 15px 14px;
+  }
+
+  .marketing-technology__showcase-top strong {
+    font-size: 0.62rem;
+  }
+
+  .marketing-technology__live {
+    padding: 5px 7px;
+
+    font-size: 0.41rem !important;
+  }
+
+  .marketing-technology__marquee {
+    padding-top: 12px;
+  }
+
+  .marketing-technology__marquee::before,
+  .marketing-technology__marquee::after {
+    width: 45px;
+  }
+
+  .marketing-technology__track {
+    gap: 8px;
+
+    animation-duration: 26s;
+  }
+
+  .marketing-technology__marquee--right
+  .marketing-technology__track {
+    animation-duration: 30s;
+  }
+
+  .marketing-technology__card {
+    width: 145px;
+
+    min-height: 52px;
+
+    padding: 8px 10px;
+
+    gap: 8px;
+  }
+
+  .marketing-technology__icon {
+    width: 29px;
+    height: 29px;
+
+    border-radius: 6px;
+
+    font-size: 0.65rem;
+  }
+
+  .marketing-technology__card-content strong {
+    font-size: 0.51rem;
+  }
+
+  .marketing-technology__card-content span {
+    font-size: 0.4rem;
+  }
+
+  .marketing-technology__bottom {
+    align-items: flex-start;
+
+    margin-top: 15px;
+
+    padding: 12px 13px;
+  }
+
+  .marketing-technology__bottom-icon {
+    width: 29px;
+    height: 29px;
+
+    font-size: 0.64rem;
+  }
+
+  .marketing-technology__bottom strong {
+    font-size: 0.53rem;
+  }
+
+  .marketing-technology__bottom p {
+    font-size: 0.45rem;
+  }
+}
+
+/* =========================================================
+   ACCESSIBILITY
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-technology__track {
+    animation: none !important;
+  }
+
+  .marketing-technology__card {
+    transition: none !important;
+  }
+}

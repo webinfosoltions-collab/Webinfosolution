@@ -1,0 +1,459 @@
+/* =========================================================
+   WHO WE ARE
+   Premium Editorial Identity
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.who-we-are {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #f6f8fb;
+
+  color: #071b4a;
+
+  padding: clamp(65px, 7vw, 90px) 0;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.who-we-are__container {
+  width: min(1160px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.who-we-are__header {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+/* EYEBROW */
+
+.who-we-are__eyebrow {
+  margin-bottom: 11px;
+
+  font-size: 0.54rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+
+  color: #ff8500;
+}
+
+
+/* HEADING */
+
+.who-we-are__header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+.who-we-are__header h2 span {
+  color: #ff8500;
+}
+
+
+/* ACCENT */
+
+.who-we-are__accent {
+  width: 38px;
+
+  height: 2px;
+
+  margin-top: 17px;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   BIG INTRO
+========================================================= */
+
+.who-we-are__intro {
+  max-width: 900px;
+
+  margin:
+    45px
+    auto
+    58px;
+
+  text-align: center;
+}
+
+
+.who-we-are__intro p {
+  margin: 0;
+
+  font-size: clamp(1.05rem, 2.2vw, 1.45rem);
+
+  line-height: 1.55;
+
+  letter-spacing: -0.025em;
+
+  font-weight: 700;
+
+  color: #071b4a;
+}
+
+
+/* =========================================================
+   WORDS AREA
+========================================================= */
+
+.who-we-are__words {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  border-top: 1px solid rgba(7, 27, 74, 0.13);
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.13);
+}
+
+
+/* =========================================================
+   ITEM
+========================================================= */
+
+.who-we-are__item {
+  position: relative;
+
+  min-height: 285px;
+
+  padding:
+    28px
+    clamp(22px, 3vw, 42px);
+
+  transition:
+    background 0.35s ease;
+}
+
+
+/* vertical separators */
+
+.who-we-are__item + .who-we-are__item {
+  border-left: 1px solid rgba(7, 27, 74, 0.13);
+}
+
+
+/* HOVER */
+
+.who-we-are__item:hover {
+  background: #ffffff;
+}
+
+
+/* =========================================================
+   TOP
+========================================================= */
+
+.who-we-are__top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 28px;
+}
+
+
+/* NUMBER */
+
+.who-we-are__small {
+  font-size: 0.52rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  color: #ff8500;
+}
+
+
+/* LINE */
+
+.who-we-are__line {
+  width: 34px;
+
+  height: 1px;
+
+  background: rgba(255, 133, 0, 0.55);
+}
+
+
+/* =========================================================
+   LARGE WORD
+========================================================= */
+
+.who-we-are__item h3 {
+  margin: 0 0 16px;
+
+  font-size: clamp(2.2rem, 5vw, 4.1rem);
+
+  line-height: 0.95;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+
+.who-we-are__item h3 span {
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.who-we-are__item p {
+  max-width: 270px;
+
+  margin: 0;
+
+  font-size: 0.73rem;
+
+  line-height: 1.75;
+
+  color: rgba(7, 27, 74, 0.53);
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.who-we-are__bottom {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 13px;
+
+  margin-top: 42px;
+
+  text-align: center;
+}
+
+
+.who-we-are__bottom-mark {
+  width: 25px;
+
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background: #ff8500;
+}
+
+
+.who-we-are__bottom p {
+  margin: 0;
+
+  font-size: 0.7rem;
+
+  line-height: 1.6;
+
+  color: rgba(7, 27, 74, 0.48);
+}
+
+
+.who-we-are__bottom strong {
+  color: #071b4a;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .who-we-are {
+    padding: 65px 0;
+  }
+
+
+  .who-we-are__container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+
+  .who-we-are__intro {
+    margin:
+      40px
+      auto
+      48px;
+  }
+
+
+  .who-we-are__words {
+    grid-template-columns: 1fr;
+  }
+
+
+  .who-we-are__item {
+    min-height: auto;
+
+    padding:
+      25px
+      28px;
+  }
+
+
+  .who-we-are__item + .who-we-are__item {
+    border-left: none;
+
+    border-top: 1px solid rgba(7, 27, 74, 0.13);
+  }
+
+
+  .who-we-are__item p {
+    max-width: 500px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .who-we-are {
+    padding: 52px 0;
+  }
+
+
+  .who-we-are__container {
+    width: calc(100% - 30px);
+  }
+
+
+  /* Heading */
+
+  .who-we-are__header h2 {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+
+  .who-we-are__accent {
+    margin-top: 14px;
+  }
+
+
+  /* Intro */
+
+  .who-we-are__intro {
+    margin:
+      34px
+      auto
+      38px;
+  }
+
+
+  .who-we-are__intro p {
+    font-size: 0.9rem;
+
+    line-height: 1.6;
+  }
+
+
+  /* Items */
+
+  .who-we-are__item {
+    min-height: auto;
+
+    padding:
+      22px
+      18px;
+  }
+
+
+  .who-we-are__top {
+    margin-bottom: 22px;
+  }
+
+
+  .who-we-are__item h3 {
+    margin-bottom: 12px;
+
+    font-size: 2.45rem;
+  }
+
+
+  .who-we-are__item p {
+    font-size: 0.69rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* Bottom */
+
+  .who-we-are__bottom {
+    margin-top: 32px;
+  }
+
+
+  .who-we-are__bottom p {
+    font-size: 0.62rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .who-we-are__intro {
+    margin-top: 30px;
+
+    margin-bottom: 34px;
+  }
+
+
+  .who-we-are__item h3 {
+    font-size: 2.2rem;
+  }
+}

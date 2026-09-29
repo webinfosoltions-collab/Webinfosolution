@@ -1,0 +1,533 @@
+/* =========================================================
+   SHOPIFY SHOWCASE
+   Premium Real-Work Portfolio
+========================================================= */
+
+.shopify-showcase {
+  --navy: #071b4a;
+  --orange: #ff8500;
+  --white: #ffffff;
+  --muted: #687489;
+
+  position: relative;
+  width: 100%;
+
+  padding: 115px 0 120px;
+
+  background: #f7f9fc;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.shopify-showcase__container {
+  width: min(1200px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.shopify-showcase__header {
+  max-width: 760px;
+
+  margin: 0 auto 68px;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.shopify-showcase__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  margin-bottom: 17px;
+
+  color: var(--orange);
+
+  font-size: 0.69rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+}
+
+.shopify-showcase__eyebrow i {
+  width: 22px;
+  height: 2px;
+
+  display: block;
+
+  border-radius: 10px;
+
+  background: var(--orange);
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.shopify-showcase__header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.13;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  color: var(--navy);
+}
+
+.shopify-showcase__header h2 span {
+  display: block;
+
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.shopify-showcase__header p {
+  max-width: 680px;
+
+  margin: 19px auto 0;
+
+  font-size: 0.96rem;
+
+  line-height: 1.8;
+
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   PROJECT GRID
+========================================================= */
+
+.shopify-showcase__projects {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 24px;
+}
+
+
+/* =========================================================
+   PROJECT CARD
+========================================================= */
+
+.shopify-project {
+  overflow: hidden;
+
+  border: 1px solid rgba(7, 27, 74, 0.09);
+
+  border-radius: 13px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 25px rgba(7, 27, 74, 0.045);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.shopify-project:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(255, 133, 0, 0.25);
+
+  box-shadow:
+    0 22px 48px rgba(7, 27, 74, 0.11);
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.shopify-project__image {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 9;
+
+  overflow: hidden;
+
+  background: #edf0f4;
+}
+
+.shopify-project__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.55s ease;
+}
+
+.shopify-project:hover .shopify-project__image img {
+  transform: scale(1.035);
+}
+
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.shopify-project__overlay {
+  position: absolute;
+
+  left: 18px;
+  right: 18px;
+  bottom: 18px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 12px;
+
+  border: 1px solid rgba(255, 255, 255, 0.20);
+
+  border-radius: 7px;
+
+  background: rgba(7, 27, 74, 0.88);
+
+  color: #ffffff;
+
+  font-size: 0.56rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.11em;
+
+  opacity: 0;
+
+  transform: translateY(8px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.shopify-project:hover .shopify-project__overlay {
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+.shopify-project__overlay span:last-child {
+  color: var(--orange);
+
+  font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.shopify-project__content {
+  padding: 25px 26px 24px;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.shopify-project__meta {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 14px;
+
+  font-size: 0.56rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  color: #9aa3b1;
+}
+
+.shopify-project__meta span:last-child {
+  color: var(--orange);
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.shopify-project__content h3 {
+  margin: 0;
+
+  font-size: 1.3rem;
+
+  line-height: 1.25;
+
+  letter-spacing: -0.025em;
+
+  font-weight: 800;
+
+  color: var(--navy);
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.shopify-project__content p {
+  max-width: 520px;
+
+  margin: 10px 0 22px;
+
+  font-size: 0.81rem;
+
+  line-height: 1.72;
+
+  color: var(--muted);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.shopify-project__footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(7, 27, 74, 0.08);
+}
+
+
+/* =========================================================
+   WORK TYPE
+========================================================= */
+
+.shopify-project__work {
+  font-size: 0.56rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.09em;
+
+  color: #8d97a6;
+}
+
+
+/* =========================================================
+   VISIT LINK
+========================================================= */
+
+.shopify-project__link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: var(--navy);
+
+  font-size: 0.66rem;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease;
+}
+
+.shopify-project__link span {
+  color: var(--orange);
+
+  font-size: 0.9rem;
+
+  transition:
+    transform 0.25s ease;
+}
+
+.shopify-project__link:hover {
+  color: var(--orange);
+}
+
+.shopify-project__link:hover span {
+  transform: translate(2px, -2px);
+}
+
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.shopify-showcase__bottom {
+  margin-top: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.shopify-showcase__bottom span {
+  flex: 1;
+
+  height: 1px;
+
+  background: rgba(7, 27, 74, 0.10);
+}
+
+.shopify-showcase__bottom p {
+  margin: 0;
+
+  color: #8a94a3;
+
+  font-size: 0.65rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.06em;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+  .shopify-showcase {
+    padding: 90px 0 100px;
+  }
+
+  .shopify-showcase__projects {
+    grid-template-columns: 1fr;
+  }
+
+  .shopify-project {
+    max-width: 720px;
+
+    width: 100%;
+
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+  .shopify-showcase {
+    padding: 75px 0 80px;
+  }
+
+  .shopify-showcase__container {
+    width: calc(100% - 30px);
+  }
+
+  .shopify-showcase__header {
+    margin-bottom: 42px;
+  }
+
+  .shopify-showcase__eyebrow {
+    margin-bottom: 14px;
+
+    font-size: 0.61rem;
+  }
+
+  .shopify-showcase__header h2 {
+    font-size: clamp(1.7rem, 8vw, 2.2rem);
+  }
+
+  .shopify-showcase__header p {
+    margin-top: 15px;
+
+    font-size: 0.87rem;
+
+    line-height: 1.7;
+  }
+
+  .shopify-showcase__projects {
+    gap: 15px;
+  }
+
+  .shopify-project__content {
+    padding: 21px 20px 20px;
+  }
+
+  .shopify-project__content h3 {
+    font-size: 1.15rem;
+  }
+
+  .shopify-project__content p {
+    font-size: 0.78rem;
+
+    margin-bottom: 20px;
+  }
+
+  .shopify-project__overlay {
+    left: 13px;
+    right: 13px;
+    bottom: 13px;
+  }
+
+  .shopify-showcase__bottom {
+    margin-top: 38px;
+  }
+
+  .shopify-showcase__bottom span {
+    display: none;
+  }
+
+  .shopify-showcase__bottom {
+    justify-content: center;
+  }
+
+  .shopify-showcase__bottom p {
+    font-size: 0.58rem;
+  }
+}

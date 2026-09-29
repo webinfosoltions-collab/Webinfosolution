@@ -1,0 +1,846 @@
+
+
+/* =========================================================
+   MARKETING SOCIAL
+   Premium Social Media / Creative Section
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.marketing-social {
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #f8faff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+.marketing-social__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marketing-social__header {
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.marketing-social__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.marketing-social__eyebrow::before,
+.marketing-social__eyebrow::after {
+  content: "";
+
+  width: 21px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+}
+
+.marketing-social__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.marketing-social__title span {
+  color: #ff8500;
+}
+
+.marketing-social__intro {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: #718097;
+
+  font-size: 0.87rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.marketing-social__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.05fr)
+    minmax(0, 0.95fr);
+
+  gap: 42px;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SOCIAL VISUAL
+========================================================= */
+
+.marketing-social__visual {
+  padding: 22px;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 17px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 50px rgba(7, 27, 74, 0.055);
+}
+
+.marketing-social__visual-header {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.07);
+}
+
+.marketing-social__brand-mark {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 9px;
+
+  background: #fff7ef;
+
+  color: #ff8500;
+
+  font-size: 0.85rem;
+}
+
+.marketing-social__visual-header > div:nth-child(2) {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.marketing-social__visual-header span {
+  color: #9aa3b2;
+
+  font-size: 0.46rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+.marketing-social__visual-header strong {
+  color: #071b4a;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+}
+
+.marketing-social__status {
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-left: auto;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: #f6faf7;
+
+  color: #64756b !important;
+
+  font-size: 0.45rem !important;
+
+  letter-spacing: 0 !important;
+}
+
+.marketing-social__status i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+}
+
+/* =========================================================
+   POSTS
+========================================================= */
+
+.marketing-social__posts {
+  display: grid;
+
+  grid-template-columns:
+    1.3fr 0.7fr;
+
+  grid-template-rows:
+    1fr 1fr;
+
+  gap: 10px;
+
+  height: 305px;
+
+  padding-top: 18px;
+}
+
+.marketing-social__post {
+  position: relative;
+
+  overflow: hidden;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(7, 27, 74, 0.06);
+}
+
+.marketing-social__post--large {
+  grid-row: 1 / 3;
+}
+
+.marketing-social__post-gradient {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 25px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #071b4a 0%,
+      #102d68 65%,
+      #ff8500 180%
+    );
+}
+
+.marketing-social__post-gradient span {
+  margin-bottom: 12px;
+
+  color: #ff8500;
+
+  font-size: 0.5rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.15em;
+}
+
+.marketing-social__post-gradient strong {
+  color: #ffffff;
+
+  font-size: clamp(1.15rem, 2vw, 1.55rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.03em;
+}
+
+.marketing-social__post-gradient small {
+  margin-top: 14px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.49rem;
+}
+
+.marketing-social__post-footer {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 10px 13px;
+
+  background: rgba(7, 27, 74, 0.7);
+
+  backdrop-filter: blur(5px);
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 0.46rem;
+}
+
+.marketing-social__post-footer svg {
+  color: #ff8500;
+
+  font-size: 0.7rem;
+}
+
+/* =========================================================
+   SMALL POSTS
+========================================================= */
+
+.marketing-social__post--small {
+  background: #071b4a;
+}
+
+.marketing-social__post--light {
+  background: #fff8f1;
+}
+
+.marketing-social__mini-content {
+  height: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 16px;
+}
+
+.marketing-social__mini-content svg {
+  margin-bottom: 10px;
+
+  color: #ff8500;
+
+  font-size: 0.9rem;
+}
+
+.marketing-social__mini-content span {
+  color: #ff8500;
+
+  font-size: 0.43rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+}
+
+.marketing-social__mini-content strong {
+  margin-top: 5px;
+
+  color: #ffffff;
+
+  font-size: 0.68rem;
+
+  line-height: 1.3;
+}
+
+.marketing-social__post--light
+.marketing-social__mini-content strong {
+  color: #071b4a;
+}
+
+.marketing-social__mini-content small {
+  margin-top: 5px;
+
+  color: #8d96a5;
+
+  font-size: 0.45rem;
+}
+
+/* =========================================================
+   PLATFORM STRIP
+========================================================= */
+
+.marketing-social__platforms {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 8px;
+
+  margin-top: 13px;
+}
+
+.marketing-social__platforms div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 6px;
+
+  min-height: 36px;
+
+  border: 1px solid rgba(7, 27, 74, 0.06);
+
+  border-radius: 7px;
+
+  background: #fbfcfe;
+
+  color: #667389;
+
+  font-size: 0.48rem;
+
+  font-weight: 700;
+}
+
+.marketing-social__platforms svg {
+  color: #ff8500;
+
+  font-size: 0.65rem;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.marketing-social__content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  padding: 10px 0;
+}
+
+.marketing-social__content-label {
+  margin-bottom: 16px;
+
+  color: #ff8500;
+
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.marketing-social__content h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.03em;
+
+  font-weight: 800;
+}
+
+.marketing-social__content h3 span {
+  color: #ff8500;
+}
+
+.marketing-social__description {
+  max-width: 470px;
+
+  margin: 14px 0 25px;
+
+  color: #778398;
+
+  font-size: 0.67rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.marketing-social__services {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.marketing-social__service {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 12px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.marketing-social__service:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 133, 0, 0.2);
+
+  background: #fffaf6;
+}
+
+.marketing-social__service-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 7px;
+
+  background: #fff7ef;
+
+  color: #ff8500;
+
+  font-size: 0.68rem;
+}
+
+.marketing-social__service h4 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.59rem;
+
+  font-weight: 800;
+}
+
+.marketing-social__service p {
+  margin: 4px 0 0;
+
+  color: #929bab;
+
+  font-size: 0.48rem;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   WORKFLOW
+========================================================= */
+
+.marketing-social__workflow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  max-width: 1080px;
+
+  margin: 22px auto 0;
+
+  padding: 15px 20px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 10px;
+
+  background: #ffffff;
+}
+
+.marketing-social__workflow-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  white-space: nowrap;
+}
+
+.marketing-social__workflow-item span {
+  color: #ff8500;
+
+  font-size: 0.46rem;
+
+  font-weight: 900;
+}
+
+.marketing-social__workflow-item strong {
+  color: #68758a;
+
+  font-size: 0.52rem;
+
+  font-weight: 750;
+}
+
+.marketing-social__workflow-line {
+  width: 35px;
+
+  height: 1px;
+
+  margin: 0 12px;
+
+  background: rgba(7, 27, 74, 0.1);
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .marketing-social {
+    padding: 90px 0 100px;
+  }
+
+  .marketing-social__layout {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+
+    gap: 35px;
+  }
+
+  .marketing-social__content {
+    padding: 0;
+  }
+
+  .marketing-social__description {
+    max-width: 600px;
+  }
+
+  .marketing-social__services {
+    max-width: 650px;
+  }
+
+  .marketing-social__workflow {
+    max-width: 700px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .marketing-social {
+    padding: 72px 0 78px;
+  }
+
+  .marketing-social__container {
+    width: calc(100% - 28px);
+  }
+
+  .marketing-social__header {
+    margin-bottom: 38px;
+  }
+
+  .marketing-social__eyebrow {
+    font-size: 0.56rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .marketing-social__eyebrow::before,
+  .marketing-social__eyebrow::after {
+    width: 17px;
+  }
+
+  .marketing-social__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .marketing-social__intro {
+    font-size: 0.79rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-social__layout {
+    gap: 25px;
+  }
+
+  .marketing-social__visual {
+    padding: 14px;
+
+    border-radius: 12px;
+  }
+
+  .marketing-social__visual-header {
+    padding-bottom: 12px;
+  }
+
+  .marketing-social__visual-header strong {
+    font-size: 0.6rem;
+  }
+
+  .marketing-social__posts {
+    height: 245px;
+
+    gap: 7px;
+
+    padding-top: 13px;
+  }
+
+  .marketing-social__post-gradient {
+    padding: 18px;
+  }
+
+  .marketing-social__post-gradient strong {
+    font-size: 1.05rem;
+  }
+
+  .marketing-social__post-gradient small {
+    font-size: 0.42rem;
+  }
+
+  .marketing-social__mini-content {
+    padding: 11px;
+  }
+
+  .marketing-social__mini-content strong {
+    font-size: 0.56rem;
+  }
+
+  .marketing-social__platforms {
+    gap: 6px;
+  }
+
+  .marketing-social__platforms div {
+    min-height: 32px;
+
+    font-size: 0.43rem;
+  }
+
+  .marketing-social__content-label {
+    font-size: 0.5rem;
+  }
+
+  .marketing-social__content h3 {
+    font-size: 1.4rem;
+  }
+
+  .marketing-social__description {
+    font-size: 0.61rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-social__services {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .marketing-social__service {
+    padding: 10px;
+  }
+
+  .marketing-social__service h4 {
+    font-size: 0.57rem;
+  }
+
+  .marketing-social__service p {
+    font-size: 0.47rem;
+  }
+
+  .marketing-social__workflow {
+    display: grid;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 11px;
+
+    padding: 14px;
+  }
+
+  .marketing-social__workflow-item {
+    justify-content: center;
+  }
+
+  .marketing-social__workflow-line {
+    display: none;
+  }
+
+  .marketing-social__workflow-item:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-social__service {
+    transition: none !important;
+  }
+}
+ 

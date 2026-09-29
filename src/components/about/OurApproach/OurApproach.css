@@ -1,0 +1,484 @@
+/* =========================================================
+   OUR APPROACH / HOW WE THINK
+   Premium Editorial Philosophy Section
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.our-approach {
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  padding: clamp(58px, 6vw, 80px) 0;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.our-approach__container {
+  width: min(1100px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.our-approach__header {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+
+  text-align: center;
+}
+
+
+.our-approach__eyebrow {
+  margin-bottom: 9px;
+
+  font-size: 0.53rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+
+  color: #ff8500;
+}
+
+
+.our-approach__header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+
+.our-approach__header h2 span {
+  color: #ff8500;
+}
+
+
+.our-approach__accent {
+  width: 36px;
+
+  height: 2px;
+
+  margin-top: 14px;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.our-approach__intro {
+  display: grid;
+
+  grid-template-columns: 1fr 0.85fr;
+
+  gap: 70px;
+
+  align-items: end;
+
+  max-width: 900px;
+
+  margin: 48px auto 45px;
+}
+
+
+.our-approach__intro-title span {
+  display: block;
+
+  margin-bottom: 10px;
+
+  font-size: 0.5rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  color: #ff8500;
+}
+
+
+.our-approach__intro-title h3 {
+  margin: 0;
+
+  font-size: clamp(2.15rem, 4vw, 3.4rem);
+
+  line-height: 0.99;
+
+  letter-spacing: -0.055em;
+
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+
+.our-approach__intro-title h3 em {
+  font-style: normal;
+
+  color: #ff8500;
+}
+
+
+.our-approach__intro-text {
+  padding-bottom: 4px;
+}
+
+
+.our-approach__intro-text p {
+  max-width: 390px;
+
+  margin: 0;
+
+  font-size: 0.75rem;
+
+  line-height: 1.8;
+
+  color: rgba(7, 27, 74, 0.53);
+}
+
+
+.our-approach__small-line {
+  width: 30px;
+
+  height: 2px;
+
+  margin-top: 17px;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   PRINCIPLES
+========================================================= */
+
+.our-approach__principles {
+  border-top: 1px solid rgba(7, 27, 74, 0.13);
+}
+
+
+.our-approach__principle {
+  display: grid;
+
+  grid-template-columns: 85px minmax(0, 1fr) 35px;
+
+  align-items: center;
+
+  min-height: 105px;
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.13);
+
+  transition:
+    padding-left 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.our-approach__principle:hover {
+  padding-left: 12px;
+
+  background: #f8f9fb;
+}
+
+
+/* =========================================================
+   INDEX
+========================================================= */
+
+.our-approach__index {
+  align-self: stretch;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: flex-start;
+}
+
+
+.our-approach__index span {
+  font-size: 0.58rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.our-approach__principle-content {
+  padding: 19px 0;
+}
+
+
+.our-approach__principle-content h4 {
+  margin: 0 0 6px;
+
+  font-size: 1rem;
+
+  line-height: 1.25;
+
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+
+.our-approach__principle-content p {
+  max-width: 600px;
+
+  margin: 0;
+
+  font-size: 0.68rem;
+
+  line-height: 1.7;
+
+  color: rgba(7, 27, 74, 0.5);
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.our-approach__arrow {
+  font-size: 1.05rem;
+
+  font-weight: 300;
+
+  color: rgba(7, 27, 74, 0.25);
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+
+.our-approach__principle:hover .our-approach__arrow {
+  color: #ff8500;
+
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================================
+   CLOSING
+========================================================= */
+
+.our-approach__closing {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 11px;
+
+  margin-top: 34px;
+
+  text-align: center;
+}
+
+
+.our-approach__closing span {
+  width: 22px;
+
+  height: 2px;
+
+  background: #ff8500;
+}
+
+
+.our-approach__closing p {
+  margin: 0;
+
+  font-size: 0.62rem;
+
+  color: rgba(7, 27, 74, 0.42);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .our-approach {
+    padding: 62px 0;
+  }
+
+  .our-approach__container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .our-approach__intro {
+    gap: 40px;
+
+    margin-top: 42px;
+  }
+
+  .our-approach__principle {
+    grid-template-columns: 65px minmax(0, 1fr) 30px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .our-approach {
+    padding: 50px 0;
+  }
+
+  .our-approach__container {
+    width: calc(100% - 30px);
+  }
+
+
+  /* Header */
+
+  .our-approach__header h2 {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+
+  /* Intro */
+
+  .our-approach__intro {
+    grid-template-columns: 1fr;
+
+    gap: 20px;
+
+    margin:
+      35px
+      auto
+      35px;
+  }
+
+
+  .our-approach__intro-title h3 {
+    font-size: 2.25rem;
+
+    line-height: 1;
+  }
+
+
+  .our-approach__intro-text {
+    padding-bottom: 0;
+  }
+
+
+  .our-approach__intro-text p {
+    font-size: 0.7rem;
+
+    line-height: 1.72;
+  }
+
+
+  /* Principles */
+
+  .our-approach__principle {
+    grid-template-columns: 38px minmax(0, 1fr) 22px;
+
+    min-height: 105px;
+  }
+
+
+  .our-approach__principle:hover {
+    padding-left: 0;
+  }
+
+
+  .our-approach__index span {
+    font-size: 0.49rem;
+  }
+
+
+  .our-approach__principle-content {
+    padding: 17px 8px 17px 0;
+  }
+
+
+  .our-approach__principle-content h4 {
+    margin-bottom: 5px;
+
+    font-size: 0.88rem;
+  }
+
+
+  .our-approach__principle-content p {
+    font-size: 0.64rem;
+
+    line-height: 1.7;
+  }
+
+
+  .our-approach__arrow {
+    font-size: 0.9rem;
+  }
+
+
+  /* Closing */
+
+  .our-approach__closing {
+    margin-top: 28px;
+  }
+
+
+  .our-approach__closing p {
+    font-size: 0.58rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .our-approach__intro-title h3 {
+    font-size: 2rem;
+  }
+
+  .our-approach__principle-content h4 {
+    font-size: 0.84rem;
+  }
+
+  .our-approach__principle-content p {
+    font-size: 0.61rem;
+  }
+}

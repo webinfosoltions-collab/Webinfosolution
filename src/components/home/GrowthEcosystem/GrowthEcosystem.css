@@ -1,0 +1,989 @@
+/* =========================================================
+   GROWTH ECOSYSTEM
+   Premium / Floating / Interactive
+
+   Navy  : #071B4A
+   Orange: #FF8500
+   Cream : #F5F1E8
+========================================================= */
+
+.ws-growth-section {
+  position: relative;
+  overflow: hidden;
+  background: #f5f1e8;
+  padding: 70px 0 75px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.ws-growth-head {
+  position: relative;
+  z-index: 10;
+  max-width: 780px;
+  margin: 0 auto 42px;
+  text-align: center;
+}
+
+.ws-growth-head h2 {
+  margin: 14px 0 0;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.13;
+  letter-spacing: -0.035em;
+  font-weight: 850;
+  color: #071b4a;
+}
+
+.ws-growth-head h2 .accent {
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   MAIN ECOSYSTEM
+========================================================= */
+
+.ws-growth-ecosystem {
+  position: relative;
+
+  width: min(900px, calc(100% - 30px));
+  height: 590px;
+
+  margin: 0 auto;
+
+  isolation: isolate;
+}
+
+
+/* =========================================================
+   BACKGROUND ORBS
+========================================================= */
+
+.ws-growth-ecosystem::before,
+.ws-growth-ecosystem::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  z-index: -3;
+}
+
+.ws-growth-ecosystem::before {
+  width: 300px;
+  height: 300px;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  background: rgba(255, 133, 0, 0.07);
+
+  filter: blur(55px);
+
+  animation: ecosystemGlow 5s ease-in-out infinite;
+}
+
+.ws-growth-ecosystem::after {
+  width: 170px;
+  height: 170px;
+
+  left: 10%;
+  top: 10%;
+
+  background: rgba(7, 27, 74, 0.035);
+
+  filter: blur(35px);
+
+  animation: floatingOrb 7s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   CENTER GLOW RING
+========================================================= */
+
+.ws-ecosystem-glow {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 270px;
+  height: 270px;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 133, 0, 0.10);
+
+  box-shadow:
+    0 0 80px rgba(255, 133, 0, 0.08),
+    inset 0 0 60px rgba(255, 133, 0, 0.04);
+
+  animation: coreRing 5s ease-in-out infinite;
+
+  pointer-events: none;
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   CONNECTION SVG
+========================================================= */
+
+.ws-growth-connections {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  z-index: 1;
+
+  overflow: visible;
+
+  pointer-events: none;
+}
+
+.connection-line {
+  fill: none;
+
+  stroke: rgba(7, 27, 74, 0.15);
+
+  stroke-width: 1.2;
+
+  stroke-dasharray: 5 8;
+
+  animation: connectionFlow 4s linear infinite;
+}
+
+
+/* =========================================================
+   PULSE WAVES
+========================================================= */
+
+.ws-pulse {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 120px;
+  height: 120px;
+
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(255, 133, 0, 0.24);
+
+  pointer-events: none;
+
+  z-index: 2;
+
+  animation: pulseWave 4s ease-out infinite;
+}
+
+.pulse-2 {
+  animation-delay: 1.3s;
+}
+
+.pulse-3 {
+  animation-delay: 2.6s;
+}
+
+
+/* =========================================================
+   CENTER SHOPIFY STORE
+========================================================= */
+
+.ws-growth-core {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  width: 165px;
+  height: 165px;
+
+  transform: translate(-50%, -50%);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #071b4a;
+
+  border: 2px solid rgba(255, 133, 0, 0.60);
+
+  box-shadow:
+    0 25px 70px rgba(7, 27, 74, 0.20),
+    0 0 0 10px rgba(255, 255, 255, 0.38),
+    0 0 55px rgba(255, 133, 0, 0.12);
+
+  z-index: 10;
+
+  animation:
+    coreAppear 1s ease forwards,
+    coreFloat 5s ease-in-out 1s infinite;
+}
+
+.ws-core-inner {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.ws-core-small {
+  margin-bottom: 7px;
+
+  font-size: 0.44rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  color: rgba(255, 255, 255, 0.48);
+}
+
+.ws-growth-core strong {
+  font-size: 1.22rem;
+
+  line-height: 1;
+
+  letter-spacing: -0.025em;
+
+  font-weight: 850;
+
+  color: #ffffff;
+}
+
+.ws-core-label {
+  margin-top: 7px;
+
+  font-size: 0.44rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.20em;
+
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   ECOSYSTEM NODES
+========================================================= */
+
+.ws-growth-node {
+  position: absolute;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  min-width: 130px;
+
+  padding: 11px 15px;
+
+  border: 1px solid rgba(7, 27, 74, 0.12);
+
+  border-radius: 50px;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  backdrop-filter: blur(14px);
+
+  -webkit-backdrop-filter: blur(14px);
+
+  box-shadow:
+    0 12px 35px rgba(7, 27, 74, 0.075);
+
+  z-index: 6;
+
+  opacity: 0;
+
+  transition:
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease,
+    transform 0.3s ease;
+}
+
+.ws-growth-node:hover {
+  border-color: rgba(255, 133, 0, 0.50);
+
+  background: #ffffff;
+
+  box-shadow:
+    0 18px 45px rgba(7, 27, 74, 0.12),
+    0 0 25px rgba(255, 133, 0, 0.10);
+
+  z-index: 20;
+}
+
+.ws-growth-node > span:last-child {
+  font-size: 0.58rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.025em;
+
+  color: #071b4a;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   NODE DOT
+========================================================= */
+
+.ws-node-dot {
+  width: 7px;
+  height: 7px;
+
+  flex-shrink: 0;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+
+  box-shadow:
+    0 0 0 4px rgba(255, 133, 0, 0.10);
+
+  animation: dotPulse 2.4s ease-in-out infinite;
+}
+
+
+/* =========================================================
+   PERFECT RADIAL NODE POSITIONS
+========================================================= */
+
+/*
+       NODE 0
+         ↑
+
+ NODE 5       NODE 1
+
+
+         SHOPIFY
+
+
+ NODE 4       NODE 2
+
+         ↓
+       NODE 3
+*/
+
+
+/* TOP */
+
+.ws-node-0 {
+  left: 50%;
+  top: 5%;
+
+  transform: translateX(-50%);
+
+  animation:
+    nodeAppear 0.7s ease 0.20s forwards,
+    floatTop 5s ease-in-out 1s infinite;
+}
+
+
+/* TOP RIGHT */
+
+.ws-node-1 {
+  right: 5%;
+  top: 22%;
+
+  animation:
+    nodeAppear 0.7s ease 0.45s forwards,
+    floatRight 5.5s ease-in-out 1.2s infinite;
+}
+
+
+/* BOTTOM RIGHT */
+
+.ws-node-2 {
+  right: 5%;
+  bottom: 22%;
+
+  animation:
+    nodeAppear 0.7s ease 0.70s forwards,
+    floatRight 5.8s ease-in-out 1.4s infinite;
+}
+
+
+/* BOTTOM */
+
+.ws-node-3 {
+  left: 50%;
+  bottom: 5%;
+
+  transform: translateX(-50%);
+
+  animation:
+    nodeAppear 0.7s ease 0.95s forwards,
+    floatBottom 5.2s ease-in-out 1.6s infinite;
+}
+
+
+/* BOTTOM LEFT */
+
+.ws-node-4 {
+  left: 5%;
+  bottom: 22%;
+
+  animation:
+    nodeAppear 0.7s ease 1.20s forwards,
+    floatLeft 5.7s ease-in-out 1.8s infinite;
+}
+
+
+/* TOP LEFT */
+
+.ws-node-5 {
+  left: 5%;
+  top: 22%;
+
+  animation:
+    nodeAppear 0.7s ease 1.45s forwards,
+    floatLeft 5.4s ease-in-out 2s infinite;
+}
+
+
+/* =========================================================
+   NETWORK PARTICLES
+========================================================= */
+
+.ws-network-particle {
+  position: absolute;
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+
+  box-shadow:
+    0 0 12px rgba(255, 133, 0, 0.55);
+
+  z-index: 4;
+
+  pointer-events: none;
+}
+
+.particle-1 {
+  left: 44%;
+  top: 30%;
+}
+
+.particle-2 {
+  left: 56%;
+  top: 67%;
+}
+
+.particle-3 {
+  left: 36%;
+  top: 61%;
+}
+
+
+/* =========================================================
+   FLOW
+========================================================= */
+
+.ws-growth-flow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin-top: 5px;
+}
+
+.ws-growth-flow span,
+.ws-growth-flow strong {
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  color: rgba(7, 27, 74, 0.45);
+}
+
+.ws-growth-flow strong {
+  color: #ff8500;
+}
+
+.ws-growth-flow b {
+  font-size: 0.7rem;
+
+  font-weight: 500;
+
+  color: rgba(7, 27, 74, 0.25);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes nodeAppear {
+  0% {
+    opacity: 0;
+    transform: scale(0.65);
+  }
+
+  70% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes coreAppear {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.65);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes coreFloat {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: -7px;
+  }
+}
+
+
+/* =========================================================
+   FLOATING NODES
+========================================================= */
+
+@keyframes floatTop {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: -9px;
+  }
+}
+
+@keyframes floatBottom {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: 8px;
+  }
+}
+
+@keyframes floatLeft {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: -7px;
+  }
+}
+
+@keyframes floatRight {
+  0%,
+  100% {
+    margin-top: 0;
+  }
+
+  50% {
+    margin-top: 7px;
+  }
+}
+
+
+/* =========================================================
+   ORBS
+========================================================= */
+
+@keyframes floatingOrb {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(35px, 25px);
+  }
+}
+
+@keyframes ecosystemGlow {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.9);
+    opacity: 0.7;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.12);
+    opacity: 1;
+  }
+}
+
+@keyframes coreRing {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.92);
+    opacity: 0.65;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1.08);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   PULSE
+========================================================= */
+
+@keyframes pulseWave {
+  0% {
+    transform: translate(-50%, -50%) scale(0.7);
+    opacity: 0;
+  }
+
+  25% {
+    opacity: 0.8;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(2.3);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   CONNECTION FLOW
+========================================================= */
+
+@keyframes connectionFlow {
+  from {
+    stroke-dashoffset: 0;
+  }
+
+  to {
+    stroke-dashoffset: -40;
+  }
+}
+
+
+/* =========================================================
+   DOT
+========================================================= */
+
+@keyframes dotPulse {
+  0%,
+  100% {
+    box-shadow:
+      0 0 0 3px rgba(255, 133, 0, 0.08);
+  }
+
+  50% {
+    box-shadow:
+      0 0 0 6px rgba(255, 133, 0, 0.14);
+  }
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .ws-growth-section {
+    padding: 60px 0 65px;
+  }
+
+  .ws-growth-ecosystem {
+    width: min(760px, calc(100% - 25px));
+    height: 520px;
+  }
+
+  .ws-growth-core {
+    width: 145px;
+    height: 145px;
+  }
+
+  .ws-growth-node {
+    min-width: 112px;
+    padding: 9px 12px;
+  }
+
+  .ws-growth-node > span:last-child {
+    font-size: 0.52rem;
+  }
+
+  .ws-node-1,
+  .ws-node-2 {
+    right: 2%;
+  }
+
+  .ws-node-4,
+  .ws-node-5 {
+    left: 2%;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .ws-growth-section {
+    padding: 48px 0 55px;
+  }
+
+  .ws-growth-head {
+    margin-bottom: 20px;
+
+    padding: 0 15px;
+  }
+
+  .ws-growth-head h2 {
+    font-size: 1.7rem;
+    line-height: 1.18;
+  }
+
+  .ws-growth-ecosystem {
+    width: 100%;
+    height: 430px;
+  }
+
+
+  /* CENTER */
+
+  .ws-growth-core {
+    width: 112px;
+    height: 112px;
+
+    border-width: 1.5px;
+
+    box-shadow:
+      0 15px 35px rgba(7, 27, 74, 0.16),
+      0 0 0 7px rgba(255, 255, 255, 0.42),
+      0 0 35px rgba(255, 133, 0, 0.10);
+  }
+
+  .ws-growth-core strong {
+    font-size: 0.86rem;
+  }
+
+  .ws-core-small {
+    font-size: 0.32rem;
+  }
+
+  .ws-core-label {
+    font-size: 0.34rem;
+  }
+
+
+  /* NODES */
+
+  .ws-growth-node {
+    min-width: auto;
+
+    padding: 7px 10px;
+
+    gap: 6px;
+
+    border-radius: 40px;
+  }
+
+  .ws-growth-node > span:last-child {
+    font-size: 0.44rem;
+  }
+
+  .ws-node-dot {
+    width: 5px;
+    height: 5px;
+  }
+
+
+  /* TOP */
+
+  .ws-node-0 {
+    top: 3%;
+  }
+
+
+  /* TOP RIGHT */
+
+  .ws-node-1 {
+    right: 1%;
+    top: 20%;
+  }
+
+
+  /* BOTTOM RIGHT */
+
+  .ws-node-2 {
+    right: 1%;
+    bottom: 20%;
+  }
+
+
+  /* BOTTOM */
+
+  .ws-node-3 {
+    bottom: 3%;
+  }
+
+
+  /* BOTTOM LEFT */
+
+  .ws-node-4 {
+    left: 1%;
+    bottom: 20%;
+  }
+
+
+  /* TOP LEFT */
+
+  .ws-node-5 {
+    left: 1%;
+    top: 20%;
+  }
+
+
+  /* GLOW */
+
+  .ws-ecosystem-glow {
+    width: 190px;
+    height: 190px;
+  }
+
+
+  /* FLOW */
+
+  .ws-growth-flow {
+    gap: 7px;
+
+    padding: 0 10px;
+  }
+
+  .ws-growth-flow span,
+  .ws-growth-flow strong {
+    font-size: 0.42rem;
+  }
+
+  .ws-growth-flow b {
+    font-size: 0.55rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .ws-growth-ecosystem {
+    height: 400px;
+  }
+
+  .ws-growth-core {
+    width: 100px;
+    height: 100px;
+  }
+
+  .ws-growth-core strong {
+    font-size: 0.78rem;
+  }
+
+  .ws-growth-node {
+    padding: 6px 8px;
+  }
+
+  .ws-growth-node > span:last-child {
+    font-size: 0.40rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ws-growth-node,
+  .ws-growth-core,
+  .ws-ecosystem-glow,
+  .ws-pulse,
+  .ws-network-particle,
+  .ws-growth-ecosystem::before,
+  .ws-growth-ecosystem::after,
+  .connection-line,
+  .ws-node-dot {
+    animation: none !important;
+  }
+
+  .ws-growth-node {
+    opacity: 1;
+  }
+}

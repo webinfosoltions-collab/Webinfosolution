@@ -1,0 +1,577 @@
+/* =========================================================
+   BRAND TICKER
+   PREMIUM LOGO CARD DESIGN
+========================================================= */
+
+.bt-section {
+  position: relative;
+
+  width: 100%;
+
+  padding: 24px 0;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  box-sizing: border-box;
+}
+
+
+/* =========================================================
+   MOVING TRACK
+========================================================= */
+
+.bt-track {
+  display: flex;
+
+  align-items: center;
+
+  width: max-content;
+
+  gap: 18px;
+
+  animation: bt-scroll 32s linear infinite;
+
+  will-change: transform;
+}
+
+
+/* Pause on hover */
+
+.bt-section:hover .bt-track {
+  animation-play-state: paused;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.bt-card {
+  position: relative;
+
+  width: 155px;
+
+  height: 92px;
+
+  flex: 0 0 155px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 11px;
+
+  padding: 14px 17px;
+
+  box-sizing: border-box;
+
+  background:
+    linear-gradient(
+      145deg,
+      #ffffff,
+      #f8fafc
+    );
+
+  border: 1px solid rgba(15, 23, 42, 0.10);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px rgba(15, 23, 42, 0.07);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CARD TOP LIGHT
+========================================================= */
+
+.bt-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 16%;
+
+  width: 68%;
+
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: currentColor;
+
+  opacity: 0.25;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.bt-card:hover {
+  transform: translateY(-6px);
+
+  box-shadow:
+    0 15px 35px rgba(15, 23, 42, 0.13);
+}
+
+
+/* =========================================================
+   LOGO BOX
+========================================================= */
+
+.bt-logo-box {
+  width: 42px;
+
+  height: 42px;
+
+  flex: 0 0 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(15, 23, 42, 0.07);
+
+  box-shadow:
+    0 4px 12px rgba(15, 23, 42, 0.06);
+
+  transition:
+    transform 0.3s ease;
+}
+
+
+.bt-card:hover .bt-logo-box {
+  transform: scale(1.07);
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.bt-logo {
+  display: block;
+
+  width: 30px;
+
+  height: 30px;
+
+  max-width: 30px;
+
+  max-height: 30px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================================
+   BRAND NAME
+========================================================= */
+
+.bt-name {
+  display: block;
+
+  color: #172033;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  line-height: 1.25;
+
+  letter-spacing: 0.2px;
+
+  white-space: nowrap;
+}
+
+
+/* =========================================================
+   SHOPIFY
+========================================================= */
+
+.bt-shopify {
+  color: #95bf47;
+}
+
+.bt-shopify:hover {
+  border-color: rgba(149, 191, 71, 0.45);
+}
+
+.bt-shopify .bt-name {
+  color: #5f8d22;
+}
+
+
+/* =========================================================
+   WORDPRESS
+========================================================= */
+
+.bt-wordpress {
+  color: #21759b;
+}
+
+.bt-wordpress:hover {
+  border-color: rgba(33, 117, 155, 0.45);
+}
+
+.bt-wordpress .bt-name {
+  color: #21759b;
+}
+
+
+/* =========================================================
+   REACT
+========================================================= */
+
+.bt-react {
+  color: #61dafb;
+}
+
+.bt-react:hover {
+  border-color: rgba(97, 218, 251, 0.55);
+}
+
+.bt-react .bt-name {
+  color: #087ea4;
+}
+
+
+/* =========================================================
+   SEO / GOOGLE SEARCH
+========================================================= */
+
+.bt-seo {
+  color: #4285f4;
+}
+
+.bt-seo:hover {
+  border-color: rgba(66, 133, 244, 0.45);
+}
+
+.bt-seo .bt-name {
+  color: #356ac3;
+}
+
+
+/* =========================================================
+   GOOGLE ADS
+========================================================= */
+
+.bt-google-ads {
+  color: #4285f4;
+}
+
+.bt-google-ads:hover {
+  border-color: rgba(66, 133, 244, 0.45);
+}
+
+.bt-google-ads .bt-name {
+  color: #356ac3;
+}
+
+
+/* =========================================================
+   META
+========================================================= */
+
+.bt-meta {
+  color: #0866ff;
+}
+
+.bt-meta:hover {
+  border-color: rgba(8, 102, 255, 0.45);
+}
+
+.bt-meta .bt-name {
+  color: #0866ff;
+}
+
+
+/* =========================================================
+   GOOGLE BUSINESS
+========================================================= */
+
+.bt-gmb {
+  color: #34a853;
+}
+
+.bt-gmb:hover {
+  border-color: rgba(52, 168, 83, 0.45);
+}
+
+.bt-gmb .bt-name {
+  color: #27813f;
+}
+
+
+/* =========================================================
+   CRO
+========================================================= */
+
+.bt-cro {
+  color: #ff6b35;
+}
+
+.bt-cro:hover {
+  border-color: rgba(255, 107, 53, 0.45);
+}
+
+.bt-cro .bt-name {
+  color: #d95224;
+}
+
+
+/* =========================================================
+   ECOMMERCE
+========================================================= */
+
+.bt-ecommerce {
+  color: #ff6b35;
+}
+
+.bt-ecommerce:hover {
+  border-color: rgba(255, 107, 53, 0.45);
+}
+
+.bt-ecommerce .bt-name {
+  color: #d95224;
+}
+
+
+/* =========================================================
+   INFINITE ANIMATION
+========================================================= */
+
+@keyframes bt-scroll {
+
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(
+      calc(-50% - 9px)
+    );
+  }
+
+}
+
+
+/* =========================================================
+   LEFT / RIGHT FADE
+========================================================= */
+
+.bt-fade {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 90px;
+
+  z-index: 5;
+
+  pointer-events: none;
+}
+
+
+.bt-fade-left {
+  left: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+
+.bt-fade-right {
+  right: 0;
+
+  background:
+    linear-gradient(
+      270deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .bt-section {
+    padding: 20px 0;
+  }
+
+  .bt-track {
+    gap: 14px;
+
+    animation-duration: 28s;
+  }
+
+  .bt-card {
+    width: 145px;
+
+    height: 86px;
+
+    flex-basis: 145px;
+
+    border-radius: 14px;
+
+    padding: 12px 14px;
+  }
+
+  .bt-logo-box {
+    width: 39px;
+
+    height: 39px;
+
+    flex-basis: 39px;
+  }
+
+  .bt-logo {
+    width: 28px;
+
+    height: 28px;
+
+    max-width: 28px;
+
+    max-height: 28px;
+  }
+
+  .bt-name {
+    font-size: 10.5px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .bt-section {
+    padding: 16px 0;
+  }
+
+  .bt-track {
+    gap: 12px;
+
+    animation-duration: 25s;
+  }
+
+  .bt-card {
+    width: 132px;
+
+    height: 78px;
+
+    flex-basis: 132px;
+
+    gap: 8px;
+
+    padding: 10px 11px;
+
+    border-radius: 13px;
+  }
+
+  .bt-logo-box {
+    width: 35px;
+
+    height: 35px;
+
+    flex-basis: 35px;
+
+    border-radius: 9px;
+  }
+
+  .bt-logo {
+    width: 25px;
+
+    height: 25px;
+
+    max-width: 25px;
+
+    max-height: 25px;
+  }
+
+  .bt-name {
+    font-size: 9.5px;
+  }
+
+  .bt-fade {
+    width: 55px;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .bt-card {
+    width: 122px;
+
+    height: 72px;
+
+    flex-basis: 122px;
+
+    gap: 7px;
+
+    padding: 8px 9px;
+  }
+
+  .bt-logo-box {
+    width: 32px;
+
+    height: 32px;
+
+    flex-basis: 32px;
+  }
+
+  .bt-logo {
+    width: 23px;
+
+    height: 23px;
+
+    max-width: 23px;
+
+    max-height: 23px;
+  }
+
+  .bt-name {
+    font-size: 9px;
+  }
+
+}

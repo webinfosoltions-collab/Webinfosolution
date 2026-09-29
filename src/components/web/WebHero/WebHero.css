@@ -1,0 +1,684 @@
+
+/* =========================================================
+   WEB HERO
+   Premium Services Page Hero
+   Brand:
+   Navy  #071b4a
+   Orange #ff8500
+========================================================= */
+
+.web-hero {
+  position: relative;
+
+  width: 100%;
+  min-height: 700px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  isolation: isolate;
+}
+
+/* =========================================================
+   BACKGROUND GRID
+========================================================= */
+
+.web-hero__grid {
+  position: absolute;
+  inset: 0;
+
+  z-index: -3;
+
+  background-image:
+    linear-gradient(
+      rgba(7, 27, 74, 0.035) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(7, 27, 74, 0.035) 1px,
+      transparent 1px
+    );
+
+  background-size: 64px 64px;
+
+  mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      rgba(0, 0, 0, 0.7) 45%,
+      transparent 100%
+    );
+
+  -webkit-mask-image:
+    linear-gradient(
+      to bottom,
+      black 0%,
+      rgba(0, 0, 0, 0.7) 45%,
+      transparent 100%
+    );
+
+  pointer-events: none;
+}
+
+/* =========================================================
+   BACKGROUND ORBS
+========================================================= */
+
+.web-hero__orb {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  border-radius: 50%;
+
+  filter: blur(110px);
+
+  pointer-events: none;
+
+  z-index: -2;
+}
+
+.web-hero__orb--left {
+  top: -240px;
+  left: -170px;
+
+  background: rgba(255, 133, 0, 0.08);
+}
+
+.web-hero__orb--right {
+  right: -220px;
+  bottom: -250px;
+
+  background: rgba(7, 27, 74, 0.07);
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.web-hero__container {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: 0 auto;
+
+  padding: 105px 0 70px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.web-hero__eyebrow {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-bottom: 25px;
+
+  color: #ff8500;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+
+  animation:
+    webHeroFadeUp 0.7s ease both;
+}
+
+.web-hero__eyebrow-line {
+  display: block;
+
+  width: 34px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.65;
+}
+
+/* =========================================================
+   MAIN SECTION HEADING
+   REQUIRED SIZE
+========================================================= */
+
+.web-hero__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  /* REQUIRED SECTION HEADING SIZE */
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  animation:
+    webHeroFadeUp 0.8s ease 0.08s both;
+}
+
+.web-hero__title span {
+  position: relative;
+
+  display: inline-block;
+
+  color: #ff8500;
+}
+
+.web-hero__title span::after {
+  content: "";
+
+  position: absolute;
+
+  left: 3%;
+  right: 3%;
+
+  bottom: -6px;
+
+  height: 2px;
+
+  border-radius: 50px;
+
+  background: #ff8500;
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  animation:
+    webHeroUnderline 0.7s ease 0.75s forwards;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.web-hero__description {
+  width: min(720px, 100%);
+
+  margin: 24px auto 0;
+
+  color: #59657c;
+
+  font-size: clamp(0.92rem, 1.3vw, 1.05rem);
+
+  line-height: 1.75;
+
+  font-weight: 400;
+
+  animation:
+    webHeroFadeUp 0.8s ease 0.18s both;
+}
+
+/* =========================================================
+   SERVICE ROW
+========================================================= */
+
+.web-hero__services {
+  width: 100%;
+
+  max-width: 1080px;
+
+  display: flex;
+
+  align-items: stretch;
+  justify-content: center;
+
+  margin: 55px auto 0;
+
+  animation:
+    webHeroFadeUp 0.8s ease 0.28s both;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.web-hero__service {
+  position: relative;
+
+  flex: 1;
+
+  min-width: 0;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px 17px;
+
+  text-align: left;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border: 1px solid rgba(7, 27, 74, 0.09);
+
+  border-radius: 14px;
+
+  box-shadow:
+    0 8px 28px rgba(7, 27, 74, 0.045);
+
+  opacity: 0;
+
+  animation:
+    webHeroServiceReveal
+    0.65s
+    ease
+    var(--service-delay)
+    forwards;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.web-hero__service:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(255, 133, 0, 0.35);
+
+  box-shadow:
+    0 18px 40px rgba(7, 27, 74, 0.09);
+}
+
+/* =========================================================
+   SERVICE NUMBER
+========================================================= */
+
+.web-hero__service-number {
+  flex: 0 0 auto;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 10px;
+
+  background: rgba(255, 133, 0, 0.09);
+
+  color: #ff8500;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+}
+
+/* =========================================================
+   SERVICE INFO
+========================================================= */
+
+.web-hero__service-info {
+  min-width: 0;
+}
+
+.web-hero__service-info h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.9rem;
+
+  line-height: 1.3;
+
+  font-weight: 750;
+
+  white-space: nowrap;
+}
+
+.web-hero__service-info p {
+  margin: 5px 0 0;
+
+  color: #7a8498;
+
+  font-size: 0.71rem;
+
+  line-height: 1.35;
+
+  white-space: nowrap;
+}
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.web-hero__service-arrow {
+  flex: 0 0 auto;
+
+  margin-left: auto;
+
+  color: #ff8500;
+
+  font-size: 0.95rem;
+
+  opacity: 0;
+
+  transform: translate(-5px, 5px);
+
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.web-hero__service:hover .web-hero__service-arrow {
+  opacity: 1;
+
+  transform: translate(0, 0);
+}
+
+/* =========================================================
+   CONNECTOR
+========================================================= */
+
+.web-hero__connector {
+  position: relative;
+
+  flex: 0 0 22px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.web-hero__connector::before {
+  content: "";
+
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+
+  box-shadow:
+    0 0 0 4px rgba(255, 133, 0, 0.08);
+}
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.web-hero__bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 14px;
+
+  margin-top: 40px;
+
+  animation:
+    webHeroFadeUp 0.8s ease 0.48s both;
+}
+
+.web-hero__bottom p {
+  margin: 0;
+
+  color: #7a8498;
+
+  font-size: 0.68rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+.web-hero__bottom p span {
+  margin: 0 8px;
+
+  color: #ff8500;
+}
+
+.web-hero__bottom-line {
+  width: 26px;
+  height: 1px;
+
+  background: rgba(255, 133, 0, 0.5);
+}
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes webHeroFadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes webHeroServiceReveal {
+  from {
+    opacity: 0;
+
+    transform: translateY(22px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+@keyframes webHeroUnderline {
+  from {
+    transform: scaleX(0);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+  .web-hero {
+    min-height: auto;
+  }
+
+  .web-hero__container {
+    padding: 95px 0 65px;
+  }
+
+  .web-hero__services {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 13px;
+  }
+
+  .web-hero__connector {
+    display: none;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .web-hero__container {
+    width: calc(100% - 28px);
+
+    padding: 78px 0 52px;
+  }
+
+  .web-hero__eyebrow {
+    gap: 8px;
+
+    margin-bottom: 20px;
+
+    font-size: 0.58rem;
+
+    letter-spacing: 0.11em;
+  }
+
+  .web-hero__eyebrow-line {
+    width: 18px;
+  }
+
+  /* Keep exact requested heading sizing */
+  .web-hero__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.15;
+  }
+
+  .web-hero__title br {
+    display: none;
+  }
+
+  .web-hero__title span::after {
+    bottom: -5px;
+
+    height: 2px;
+  }
+
+  .web-hero__description {
+    margin-top: 20px;
+
+    font-size: 0.9rem;
+
+    line-height: 1.7;
+  }
+
+  .web-hero__services {
+    grid-template-columns: 1fr;
+
+    gap: 9px;
+
+    margin-top: 40px;
+  }
+
+  .web-hero__service {
+    min-height: 76px;
+
+    padding: 16px;
+
+    border-radius: 12px;
+  }
+
+  .web-hero__service-info h3 {
+    font-size: 0.88rem;
+  }
+
+  .web-hero__service-info p {
+    font-size: 0.7rem;
+  }
+
+  .web-hero__service-arrow {
+    opacity: 1;
+
+    transform: none;
+  }
+
+  .web-hero__bottom {
+    margin-top: 32px;
+  }
+
+  .web-hero__bottom p {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.07em;
+  }
+
+  .web-hero__bottom-line {
+    width: 17px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .web-hero__container {
+    width: calc(100% - 24px);
+  }
+
+  .web-hero__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .web-hero__description {
+    font-size: 0.86rem;
+  }
+
+  .web-hero__service {
+    padding: 14px;
+  }
+
+  .web-hero__service-number {
+    width: 37px;
+    height: 37px;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .web-hero *,
+  .web-hero *::before,
+  .web-hero *::after {
+    animation: none !important;
+
+    transition: none !important;
+  }
+
+  .web-hero__service {
+    opacity: 1;
+  }
+
+  .web-hero__title span::after {
+    transform: scaleX(1);
+  }
+}
+ 

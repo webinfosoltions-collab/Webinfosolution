@@ -1,0 +1,685 @@
+/* =========================================================
+   PREMIUM FAQ
+========================================================= */
+
+.ws-faq-section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   BACKGROUND GLOW
+========================================================= */
+
+.ws-faq-section::before {
+  content: "";
+
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: -180px;
+  top: 30%;
+
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(255, 133, 0, 0.08),
+      transparent 70%
+    );
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.ws-faq-heading {
+  max-width: 760px;
+
+  margin: 0 auto 42px;
+
+  text-align: center;
+}
+
+.ws-faq-heading h2 {
+  margin: 8px auto 12px;
+
+  font-size:
+    clamp(1.65rem, 3vw, 2.25rem);
+
+  line-height: 1.18;
+
+  letter-spacing: -0.035em;
+}
+
+.ws-faq-heading p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color:
+    rgba(7, 27, 74, 0.62);
+
+  font-size:
+    0.88rem;
+
+  line-height:
+    1.7;
+}
+
+
+/* =========================================================
+   MAIN PANEL
+========================================================= */
+
+.ws-faq-panel {
+  position: relative;
+
+  max-width: 920px;
+
+  margin: 0 auto;
+
+  background:
+    rgba(255, 255, 255, 0.96);
+
+  border:
+    1px solid rgba(7, 27, 74, 0.10);
+
+  border-radius:
+    24px;
+
+  overflow:
+    hidden;
+
+  box-shadow:
+    0 25px 70px rgba(7, 27, 74, 0.08),
+    0 5px 25px rgba(255, 133, 0, 0.035);
+}
+
+
+/* =========================================================
+   PANEL TOP
+========================================================= */
+
+.ws-faq-panel-top {
+  min-height:
+    54px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    space-between;
+
+  padding:
+    0 28px;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(7, 27, 74, 0.025),
+      rgba(255, 133, 0, 0.035)
+    );
+
+  border-bottom:
+    1px solid rgba(7, 27, 74, 0.08);
+
+  color:
+    rgba(7, 27, 74, 0.48);
+
+  font-size:
+    0.62rem;
+
+  font-weight:
+    800;
+
+  letter-spacing:
+    0.13em;
+}
+
+.ws-faq-count {
+  color:
+    var(--orange);
+}
+
+
+/* =========================================================
+   FAQ ROW
+========================================================= */
+
+.ws-faq-row {
+  position:
+    relative;
+
+  border-bottom:
+    1px solid rgba(7, 27, 74, 0.08);
+
+  transition:
+    background 0.3s ease;
+}
+
+.ws-faq-row:last-child {
+  border-bottom:
+    0;
+}
+
+
+/* =========================================================
+   ORANGE ACTIVE LINE
+========================================================= */
+
+.ws-faq-row::before {
+  content: "";
+
+  position:
+    absolute;
+
+  left:
+    0;
+
+  top:
+    0;
+
+  bottom:
+    0;
+
+  width:
+    0;
+
+  background:
+    var(--orange);
+
+  transition:
+    width 0.3s ease;
+}
+
+.ws-faq-row.is-active::before {
+  width:
+    4px;
+}
+
+
+/* =========================================================
+   QUESTION BUTTON
+========================================================= */
+
+.ws-faq-row button {
+  width:
+    100%;
+
+  min-height:
+    78px;
+
+  display:
+    grid;
+
+  grid-template-columns:
+    55px 1fr 42px;
+
+  align-items:
+    center;
+
+  gap:
+    15px;
+
+  padding:
+    17px 28px;
+
+  border:
+    0;
+
+  background:
+    transparent;
+
+  color:
+    var(--navy);
+
+  text-align:
+    left;
+
+  cursor:
+    pointer;
+
+  font-family:
+    "Manrope",
+    sans-serif;
+}
+
+
+/* =========================================================
+   QUESTION HOVER
+========================================================= */
+
+.ws-faq-row:hover {
+  background:
+    rgba(255, 133, 0, 0.025);
+}
+
+.ws-faq-row button:hover .ws-faq-question {
+  color:
+    var(--orange);
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.ws-faq-index {
+  font-size:
+    0.7rem;
+
+  font-weight:
+    800;
+
+  color:
+    rgba(7, 27, 74, 0.35);
+
+  letter-spacing:
+    0.08em;
+
+  transition:
+    color 0.3s ease;
+}
+
+.ws-faq-row.is-active .ws-faq-index {
+  color:
+    var(--orange);
+}
+
+
+/* =========================================================
+   QUESTION TEXT
+========================================================= */
+
+.ws-faq-question {
+  font-size:
+    0.91rem;
+
+  line-height:
+    1.45;
+
+  font-weight:
+    800;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+/* =========================================================
+   ARROW
+========================================================= */
+
+.ws-faq-icon {
+  width:
+    34px;
+
+  height:
+    34px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  border:
+    1px solid rgba(7, 27, 74, 0.10);
+
+  border-radius:
+    50%;
+
+  color:
+    var(--navy);
+
+  background:
+    #fff;
+
+  transition:
+    transform 0.35s ease,
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.ws-faq-icon svg {
+  width:
+    11px;
+
+  height:
+    11px;
+}
+
+.ws-faq-row.is-active .ws-faq-icon {
+  transform:
+    rotate(90deg);
+
+  color:
+    #fff;
+
+  background:
+    var(--orange);
+
+  border-color:
+    var(--orange);
+
+  box-shadow:
+    0 5px 15px rgba(255, 133, 0, 0.22);
+}
+
+
+/* =========================================================
+   ANSWER
+========================================================= */
+
+.ws-faq-answer {
+  overflow:
+    hidden;
+}
+
+
+/* =========================================================
+   ANSWER TEXT
+========================================================= */
+
+.ws-faq-answer p {
+  max-width:
+    700px;
+
+  margin:
+    0 0 24px 70px;
+
+  padding-right:
+    70px;
+
+  color:
+    rgba(7, 27, 74, 0.62);
+
+  font-size:
+    0.82rem;
+
+  line-height:
+    1.75;
+
+  font-weight:
+    500;
+}
+
+
+/* =========================================================
+   BOTTOM STRIP
+========================================================= */
+
+.ws-faq-bottom {
+  min-height:
+    58px;
+
+  display:
+    flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    9px;
+
+  padding:
+    12px 25px;
+
+  background:
+    var(--navy);
+
+  color:
+    rgba(255,255,255,.68);
+
+  font-size:
+    0.65rem;
+
+  font-weight:
+    700;
+
+  letter-spacing:
+    .04em;
+}
+
+.ws-faq-bottom i {
+  color:
+    var(--orange);
+
+  font-style:
+    normal;
+}
+
+.ws-faq-bottom span:last-child {
+  color:
+    var(--orange);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 800px) {
+
+  .ws-faq-heading {
+    margin-bottom:
+      30px;
+  }
+
+  .ws-faq-panel {
+    border-radius:
+      19px;
+  }
+
+  .ws-faq-panel-top {
+    padding:
+      0 20px;
+  }
+
+  .ws-faq-row button {
+    grid-template-columns:
+      42px 1fr 38px;
+
+    min-height:
+      68px;
+
+    padding:
+      15px 20px;
+  }
+
+  .ws-faq-question {
+    font-size:
+      0.83rem;
+  }
+
+  .ws-faq-answer p {
+    margin-left:
+      62px;
+
+    padding-right:
+      35px;
+
+    font-size:
+      0.77rem;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 520px) {
+
+  .ws-faq-heading {
+    padding:
+      0 8px;
+
+    margin-bottom:
+      24px;
+  }
+
+  .ws-faq-heading h2 {
+    font-size:
+      1.48rem;
+  }
+
+  .ws-faq-heading p {
+    font-size:
+      0.78rem;
+
+    line-height:
+      1.65;
+  }
+
+  .ws-faq-panel {
+    border-radius:
+      16px;
+  }
+
+  .ws-faq-panel-top {
+    min-height:
+      48px;
+
+    padding:
+      0 15px;
+
+    font-size:
+      0.54rem;
+  }
+
+  .ws-faq-row button {
+    grid-template-columns:
+      31px 1fr 34px;
+
+    gap:
+      9px;
+
+    min-height:
+      62px;
+
+    padding:
+      13px 15px;
+  }
+
+  .ws-faq-index {
+    font-size:
+      0.6rem;
+  }
+
+  .ws-faq-question {
+    font-size:
+      0.77rem;
+
+    line-height:
+      1.4;
+  }
+
+  .ws-faq-icon {
+    width:
+      29px;
+
+    height:
+      29px;
+  }
+
+  .ws-faq-icon svg {
+    width:
+      9px;
+
+    height:
+      9px;
+  }
+
+  .ws-faq-answer p {
+    margin:
+      0 30px 18px 55px;
+
+    padding:
+      0;
+
+    font-size:
+      0.72rem;
+
+    line-height:
+      1.7;
+  }
+
+  .ws-faq-bottom {
+    gap:
+      6px;
+
+    padding:
+      11px 15px;
+
+    font-size:
+      0.56rem;
+  }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 370px) {
+
+  .ws-faq-question {
+    font-size:
+      0.72rem;
+  }
+
+  .ws-faq-row button {
+    grid-template-columns:
+      27px 1fr 30px;
+
+    padding:
+      12px;
+  }
+
+  .ws-faq-answer p {
+    margin-left:
+      48px;
+
+    margin-right:
+      20px;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .ws-faq-row,
+  .ws-faq-icon,
+  .ws-faq-question,
+  .ws-faq-index {
+    transition:
+      none !important;
+  }
+
+}

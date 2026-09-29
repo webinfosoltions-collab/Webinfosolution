@@ -1,0 +1,591 @@
+
+/* =========================================================
+   WEB SERVICES
+   Premium Services Section
+   Navy  #071b4a
+   Orange #ff8500
+========================================================= */
+
+.web-services {
+  position: relative;
+
+  width: 100%;
+
+  padding: 110px 0 120px;
+
+  background: #f8faff;
+
+  overflow: hidden;
+
+  color: #071b4a;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.web-services__container {
+  width: min(1180px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SECTION HEADER
+========================================================= */
+
+.web-services__header {
+  max-width: 720px;
+
+  margin: 0 auto 58px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.web-services__eyebrow {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 14px;
+
+  color: #ff8500;
+
+  font-size: 0.67rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.web-services__eyebrow::before,
+.web-services__eyebrow::after {
+  content: "";
+
+  width: 24px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.web-services__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  /*
+    REQUIRED SECTION HEADING SIZE
+  */
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.web-services__title span {
+  color: #ff8500;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.web-services__intro {
+  max-width: 630px;
+
+  margin: 16px auto 0;
+
+  color: #68738a;
+
+  font-size: 0.96rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   SERVICES GRID
+========================================================= */
+
+.web-services__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 20px;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.web-service-card {
+  position: relative;
+
+  min-height: 390px;
+
+  padding: 30px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 35px rgba(7, 27, 74, 0.045);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* Top Orange Line */
+
+.web-service-card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 3px;
+
+  background: #ff8500;
+
+  transform: scaleX(0);
+
+  transform-origin: left;
+
+  transition: transform 0.4s ease;
+}
+
+.web-service-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(255, 133, 0, 0.22);
+
+  box-shadow:
+    0 24px 55px rgba(7, 27, 74, 0.1);
+}
+
+.web-service-card:hover::before {
+  transform: scaleX(1);
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.web-service-card__top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 27px;
+}
+
+/* Number */
+
+.web-service-card__number {
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  background: rgba(255, 133, 0, 0.09);
+
+  color: #ff8500;
+
+  font-size: 0.69rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.04em;
+}
+
+/* Arrow */
+
+.web-service-card__arrow {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(7, 27, 74, 0.09);
+
+  border-radius: 50%;
+
+  color: #071b4a;
+
+  font-size: 0.9rem;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.web-service-card:hover .web-service-card__arrow {
+  background: #ff8500;
+
+  border-color: #ff8500;
+
+  color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.web-service-card__content h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 1.3rem;
+
+  line-height: 1.3;
+
+  letter-spacing: -0.02em;
+
+  font-weight: 800;
+}
+
+.web-service-card__content p {
+  max-width: 510px;
+
+  margin: 13px 0 0;
+
+  color: #667188;
+
+  font-size: 0.88rem;
+
+  line-height: 1.72;
+}
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.web-service-card__divider {
+  width: 100%;
+  height: 1px;
+
+  margin: 25px 0 21px;
+
+  background: rgba(7, 27, 74, 0.08);
+}
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.web-service-card__capabilities-label {
+  display: block;
+
+  margin-bottom: 14px;
+
+  color: #9aa3b3;
+
+  font-size: 0.59rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+.web-service-card__capabilities ul {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 12px 20px;
+
+  margin: 0;
+
+  padding: 0;
+
+  list-style: none;
+}
+
+.web-service-card__capabilities li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 8px;
+
+  color: #45516a;
+
+  font-size: 0.77rem;
+
+  line-height: 1.45;
+
+  font-weight: 500;
+}
+
+/* Check */
+
+.web-service-card__check {
+  flex: 0 0 auto;
+
+  width: 17px;
+  height: 17px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 1px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 133, 0, 0.1);
+
+  color: #ff8500;
+
+  font-size: 0.59rem;
+
+  font-weight: 900;
+}
+
+/* =========================================================
+   BOTTOM ACCENT
+========================================================= */
+
+.web-service-card__bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+
+  margin-top: auto;
+
+  padding-top: 28px;
+}
+
+.web-service-card__bottom span {
+  display: block;
+
+  width: 18px;
+  height: 2px;
+
+  border-radius: 20px;
+
+  background: #ff8500;
+
+  opacity: 0.35;
+}
+
+.web-service-card__bottom span:nth-child(2) {
+  width: 7px;
+
+  opacity: 0.2;
+}
+
+.web-service-card__bottom span:nth-child(3) {
+  width: 4px;
+
+  opacity: 0.12;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 850px) {
+  .web-services {
+    padding: 90px 0 95px;
+  }
+
+  .web-services__grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+  }
+
+  .web-service-card {
+    min-height: auto;
+
+    padding: 28px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .web-services {
+    padding: 72px 0 78px;
+  }
+
+  .web-services__container {
+    width: calc(100% - 28px);
+  }
+
+  .web-services__header {
+    margin-bottom: 38px;
+  }
+
+  .web-services__eyebrow {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.12em;
+  }
+
+  .web-services__eyebrow::before,
+  .web-services__eyebrow::after {
+    width: 17px;
+  }
+
+  /* EXACT REQUIRED SIZE */
+  .web-services__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.15;
+  }
+
+  .web-services__intro {
+    margin-top: 13px;
+
+    font-size: 0.87rem;
+
+    line-height: 1.7;
+  }
+
+  .web-services__grid {
+    gap: 14px;
+  }
+
+  .web-service-card {
+    min-height: auto;
+
+    padding: 23px 20px;
+
+    border-radius: 15px;
+  }
+
+  .web-service-card__top {
+    margin-bottom: 21px;
+  }
+
+  .web-service-card__number {
+    width: 40px;
+    height: 40px;
+  }
+
+  .web-service-card__content h3 {
+    font-size: 1.14rem;
+  }
+
+  .web-service-card__content p {
+    margin-top: 11px;
+
+    font-size: 0.82rem;
+
+    line-height: 1.67;
+  }
+
+  .web-service-card__divider {
+    margin: 21px 0 19px;
+  }
+
+  .web-service-card__capabilities ul {
+    grid-template-columns: 1fr;
+
+    gap: 10px;
+  }
+
+  .web-service-card__capabilities li {
+    font-size: 0.75rem;
+  }
+
+  .web-service-card__bottom {
+    padding-top: 24px;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .web-services__container {
+    width: calc(100% - 24px);
+  }
+
+  .web-service-card {
+    padding: 21px 17px;
+  }
+
+  .web-service-card__content h3 {
+    font-size: 1.06rem;
+  }
+
+  .web-service-card__content p {
+    font-size: 0.8rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .web-service-card,
+  .web-service-card::before,
+  .web-service-card__arrow {
+    transition: none !important;
+  }
+}
+ 

@@ -1,0 +1,551 @@
+/* =========================================================
+   WHY CHOOSE US
+   PREMIUM DIGITAL DISPLAY → CARD TEXT EFFECT
+========================================================= */
+
+.why-section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.why-head {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.why-head h2 {
+  color: #071b4a;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.2;
+  margin: 12px auto 0;
+}
+
+.why-head .accent {
+  color: #ff8500;
+}
+
+.why-head .eyebrow {
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 18px;
+
+  max-width: 1100px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.why-card {
+  position: relative;
+
+  min-height: 205px;
+
+  padding: 23px;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(7, 27, 74, 0.10);
+
+  box-shadow:
+    0 12px 38px rgba(7, 27, 74, 0.06);
+
+  isolation: isolate;
+
+  transition:
+    transform .45s cubic-bezier(.16,1,.3,1),
+    box-shadow .45s ease,
+    border-color .35s ease;
+}
+
+
+/* =========================================================
+   ORANGE DISPLAY LINE
+========================================================= */
+
+.why-card::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 0;
+
+  background: #ff8500;
+
+  z-index: 20;
+
+  transition:
+    height .45s cubic-bezier(.16,1,.3,1);
+}
+
+.why-card:hover::before {
+  height: 100%;
+}
+
+
+/* =========================================================
+   DIGITAL SCAN LINE
+========================================================= */
+
+.why-card::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: -20%;
+
+  top: -5px;
+
+  width: 140%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255,133,0,.8),
+      transparent
+    );
+
+  opacity: 0;
+
+  z-index: 30;
+
+  transform: translateY(-20px);
+}
+
+.why-card:hover::after {
+
+  opacity: 1;
+
+  animation:
+    displayScan 1s
+    cubic-bezier(.16,1,.3,1);
+}
+
+@keyframes displayScan {
+
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(230px);
+    opacity: 0;
+  }
+}
+
+
+/* =========================================================
+   NUMBER
+========================================================= */
+
+.why-number {
+
+  position: relative;
+
+  z-index: 10;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 12px;
+
+  background: rgba(7,27,74,.06);
+
+  color: #071b4a;
+
+  font-size: .76rem;
+
+  font-weight: 900;
+
+  transition:
+    transform .5s cubic-bezier(.16,1,.3,1),
+    background .3s ease,
+    color .3s ease;
+}
+
+
+/* =========================================================
+   ORIGINAL CARD TEXT
+========================================================= */
+
+.why-main {
+
+  position: relative;
+
+  z-index: 5;
+
+  margin-top: 18px;
+
+  transition:
+    transform .55s cubic-bezier(.16,1,.3,1),
+    opacity .35s ease,
+    filter .35s ease;
+}
+
+.why-main h3 {
+
+  color: #071b4a;
+
+  font-size: 1.08rem;
+
+  line-height: 1.3;
+
+  margin: 0 0 9px;
+}
+
+.why-main p {
+
+  color: #071b4a;
+
+  opacity: .65;
+
+  font-size: .88rem;
+
+  line-height: 1.55;
+
+  margin: 0;
+
+  max-width: 310px;
+}
+
+
+/* =========================================================
+   NEW CONTENT
+   STARTS OUTSIDE THE CARD
+========================================================= */
+
+.why-hover-content {
+
+  position: absolute;
+
+  left: 23px;
+  right: 23px;
+
+  /*
+    Start ABOVE the card
+  */
+
+  top: -150px;
+
+  z-index: 15;
+
+  opacity: 0;
+
+  transform:
+    scale(.78)
+    translateY(-35px);
+
+  transform-origin:
+    center bottom;
+
+  filter:
+    blur(5px);
+
+  transition:
+    top .72s cubic-bezier(.12,.8,.18,1),
+    opacity .18s ease,
+    transform .72s cubic-bezier(.12,.8,.18,1),
+    filter .45s ease;
+}
+
+
+/* =========================================================
+   CONTENT FLIES DOWN INTO CARD
+========================================================= */
+
+.why-card:hover .why-hover-content {
+
+  top: 50%;
+
+  opacity: 1;
+
+  transform:
+    translateY(-50%)
+    scale(1);
+
+  filter: blur(0);
+
+}
+
+
+/* =========================================================
+   ORIGINAL CONTENT MOVES OUT
+========================================================= */
+
+.why-card:hover .why-main {
+
+  transform:
+    translateY(45px)
+    scale(.92);
+
+  opacity: 0;
+
+  filter: blur(4px);
+}
+
+
+/* =========================================================
+   HOVER LABEL
+========================================================= */
+
+.why-hover-label {
+
+  display: block;
+
+  color: #ff8500;
+
+  font-size: .64rem;
+
+  font-weight: 900;
+
+  letter-spacing: .14em;
+
+  margin-bottom: 9px;
+
+  opacity: 0;
+
+  transform:
+    translateY(15px);
+
+  transition:
+    opacity .3s ease .45s,
+    transform .45s cubic-bezier(.16,1,.3,1) .45s;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.why-hover-content p {
+
+  color: #071b4a;
+
+  font-size: .82rem;
+
+  line-height: 1.55;
+
+  margin: 0 0 10px;
+
+  opacity: 0;
+
+  transform:
+    translateY(18px);
+
+  transition:
+    opacity .3s ease .52s,
+    transform .45s cubic-bezier(.16,1,.3,1) .52s;
+}
+
+
+/* =========================================================
+   RESULT
+========================================================= */
+
+.why-hover-content strong {
+
+  display: block;
+
+  color: #ff8500;
+
+  font-size: .76rem;
+
+  line-height: 1.4;
+
+  opacity: 0;
+
+  transform:
+    translateY(20px);
+
+  transition:
+    opacity .3s ease .60s,
+    transform .45s cubic-bezier(.16,1,.3,1) .60s;
+}
+
+
+/* =========================================================
+   CONTENT PRESENTATION
+========================================================= */
+
+.why-card:hover .why-hover-label {
+
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+.why-card:hover .why-hover-content p {
+
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+.why-card:hover .why-hover-content strong {
+
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.why-card:hover {
+
+  transform:
+    translateY(-7px);
+
+  border-color:
+    rgba(255,133,0,.32);
+
+  box-shadow:
+    0 24px 55px rgba(7,27,74,.12),
+    0 8px 25px rgba(255,133,0,.08);
+}
+
+
+/* =========================================================
+   NUMBER HOVER
+========================================================= */
+
+.why-card:hover .why-number {
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  transform:
+    translateY(-3px)
+    scale(1.06)
+    rotate(-4deg);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .why-grid {
+
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    gap: 16px;
+  }
+
+}
+
+
+@media (max-width: 650px) {
+
+  .why-head {
+
+    padding: 0 12px;
+
+    margin-bottom: 35px;
+  }
+
+
+  .why-grid {
+
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+  }
+
+
+  .why-card {
+
+    min-height: 190px;
+
+    padding: 20px;
+
+    border-radius: 19px;
+  }
+
+
+  /*
+    On mobile show normal content.
+  */
+
+  .why-hover-content {
+
+    display: none;
+  }
+
+
+  .why-card:hover {
+
+    transform:
+      translateY(-3px);
+  }
+
+
+  .why-card:hover .why-main {
+
+    transform: none;
+
+    opacity: 1;
+
+    filter: none;
+  }
+
+
+  .why-card:hover .why-number {
+
+    transform: none;
+  }
+
+}

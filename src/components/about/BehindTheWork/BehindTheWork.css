@@ -1,0 +1,438 @@
+/* =========================================================
+   BEHIND THE WORK
+   Premium Editorial Image Composition
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.behind-work {
+  width: 100%;
+  overflow: hidden;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  padding: clamp(60px, 6.5vw, 84px) 0;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.behind-work__container {
+  width: min(1120px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.behind-work__header {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+.behind-work__eyebrow {
+  margin-bottom: 9px;
+
+  font-size: 0.53rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+
+  color: #ff8500;
+}
+
+
+.behind-work__header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.12;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+
+.behind-work__header h2 span {
+  color: #ff8500;
+}
+
+
+.behind-work__accent {
+  width: 36px;
+
+  height: 2px;
+
+  margin-top: 14px;
+
+  background: #ff8500;
+}
+
+
+.behind-work__header p {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  font-size: 0.74rem;
+
+  line-height: 1.75;
+
+  color: rgba(7, 27, 74, 0.5);
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.behind-work__gallery {
+  display: grid;
+
+  grid-template-columns:
+    1.18fr
+    0.82fr
+    0.82fr;
+
+  grid-template-rows:
+    245px
+    215px;
+
+  gap: 15px;
+
+  margin-top: 48px;
+}
+
+
+/* =========================================================
+   GALLERY ITEM
+========================================================= */
+
+.behind-work__item {
+  position: relative;
+
+  margin: 0;
+
+  overflow: hidden;
+
+  background: #071b4a;
+}
+
+
+.behind-work__item--large {
+  grid-row: 1 / span 2;
+}
+
+
+.behind-work__item--small {
+  grid-column: 2;
+}
+
+
+.behind-work__item--tall {
+  grid-column: 3;
+
+  grid-row: 1 / span 2;
+}
+
+
+.behind-work__item--wide {
+  grid-column: 2;
+}
+
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.behind-work__image {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+}
+
+
+.behind-work__image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7, 27, 74, 0.68),
+      rgba(7, 27, 74, 0.02) 65%
+    );
+}
+
+
+.behind-work__image img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.7s ease;
+}
+
+
+.behind-work__item:hover img {
+  transform: scale(1.045);
+}
+
+
+/* =========================================================
+   CAPTION
+========================================================= */
+
+.behind-work__item figcaption {
+  position: absolute;
+
+  left: 17px;
+  right: 17px;
+  bottom: 15px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  z-index: 3;
+
+  font-size: 0.6rem;
+
+  line-height: 1.4;
+
+  font-weight: 600;
+
+  color: #ffffff;
+}
+
+
+.behind-work__item figcaption span {
+  font-size: 0.49rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   STATEMENT
+========================================================= */
+
+.behind-work__statement {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+
+  max-width: 720px;
+
+  margin: 37px auto 0;
+
+  text-align: center;
+}
+
+
+.behind-work__statement-line {
+  width: 25px;
+
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background: #ff8500;
+}
+
+
+.behind-work__statement p {
+  margin: 0;
+
+  font-size: 0.67rem;
+
+  line-height: 1.6;
+
+  color: rgba(7, 27, 74, 0.45);
+}
+
+
+.behind-work__statement strong {
+  color: #071b4a;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .behind-work {
+    padding: 62px 0;
+  }
+
+  .behind-work__container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .behind-work__gallery {
+    grid-template-columns: 1fr 1fr;
+
+    grid-template-rows:
+      260px
+      210px
+      230px;
+
+    gap: 13px;
+  }
+
+  .behind-work__item--large {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+  }
+
+  .behind-work__item--small {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .behind-work__item--tall {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .behind-work__item--wide {
+    grid-column: 1 / span 2;
+    grid-row: 3;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .behind-work {
+    padding: 50px 0;
+  }
+
+  .behind-work__container {
+    width: calc(100% - 30px);
+  }
+
+
+  /* Header */
+
+  .behind-work__header h2 {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .behind-work__header p {
+    margin-top: 12px;
+
+    font-size: 0.68rem;
+
+    line-height: 1.72;
+  }
+
+
+  /* Gallery */
+
+  .behind-work__gallery {
+    grid-template-columns: 1fr;
+
+    grid-template-rows: none;
+
+    gap: 11px;
+
+    margin-top: 35px;
+  }
+
+
+  .behind-work__item,
+  .behind-work__item--large,
+  .behind-work__item--small,
+  .behind-work__item--tall,
+  .behind-work__item--wide {
+    grid-column: auto;
+
+    grid-row: auto;
+
+    height: 245px;
+  }
+
+
+  .behind-work__item--large {
+    height: 285px;
+  }
+
+
+  .behind-work__item--tall {
+    height: 270px;
+  }
+
+
+  .behind-work__item figcaption {
+    left: 13px;
+    right: 13px;
+    bottom: 12px;
+
+    font-size: 0.56rem;
+  }
+
+
+  /* Statement */
+
+  .behind-work__statement {
+    margin-top: 30px;
+
+    gap: 9px;
+  }
+
+
+  .behind-work__statement p {
+    font-size: 0.59rem;
+  }
+}

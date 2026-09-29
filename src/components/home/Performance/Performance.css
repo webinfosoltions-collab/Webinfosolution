@@ -1,0 +1,592 @@
+/* =========================================================
+   PERFORMANCE
+   Compact / Premium / Editorial
+
+   Navy  : #071B4A
+   Orange: #FF8500
+   Cream : #F5F1E8
+========================================================= */
+
+.performance {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+
+  background: #f5f1e8;
+  color: #071b4a;
+
+  padding: 52px 0 58px;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.performance__container {
+  position: relative;
+  z-index: 2;
+
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   BACKGROUND DETAILS
+========================================================= */
+
+.performance__grid {
+  position: absolute;
+
+  width: 420px;
+  height: 420px;
+
+  right: -180px;
+  top: -220px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 133, 0, 0.07);
+
+  filter: blur(5px);
+
+  pointer-events: none;
+}
+
+
+.performance__glow {
+  position: absolute;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.performance__glow--one {
+  width: 180px;
+  height: 180px;
+
+  left: -100px;
+  bottom: -100px;
+
+  background: rgba(7, 27, 74, 0.04);
+
+  filter: blur(35px);
+}
+
+
+.performance__glow--two {
+  display: none;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.performance__header {
+  margin-bottom: 34px;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.performance__eyebrow {
+  display: flex;
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 18px;
+
+  font-size: 0.58rem;
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  color: rgba(7, 27, 74, 0.58);
+}
+
+
+.performance__eyebrow-line {
+  width: 25px;
+  height: 2px;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   HEADING ROW
+========================================================= */
+
+.performance__heading-row {
+  display: grid;
+
+  grid-template-columns: minmax(0, 1fr) minmax(250px, 0.55fr);
+
+  align-items: end;
+
+  gap: 55px;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.performance__title {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.13;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 850;
+
+  color: #071b4a;
+}
+
+
+.performance__title span {
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.performance__description {
+  max-width: 390px;
+
+  margin: 0;
+
+  font-size: 0.76rem;
+
+  line-height: 1.65;
+
+  color: rgba(7, 27, 74, 0.52);
+}
+
+
+/* =========================================================
+   METRICS
+========================================================= */
+
+.performance__metrics {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid rgba(7, 27, 74, 0.12);
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.12);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.performance-card {
+  position: relative;
+
+  min-height: 175px;
+
+  padding: 20px 21px 22px;
+
+  background: rgba(255, 255, 255, 0.42);
+
+  border-right: 1px solid rgba(7, 27, 74, 0.1);
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease;
+}
+
+
+.performance-card:last-child {
+  border-right: none;
+}
+
+
+.performance-card:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 255, 255, 0.78);
+}
+
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.performance-card__top {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 20px;
+}
+
+
+.performance-card__number {
+  font-size: 0.44rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.12em;
+
+  color: rgba(7, 27, 74, 0.35);
+}
+
+
+.performance-card__arrow {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 22px;
+  height: 22px;
+
+  border: 1px solid rgba(255, 133, 0, 0.45);
+
+  color: #ff8500;
+
+  font-size: 0.65rem;
+
+  transition: 0.25s ease;
+}
+
+
+.performance-card:hover .performance-card__arrow {
+  background: #ff8500;
+
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   METRIC
+========================================================= */
+
+.performance-card__metric {
+  display: block;
+
+  margin-bottom: 7px;
+
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+
+  line-height: 1;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 850;
+
+  color: #071b4a;
+}
+
+
+.performance-card:first-child .performance-card__metric {
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.performance-card h3 {
+  margin: 0;
+
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+
+  color: #071b4a;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.performance-card p {
+  max-width: 180px;
+
+  margin: 9px 0 0;
+
+  font-size: 0.56rem;
+
+  line-height: 1.55;
+
+  color: rgba(7, 27, 74, 0.45);
+}
+
+
+/* =========================================================
+   ORANGE BOTTOM LINE
+========================================================= */
+
+.performance-card__line {
+  position: absolute;
+
+  left: 21px;
+  right: 21px;
+
+  bottom: 0;
+
+  height: 2px;
+
+  background: rgba(7, 27, 74, 0.06);
+
+  overflow: hidden;
+}
+
+
+.performance-card__line span {
+  display: block;
+
+  width: 0;
+
+  height: 100%;
+
+  background: #ff8500;
+
+  transition: width 0.4s ease;
+}
+
+
+.performance-card:hover .performance-card__line span {
+  width: 100%;
+}
+
+
+/* =========================================================
+   BOTTOM
+========================================================= */
+
+.performance__bottom {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 20px;
+}
+
+
+.performance__bottom-mark {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 23px;
+  height: 23px;
+
+  border: 1px solid rgba(255, 133, 0, 0.45);
+
+  color: #ff8500;
+
+  font-size: 0.7rem;
+}
+
+
+.performance__bottom p {
+  margin: 0;
+
+  font-size: 0.45rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.11em;
+
+  text-transform: uppercase;
+
+  color: rgba(7, 27, 74, 0.35);
+}
+
+
+.performance__bottom strong {
+  color: #ff8500;
+
+  margin: 0 3px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .performance {
+    padding: 48px 0 52px;
+  }
+
+  .performance__container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .performance__heading-row {
+    grid-template-columns: 1fr;
+
+    gap: 15px;
+  }
+
+  .performance__description {
+    max-width: 550px;
+  }
+
+  .performance__metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .performance-card:nth-child(2) {
+    border-right: none;
+  }
+
+  .performance-card:nth-child(1),
+  .performance-card:nth-child(2) {
+    border-bottom: 1px solid rgba(7, 27, 74, 0.1);
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .performance {
+    padding: 43px 0 48px;
+  }
+
+  .performance__container {
+    width: calc(100% - 30px);
+  }
+
+  .performance__eyebrow {
+    margin-bottom: 17px;
+
+    font-size: 0.55rem;
+  }
+
+  .performance__eyebrow-line {
+    width: 22px;
+  }
+
+  .performance__header {
+    margin-bottom: 28px;
+  }
+
+  .performance__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.18;
+  }
+
+  .performance__description {
+    font-size: 0.72rem;
+
+    line-height: 1.65;
+  }
+
+  .performance__metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .performance-card,
+  .performance-card:nth-child(1),
+  .performance-card:nth-child(2) {
+
+    min-height: auto;
+
+    padding: 18px 17px 20px;
+
+    border-right: none;
+
+    border-bottom: 1px solid rgba(7, 27, 74, 0.1);
+  }
+
+  .performance-card:last-child {
+    border-bottom: none;
+  }
+
+  .performance-card__top {
+    margin-bottom: 17px;
+  }
+
+  .performance-card__metric {
+    font-size: 1.45rem;
+  }
+
+  .performance-card p {
+    max-width: 280px;
+
+    font-size: 0.55rem;
+  }
+
+  .performance-card__line {
+    left: 17px;
+    right: 17px;
+  }
+
+  .performance__bottom {
+    margin-top: 18px;
+
+    align-items: flex-start;
+  }
+
+  .performance__bottom p {
+    font-size: 0.4rem;
+
+    line-height: 1.6;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .performance__container {
+    width: calc(100% - 26px);
+  }
+
+  .performance__title {
+    font-size: 1.7rem;
+  }
+
+  .performance-card {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .performance-card__line {
+    left: 15px;
+    right: 15px;
+  }
+}

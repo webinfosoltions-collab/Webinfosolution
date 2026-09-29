@@ -1,0 +1,873 @@
+
+/* =========================================================
+   MARKETING PERFORMANCE
+   Premium Split Dashboard Layout
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.marketing-performance {
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #f8faff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+.marketing-performance__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marketing-performance__header {
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.marketing-performance__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.marketing-performance__eyebrow::before,
+.marketing-performance__eyebrow::after {
+  content: "";
+
+  width: 21px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+}
+
+.marketing-performance__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.marketing-performance__title span {
+  color: #ff8500;
+}
+
+.marketing-performance__intro {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: #718097;
+
+  font-size: 0.87rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN PANEL
+========================================================= */
+
+.marketing-performance__panel {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.92fr)
+    minmax(0, 1.08fr);
+
+  gap: 0;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 18px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 20px 55px rgba(7, 27, 74, 0.065);
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   LEFT SIDE
+========================================================= */
+
+.marketing-performance__left {
+  padding: 43px 40px;
+
+  border-right: 1px solid rgba(7, 27, 74, 0.07);
+}
+
+.marketing-performance__label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  margin-bottom: 18px;
+
+  color: #ff8500;
+
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+
+  text-transform: uppercase;
+}
+
+.marketing-performance__label span {
+  width: 23px;
+  height: 1px;
+
+  background: #ff8500;
+}
+
+.marketing-performance__left > h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.4rem, 2.4vw, 1.85rem);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.025em;
+
+  font-weight: 800;
+}
+
+.marketing-performance__left > h3 span {
+  color: #ff8500;
+}
+
+.marketing-performance__description {
+  margin: 15px 0 27px;
+
+  color: #768196;
+
+  font-size: 0.69rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   CAPABILITIES
+========================================================= */
+
+.marketing-performance__capabilities {
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  gap: 11px;
+}
+
+.marketing-performance__capability {
+  display: flex;
+
+  align-items: center;
+
+  gap: 11px;
+
+  padding: 10px 11px;
+
+  border: 1px solid rgba(7, 27, 74, 0.065);
+
+  border-radius: 9px;
+
+  background: #fbfcfe;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.marketing-performance__capability:hover {
+  transform: translateX(3px);
+
+  border-color: rgba(255, 133, 0, 0.22);
+
+  background: #fffaf5;
+}
+
+.marketing-performance__capability-icon {
+  width: 32px;
+  height: 32px;
+
+  flex: 0 0 auto;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: rgba(255, 133, 0, 0.08);
+
+  color: #ff8500;
+
+  font-size: 0.75rem;
+}
+
+.marketing-performance__capability h4 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.64rem;
+
+  font-weight: 800;
+}
+
+.marketing-performance__capability p {
+  margin: 3px 0 0;
+
+  color: #929bab;
+
+  font-size: 0.52rem;
+
+  line-height: 1.4;
+}
+
+/* =========================================================
+   RIGHT SIDE
+========================================================= */
+
+.marketing-performance__right {
+  display: flex;
+
+  align-items: center;
+
+  padding: 30px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fbfcff 0%,
+      #f8faff 100%
+    );
+}
+
+/* =========================================================
+   DASHBOARD
+========================================================= */
+
+.marketing-performance__dashboard {
+  width: 100%;
+
+  padding: 21px;
+
+  border: 1px solid rgba(7, 27, 74, 0.075);
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px rgba(7, 27, 74, 0.055);
+}
+
+/* =========================================================
+   DASHBOARD HEADER
+========================================================= */
+
+.marketing-performance__dashboard-header {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 15px;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.07);
+}
+
+.marketing-performance__dashboard-header > div:first-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.marketing-performance__dashboard-header span {
+  color: #9aa3b2;
+
+  font-size: 0.47rem;
+
+  font-weight: 750;
+
+  letter-spacing: 0.1em;
+}
+
+.marketing-performance__dashboard-header strong {
+  color: #071b4a;
+
+  font-size: 0.75rem;
+
+  font-weight: 800;
+}
+
+.marketing-performance__live {
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 6px 9px;
+
+  border-radius: 6px;
+
+  background: #fff8f1;
+
+  color: #ff8500 !important;
+
+  font-size: 0.48rem !important;
+
+  letter-spacing: 0 !important;
+}
+
+.marketing-performance__live i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+}
+
+/* =========================================================
+   FUNNEL
+========================================================= */
+
+.marketing-performance__funnel {
+  position: relative;
+
+  padding: 20px 0 10px;
+}
+
+.marketing-performance__funnel-line {
+  position: absolute;
+
+  left: 21px;
+  top: 40px;
+  bottom: 39px;
+
+  width: 1px;
+
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      rgba(255, 133, 0, 0.35) 0,
+      rgba(255, 133, 0, 0.35) 4px,
+      transparent 4px,
+      transparent 9px
+    );
+}
+
+.marketing-performance__funnel-step {
+  position: relative;
+  z-index: 2;
+
+  display: grid;
+
+  grid-template-columns:
+    43px minmax(0, 1fr) 28px;
+
+  align-items: center;
+
+  gap: 12px;
+
+  min-height: 55px;
+
+  padding: 7px 10px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.marketing-performance__funnel-step:hover {
+  transform: translateX(4px);
+
+  border-color: rgba(255, 133, 0, 0.23);
+
+  box-shadow:
+    0 8px 20px rgba(7, 27, 74, 0.055);
+}
+
+.marketing-performance__funnel-number {
+  width: 34px;
+  height: 34px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 8px;
+
+  background: #fff8f1;
+
+  color: #ff8500;
+
+  font-size: 0.52rem;
+
+  font-weight: 900;
+}
+
+.marketing-performance__funnel-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.marketing-performance__funnel-content strong {
+  color: #071b4a;
+
+  font-size: 0.67rem;
+
+  font-weight: 800;
+}
+
+.marketing-performance__funnel-content span {
+  color: #929bab;
+
+  font-size: 0.51rem;
+}
+
+.marketing-performance__funnel-check {
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #f7f9fc;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+}
+
+.marketing-performance__funnel-arrow {
+  position: relative;
+  z-index: 3;
+
+  height: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+}
+
+/* =========================================================
+   DASHBOARD FOOTER
+========================================================= */
+
+.marketing-performance__dashboard-footer {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-top: 7px;
+
+  padding-top: 13px;
+
+  border-top: 1px solid rgba(7, 27, 74, 0.06);
+}
+
+.marketing-performance__dashboard-footer div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+}
+
+.marketing-performance__dashboard-footer svg {
+  color: #ff8500;
+
+  font-size: 0.75rem;
+}
+
+.marketing-performance__dashboard-footer span {
+  color: #8b95a6;
+
+  font-size: 0.51rem;
+
+  font-weight: 700;
+}
+
+.marketing-performance__dashboard-footer > svg {
+  color: #071b4a;
+
+  font-size: 0.75rem;
+}
+
+/* =========================================================
+   BOTTOM CHANNELS
+========================================================= */
+
+.marketing-performance__channels {
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, minmax(0, 1fr));
+
+  max-width: 1080px;
+
+  margin: 18px auto 0;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.marketing-performance__channels div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 43px;
+
+  padding: 7px 10px;
+
+  border-right: 1px solid rgba(7, 27, 74, 0.06);
+
+  color: #68758a;
+
+  font-size: 0.52rem;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.marketing-performance__channels div:last-child {
+  border-right: none;
+}
+
+.marketing-performance__channels span {
+  color: #ff8500;
+
+  font-size: 0.46rem;
+
+  font-weight: 900;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+  .marketing-performance {
+    padding: 90px 0 100px;
+  }
+
+  .marketing-performance__panel {
+    grid-template-columns: 1fr;
+
+    max-width: 720px;
+  }
+
+  .marketing-performance__left {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(7, 27, 74, 0.07);
+  }
+
+  .marketing-performance__capabilities {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  .marketing-performance__channels {
+    max-width: 720px;
+
+    grid-template-columns:
+      repeat(3, 1fr);
+  }
+
+  .marketing-performance__channels div:nth-child(3) {
+    border-right: none;
+  }
+
+  .marketing-performance__channels div:nth-child(-n + 3) {
+    border-bottom: 1px solid rgba(7, 27, 74, 0.06);
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .marketing-performance {
+    padding: 72px 0 78px;
+  }
+
+  .marketing-performance__container {
+    width: calc(100% - 28px);
+  }
+
+  .marketing-performance__header {
+    margin-bottom: 38px;
+  }
+
+  .marketing-performance__eyebrow {
+    font-size: 0.56rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .marketing-performance__eyebrow::before,
+  .marketing-performance__eyebrow::after {
+    width: 17px;
+  }
+
+  .marketing-performance__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .marketing-performance__intro {
+    font-size: 0.79rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-performance__left {
+    padding: 27px 19px;
+  }
+
+  .marketing-performance__right {
+    padding: 16px;
+  }
+
+  .marketing-performance__dashboard {
+    padding: 14px;
+
+    border-radius: 11px;
+  }
+
+  .marketing-performance__dashboard-header {
+    padding-bottom: 12px;
+  }
+
+  .marketing-performance__dashboard-header strong {
+    font-size: 0.64rem;
+  }
+
+  .marketing-performance__live {
+    padding: 5px 7px;
+
+    font-size: 0.43rem !important;
+  }
+
+  .marketing-performance__capabilities {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .marketing-performance__capability {
+    padding: 9px;
+  }
+
+  .marketing-performance__capability h4 {
+    font-size: 0.59rem;
+  }
+
+  .marketing-performance__capability p {
+    font-size: 0.49rem;
+  }
+
+  .marketing-performance__funnel {
+    padding-top: 15px;
+  }
+
+  .marketing-performance__funnel-step {
+    grid-template-columns:
+      37px minmax(0, 1fr) 24px;
+
+    gap: 9px;
+
+    min-height: 50px;
+
+    padding: 6px 8px;
+  }
+
+  .marketing-performance__funnel-line {
+    left: 18px;
+
+    top: 33px;
+    bottom: 32px;
+  }
+
+  .marketing-performance__funnel-number {
+    width: 30px;
+    height: 30px;
+
+    font-size: 0.47rem;
+  }
+
+  .marketing-performance__funnel-content strong {
+    font-size: 0.61rem;
+  }
+
+  .marketing-performance__funnel-content span {
+    font-size: 0.47rem;
+  }
+
+  .marketing-performance__funnel-check {
+    width: 22px;
+    height: 22px;
+
+    font-size: 0.55rem;
+  }
+
+  .marketing-performance__dashboard-footer span {
+    font-size: 0.47rem;
+  }
+
+  .marketing-performance__channels {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    margin-top: 12px;
+  }
+
+  .marketing-performance__channels div {
+    min-height: 40px;
+
+    font-size: 0.47rem;
+  }
+
+  .marketing-performance__channels div:nth-child(2),
+  .marketing-performance__channels div:nth-child(4) {
+    border-right: none;
+  }
+
+  .marketing-performance__channels div:nth-child(3) {
+    border-right: 1px solid rgba(7, 27, 74, 0.06);
+  }
+
+  .marketing-performance__channels div:nth-child(5) {
+    grid-column: 1 / -1;
+
+    border-right: none;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .marketing-performance__container {
+    width: calc(100% - 24px);
+  }
+
+  .marketing-performance__left {
+    padding: 24px 15px;
+  }
+
+  .marketing-performance__right {
+    padding: 12px;
+  }
+
+  .marketing-performance__channels div {
+    font-size: 0.44rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-performance__capability,
+  .marketing-performance__funnel-step {
+    transition: none !important;
+  }
+}

@@ -1,0 +1,349 @@
+
+/* =========================================================
+   CONTACT HERO
+   Premium / Minimal / Editorial
+
+   Navy  : #071b4a
+   Orange: #ff8500
+   White : #ffffff
+
+   Heading:
+   clamp(1.7rem, 3vw, 2.35rem)
+========================================================= */
+
+.page-hero {
+  position: relative;
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #ffffff;
+  color: #071b4a;
+
+  /* Compact section spacing */
+  padding: clamp(52px, 6vw, 72px) 0;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.page-hero .container {
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.page-hero .eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: clamp(20px, 3vw, 28px);
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.19em;
+
+  color: #071b4a;
+}
+
+
+/* Orange line */
+
+.page-hero .eyebrow::before {
+  content: "";
+
+  width: 25px;
+  height: 2px;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   MAIN HEADING
+========================================================= */
+
+.page-hero h1 {
+  max-width: 900px;
+
+  margin: 0 auto;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.13;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 850;
+
+  color: #071b4a;
+
+  text-wrap: balance;
+}
+
+
+/* =========================================================
+   ACCENT
+========================================================= */
+
+.page-hero h1 .accent {
+  color: #ff8500;
+
+  position: relative;
+
+  display: inline-block;
+}
+
+
+/* Elegant orange underline */
+
+.page-hero h1 .accent::after {
+  content: "";
+
+  position: absolute;
+
+  left: 2px;
+  right: 2px;
+
+  bottom: -5px;
+
+  height: 2px;
+
+  background: #ff8500;
+
+  border-radius: 50px;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.page-hero p {
+  max-width: 570px;
+
+  margin: 20px auto 0;
+
+  font-size: 0.92rem;
+
+  line-height: 1.72;
+
+  font-weight: 400;
+
+  color: rgba(7, 27, 74, 0.58);
+
+  text-wrap: balance;
+}
+
+
+/* =========================================================
+   SUBTLE DECORATIVE ELEMENTS
+========================================================= */
+
+.page-hero::before {
+  content: "";
+
+  position: absolute;
+
+  width: 180px;
+  height: 180px;
+
+  left: -110px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+.page-hero::after {
+  content: "";
+
+  position: absolute;
+
+  width: 220px;
+  height: 220px;
+
+  right: -140px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: 1px solid rgba(255, 133, 0, 0.14);
+
+  border-radius: 50%;
+
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .page-hero {
+    padding: 55px 0 62px;
+  }
+
+  .page-hero .container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .page-hero .eyebrow {
+    margin-bottom: 22px;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(1.7rem, 3vw, 2.2rem);
+
+    line-height: 1.16;
+  }
+
+  .page-hero p {
+    margin-top: 18px;
+
+    font-size: 0.87rem;
+
+    line-height: 1.7;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .page-hero {
+    padding: 48px 0 50px;
+  }
+
+  .page-hero .container {
+    width: calc(100% - 30px);
+  }
+
+
+  /* Eyebrow */
+
+  .page-hero .eyebrow {
+    margin-bottom: 20px;
+
+    font-size: 0.57rem;
+
+    letter-spacing: 0.17em;
+  }
+
+  .page-hero .eyebrow::before {
+    width: 22px;
+  }
+
+
+  /* Heading */
+
+  .page-hero h1 {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.18;
+
+    letter-spacing: -0.03em;
+
+    font-weight: 850;
+  }
+
+
+  /* Accent underline */
+
+  .page-hero h1 .accent::after {
+    bottom: -4px;
+
+    height: 2px;
+  }
+
+
+  /* Description */
+
+  .page-hero p {
+    max-width: 430px;
+
+    margin-top: 17px;
+
+    font-size: 0.84rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* Decorative circles */
+
+  .page-hero::before {
+    width: 120px;
+    height: 120px;
+
+    left: -85px;
+  }
+
+  .page-hero::after {
+    width: 150px;
+    height: 150px;
+
+    right: -100px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .page-hero {
+    padding: 44px 0 46px;
+  }
+
+  .page-hero .container {
+    width: calc(100% - 28px);
+  }
+
+  .page-hero .eyebrow {
+    margin-bottom: 18px;
+
+    font-size: 0.54rem;
+  }
+
+  .page-hero h1 {
+    font-size: 1.7rem;
+
+    line-height: 1.2;
+  }
+
+  .page-hero p {
+    margin-top: 16px;
+
+    font-size: 0.8rem;
+  }
+}
+ 

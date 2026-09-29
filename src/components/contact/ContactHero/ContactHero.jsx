@@ -1,0 +1,1 @@
+import './ContactHero.css';export default function ContactHero(){return <section className="page-hero"><div className="container"><span className="eyebrow">CONTACT</span><h1>Let's Build Something <span className="accent">Worth Growing.</span></h1><p>Tell us where the business is now, what you want to build, and where growth is getting stuck.</p></div></section>}

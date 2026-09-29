@@ -1,0 +1,525 @@
+/* =========================================================
+   MARKETING SERVICES
+   Everything You Need to Grow Online
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.marketing-services {
+  position: relative;
+
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #f8faff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.marketing-services__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marketing-services__header {
+  max-width: 730px;
+
+  margin: 0 auto 52px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.marketing-services__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.65rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.marketing-services__eyebrow::before,
+.marketing-services__eyebrow::after {
+  content: "";
+
+  width: 22px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.marketing-services__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.marketing-services__title span {
+  color: #ff8500;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.marketing-services__intro {
+  max-width: 670px;
+
+  margin: 15px auto 0;
+
+  color: #68738a;
+
+  font-size: 0.9rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.marketing-services__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 16px;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   SERVICE CARD
+========================================================= */
+
+.marketing-service-card {
+  position: relative;
+
+  min-height: 205px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  padding: 20px;
+
+  border: 1px solid rgba(7, 27, 74, 0.085);
+
+  border-radius: 14px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 7px 25px rgba(7, 27, 74, 0.035);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.marketing-service-card::before {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  top: 0;
+
+  width: 3px;
+  height: 0;
+
+  background: #ff8500;
+
+  transition: height 0.3s ease;
+}
+
+.marketing-service-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(255, 133, 0, 0.25);
+
+  background: #fffdfb;
+
+  box-shadow:
+    0 16px 35px rgba(7, 27, 74, 0.075);
+}
+
+.marketing-service-card:hover::before {
+  height: 100%;
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.marketing-service-card__top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 17px;
+}
+
+.marketing-service-card__number {
+  color: #ff8500;
+
+  font-size: 0.6rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+}
+
+/* =========================================================
+   ICON
+========================================================= */
+
+.marketing-service-card__icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 9px;
+
+  background: #f8faff;
+
+  color: #071b4a;
+
+  font-size: 0.95rem;
+
+  transition:
+    color 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.marketing-service-card:hover
+.marketing-service-card__icon {
+  color: #ff8500;
+
+  background: rgba(255, 133, 0, 0.07);
+
+  border-color: rgba(255, 133, 0, 0.22);
+
+  transform: scale(1.05);
+}
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.marketing-service-card h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.92rem;
+
+  line-height: 1.35;
+
+  font-weight: 800;
+
+  letter-spacing: -0.01em;
+}
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.marketing-service-card p {
+  margin: 8px 0 16px;
+
+  color: #748095;
+
+  font-size: 0.67rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   CARD BOTTOM
+========================================================= */
+
+.marketing-service-card__bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-top: auto;
+
+  padding-top: 12px;
+
+  border-top: 1px solid rgba(7, 27, 74, 0.06);
+}
+
+.marketing-service-card__bottom span {
+  color: #9aa3b3;
+
+  font-size: 0.52rem;
+
+  font-weight: 750;
+
+  letter-spacing: 0.05em;
+
+  text-transform: uppercase;
+}
+
+.marketing-service-card__bottom svg {
+  color: #ff8500;
+
+  font-size: 0.78rem;
+
+  transition: transform 0.25s ease;
+}
+
+.marketing-service-card:hover
+.marketing-service-card__bottom svg {
+  transform: translate(2px, -2px);
+}
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.marketing-services__note {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+
+  max-width: 650px;
+
+  margin: 42px auto 0;
+}
+
+.marketing-services__note span {
+  width: 45px;
+  height: 1px;
+
+  flex: 0 0 auto;
+
+  background: rgba(255, 133, 0, 0.25);
+}
+
+.marketing-services__note p {
+  margin: 0;
+
+  color: #7d8799;
+
+  font-size: 0.65rem;
+
+  line-height: 1.5;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+  .marketing-services {
+    padding: 90px 0 100px;
+  }
+
+  .marketing-services__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    max-width: 760px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .marketing-services {
+    padding: 72px 0 78px;
+  }
+
+  .marketing-services__container {
+    width: calc(100% - 28px);
+  }
+
+  .marketing-services__header {
+    margin-bottom: 36px;
+  }
+
+  .marketing-services__eyebrow {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .marketing-services__eyebrow::before,
+  .marketing-services__eyebrow::after {
+    width: 17px;
+  }
+
+  .marketing-services__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.15;
+  }
+
+  .marketing-services__intro {
+    margin-top: 13px;
+
+    font-size: 0.82rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-services__grid {
+    grid-template-columns: 1fr;
+
+    gap: 12px;
+
+    max-width: 460px;
+  }
+
+  .marketing-service-card {
+    min-height: 185px;
+
+    padding: 18px;
+  }
+
+  .marketing-service-card__top {
+    margin-bottom: 14px;
+  }
+
+  .marketing-service-card__icon {
+    width: 35px;
+    height: 35px;
+
+    font-size: 0.86rem;
+  }
+
+  .marketing-service-card h3 {
+    font-size: 0.86rem;
+  }
+
+  .marketing-service-card p {
+    margin-top: 7px;
+
+    font-size: 0.63rem;
+  }
+
+  .marketing-services__note {
+    gap: 9px;
+
+    margin-top: 29px;
+  }
+
+  .marketing-services__note span {
+    width: 25px;
+  }
+
+  .marketing-services__note p {
+    font-size: 0.59rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .marketing-services__container {
+    width: calc(100% - 24px);
+  }
+
+  .marketing-service-card {
+    min-height: 178px;
+
+    padding: 16px;
+  }
+
+  .marketing-service-card p {
+    font-size: 0.6rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-service-card,
+  .marketing-service-card::before,
+  .marketing-service-card__icon,
+  .marketing-service-card__bottom svg {
+    transition: none !important;
+  }
+}

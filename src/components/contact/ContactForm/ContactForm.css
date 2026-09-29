@@ -1,0 +1,740 @@
+
+/* =========================================================
+   CONTACT FORM
+   Premium / Clean / Modern
+
+   Brand Colors
+   Navy  : #071b4a
+   Orange: #ff8500
+   White : #ffffff
+
+   ========================================================= */
+
+.section {
+  position: relative;
+  width: 100%;
+
+  padding: clamp(60px, 7vw, 90px) 0;
+
+  background: #ffffff;
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.section .container {
+  width: min(1180px, calc(100% - 48px));
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.contact-layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 1.45fr)
+    minmax(300px, 0.7fr);
+
+  gap: clamp(45px, 6vw, 85px);
+
+  align-items: start;
+}
+
+
+/* =========================================================
+   FORM
+========================================================= */
+
+.project-form {
+  width: 100%;
+
+  padding: clamp(28px, 4vw, 42px);
+
+  background: #ffffff;
+
+  border: 1px solid rgba(7, 27, 74, 0.10);
+
+  box-shadow:
+    0 18px 55px rgba(7, 27, 74, 0.07);
+
+  position: relative;
+}
+
+
+/* Orange top line */
+
+.project-form::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 70px;
+  height: 3px;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   FORM GRID
+========================================================= */
+
+.form-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 22px 20px;
+}
+
+
+/* =========================================================
+   LABEL
+========================================================= */
+
+.project-form label {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 8px;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  color: #071b4a;
+}
+
+
+/* Full width */
+
+.project-form label.full {
+  grid-column: 1 / -1;
+}
+
+
+/* =========================================================
+   INPUT / SELECT / TEXTAREA
+========================================================= */
+
+.project-form input,
+.project-form select,
+.project-form textarea {
+  width: 100%;
+
+  border: 1px solid rgba(7, 27, 74, 0.14);
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  font-family: inherit;
+
+  font-size: 0.84rem;
+
+  font-weight: 500;
+
+  outline: none;
+
+  border-radius: 0;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+
+/* Input */
+
+.project-form input,
+.project-form select {
+  height: 48px;
+
+  padding: 0 14px;
+}
+
+
+/* Textarea */
+
+.project-form textarea {
+  min-height: 145px;
+
+  padding: 14px;
+
+  resize: vertical;
+
+  line-height: 1.6;
+}
+
+
+/* Placeholder */
+
+.project-form input::placeholder,
+.project-form textarea::placeholder {
+  color: rgba(7, 27, 74, 0.34);
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.project-form input:focus,
+.project-form select:focus,
+.project-form textarea:focus {
+  border-color: #ff8500;
+
+  box-shadow:
+    0 0 0 3px rgba(255, 133, 0, 0.09);
+
+  background: #fffdfa;
+}
+
+
+/* =========================================================
+   SELECT
+========================================================= */
+
+.project-form select {
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+
+/* =========================================================
+   ERROR
+========================================================= */
+
+.project-form small {
+  margin-top: 2px;
+
+  font-size: 0.68rem;
+
+  font-weight: 600;
+
+  letter-spacing: 0;
+
+  text-transform: none;
+
+  color: #c0392b;
+}
+
+
+/* =========================================================
+   BUTTON
+========================================================= */
+
+.project-form .btn-primary {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  min-height: 50px;
+
+  margin-top: 28px;
+
+  padding: 0 25px;
+
+  border: 1px solid #ff8500;
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+.project-form .btn-primary:hover {
+  background: #071b4a;
+
+  border-color: #071b4a;
+
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(7, 27, 74, 0.16);
+}
+
+
+/* =========================================================
+   SUCCESS
+========================================================= */
+
+.success {
+  margin: 18px 0 0;
+
+  padding: 12px 14px;
+
+  border-left: 3px solid #ff8500;
+
+  background: rgba(255, 133, 0, 0.06);
+
+  color: rgba(7, 27, 74, 0.70);
+
+  font-size: 0.75rem;
+
+  line-height: 1.55;
+}
+
+
+/* =========================================================
+   CONTACT SIDE
+========================================================= */
+
+.contact-side {
+  position: relative;
+
+  padding: 12px 0 0;
+
+  max-width: 360px;
+}
+
+
+/* =========================================================
+   SIDEBAR EYEBROW
+========================================================= */
+
+.contact-side .eyebrow {
+  display: flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 18px;
+
+  font-size: 0.61rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  color: #071b4a;
+}
+
+
+.contact-side .eyebrow::before {
+  content: "";
+
+  width: 25px;
+  height: 2px;
+
+  flex-shrink: 0;
+
+  background: #ff8500;
+}
+
+
+/* =========================================================
+   SIDEBAR HEADING
+========================================================= */
+
+.contact-side h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.13;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 850;
+
+  color: #071b4a;
+}
+
+
+/* =========================================================
+   SIDEBAR DESCRIPTION
+========================================================= */
+
+.contact-side > p {
+  margin: 18px 0 0;
+
+  font-size: 0.86rem;
+
+  line-height: 1.75;
+
+  color: rgba(7, 27, 74, 0.58);
+}
+
+
+/* =========================================================
+   WHATSAPP BUTTON
+========================================================= */
+
+.whatsapp-big {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  min-height: 48px;
+
+  margin-top: 25px;
+
+  padding: 0 19px;
+
+  border: 1px solid #071b4a;
+
+  background: #071b4a;
+
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 0.69rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.07em;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.whatsapp-big svg {
+  font-size: 16px;
+
+  color: #ff8500;
+
+  transition: color 0.25s ease;
+}
+
+
+.whatsapp-big:hover {
+  background: #ff8500;
+
+  border-color: #ff8500;
+
+  color: #ffffff;
+
+  transform: translateY(-2px);
+}
+
+
+.whatsapp-big:hover svg {
+  color: #ffffff;
+}
+
+
+/* =========================================================
+   CONTACT DETAILS
+========================================================= */
+
+.contact-lines {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0;
+
+  margin-top: 30px;
+
+  padding-top: 22px;
+
+  border-top: 1px solid rgba(7, 27, 74, 0.11);
+}
+
+
+/* Links */
+
+.contact-lines a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  padding: 10px 0;
+
+  color: #071b4a;
+
+  text-decoration: none;
+
+  font-size: 0.76rem;
+
+  font-weight: 700;
+
+  word-break: break-word;
+
+  transition: color 0.2s ease;
+}
+
+
+.contact-lines a:hover {
+  color: #ff8500;
+}
+
+
+.contact-lines a svg {
+  flex-shrink: 0;
+
+  color: #ff8500;
+
+  font-size: 13px;
+}
+
+
+/* Extra information */
+
+.contact-lines span {
+  display: block;
+
+  padding: 8px 0 0;
+
+  font-size: 0.63rem;
+
+  line-height: 1.6;
+
+  color: rgba(7, 27, 74, 0.43);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .section {
+    padding: 60px 0 70px;
+  }
+
+  .section .container {
+    width: min(720px, calc(100% - 40px));
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+  .project-form {
+    padding: 30px;
+  }
+
+  .contact-side {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .contact-side .eyebrow {
+    justify-content: center;
+  }
+
+  .contact-side > p {
+    max-width: 520px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact-lines {
+    text-align: left;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .section {
+    padding: 48px 0 55px;
+  }
+
+  .section .container {
+    width: calc(100% - 30px);
+  }
+
+
+  /* Form */
+
+  .project-form {
+    padding: 24px 18px 26px;
+  }
+
+
+  /* One column */
+
+  .form-grid {
+    grid-template-columns: 1fr;
+
+    gap: 18px;
+  }
+
+  .project-form label.full {
+    grid-column: auto;
+  }
+
+
+  /* Labels */
+
+  .project-form label {
+    font-size: 0.62rem;
+  }
+
+
+  /* Inputs */
+
+  .project-form input,
+  .project-form select {
+    height: 46px;
+
+    font-size: 0.81rem;
+  }
+
+  .project-form textarea {
+    min-height: 125px;
+
+    font-size: 0.81rem;
+  }
+
+
+  /* Button */
+
+  .project-form .btn-primary {
+    width: 100%;
+
+    margin-top: 24px;
+
+    min-height: 48px;
+
+    padding: 0 16px;
+
+    font-size: 0.66rem;
+  }
+
+
+  /* Sidebar */
+
+  .contact-side {
+    padding-top: 0;
+  }
+
+  .contact-side .eyebrow {
+    margin-bottom: 16px;
+
+    font-size: 0.55rem;
+  }
+
+  .contact-side h2 {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.18;
+  }
+
+  .contact-side > p {
+    margin-top: 15px;
+
+    font-size: 0.81rem;
+
+    line-height: 1.7;
+  }
+
+
+  /* WhatsApp */
+
+  .whatsapp-big {
+    width: 100%;
+
+    margin-top: 22px;
+  }
+
+
+  /* Details */
+
+  .contact-lines {
+    margin-top: 25px;
+
+    padding-top: 18px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .section {
+    padding: 44px 0 48px;
+  }
+
+  .section .container {
+    width: calc(100% - 26px);
+  }
+
+  .project-form {
+    padding: 22px 15px 24px;
+  }
+
+  .form-grid {
+    gap: 16px;
+  }
+
+  .contact-side h2 {
+    font-size: 1.7rem;
+  }
+
+  .contact-side > p {
+    font-size: 0.78rem;
+  }
+}
+ 

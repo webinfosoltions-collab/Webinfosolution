@@ -1,0 +1,695 @@
+ 
+/* =========================================================
+   MARKETING CONVERSION
+   Premium Lead Generation / CRO Section
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.marketing-conversion {
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+.marketing-conversion__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marketing-conversion__header {
+  max-width: 730px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.marketing-conversion__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.marketing-conversion__eyebrow::before,
+.marketing-conversion__eyebrow::after {
+  content: "";
+
+  width: 21px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+}
+
+.marketing-conversion__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.marketing-conversion__title span {
+  color: #ff8500;
+}
+
+.marketing-conversion__intro {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: #718097;
+
+  font-size: 0.87rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MAIN LAYOUT
+========================================================= */
+
+.marketing-conversion__layout {
+  display: grid;
+
+  grid-template-columns:
+    minmax(0, 0.95fr)
+    minmax(0, 1.05fr);
+
+  gap: 42px;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   JOURNEY PANEL
+========================================================= */
+
+.marketing-conversion__journey {
+  padding: 23px;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 16px;
+
+  background: #f8faff;
+
+  box-shadow:
+    0 15px 40px rgba(7, 27, 74, 0.045);
+}
+
+.marketing-conversion__journey-head {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 12px;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.07);
+}
+
+.marketing-conversion__journey-head > div:first-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.marketing-conversion__journey-head span {
+  color: #ff8500;
+
+  font-size: 0.47rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.11em;
+}
+
+.marketing-conversion__journey-head strong {
+  color: #071b4a;
+
+  font-size: 0.72rem;
+
+  font-weight: 800;
+}
+
+.marketing-conversion__journey-badge {
+  display: flex !important;
+
+  flex-direction: row !important;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 5px 8px;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #7e899b;
+
+  font-size: 0.45rem !important;
+
+  white-space: nowrap;
+}
+
+.marketing-conversion__journey-badge i {
+  width: 5px;
+  height: 5px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+}
+
+/* =========================================================
+   JOURNEY STEPS
+========================================================= */
+
+.marketing-conversion__steps {
+  padding: 19px 3px 5px;
+}
+
+.marketing-conversion__step {
+  display: grid;
+
+  grid-template-columns:
+    39px minmax(0, 1fr) 25px;
+
+  align-items: center;
+
+  gap: 11px;
+
+  min-height: 62px;
+
+  padding: 8px 10px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.marketing-conversion__step:hover {
+  transform: translateX(4px);
+
+  border-color: rgba(255, 133, 0, 0.22);
+
+  box-shadow:
+    0 8px 22px rgba(7, 27, 74, 0.055);
+}
+
+.marketing-conversion__step-icon {
+  width: 31px;
+  height: 31px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 7px;
+
+  background: #fff7ef;
+
+  color: #ff8500;
+
+  font-size: 0.72rem;
+}
+
+.marketing-conversion__step-content {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+.marketing-conversion__step-content span {
+  color: #ff8500;
+
+  font-size: 0.42rem;
+
+  font-weight: 900;
+}
+
+.marketing-conversion__step-content strong {
+  color: #071b4a;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+}
+
+.marketing-conversion__step-content small {
+  color: #9aa3b2;
+
+  font-size: 0.47rem;
+}
+
+.marketing-conversion__step-check {
+  color: #ff8500;
+
+  font-size: 0.63rem;
+}
+
+.marketing-conversion__step-arrow {
+  height: 15px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+}
+
+/* =========================================================
+   RIGHT CONTENT
+========================================================= */
+
+.marketing-conversion__content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+}
+
+.marketing-conversion__content-label {
+  margin-bottom: 15px;
+
+  color: #ff8500;
+
+  font-size: 0.55rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.13em;
+}
+
+.marketing-conversion__content h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.45rem, 2.5vw, 1.9rem);
+
+  line-height: 1.2;
+
+  letter-spacing: -0.03em;
+
+  font-weight: 800;
+}
+
+.marketing-conversion__content h3 span {
+  color: #ff8500;
+}
+
+.marketing-conversion__description {
+  max-width: 480px;
+
+  margin: 14px 0 25px;
+
+  color: #778398;
+
+  font-size: 0.67rem;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   OPTIMIZATION CARDS
+========================================================= */
+
+.marketing-conversion__cards {
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, minmax(0, 1fr));
+
+  gap: 10px;
+}
+
+.marketing-conversion__card {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 13px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    background 0.25s ease;
+}
+
+.marketing-conversion__card:hover {
+  transform: translateY(-3px);
+
+  border-color: rgba(255, 133, 0, 0.2);
+
+  background: #fffaf6;
+}
+
+.marketing-conversion__card-icon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 7px;
+
+  background: #fff7ef;
+
+  color: #ff8500;
+
+  font-size: 0.68rem;
+}
+
+.marketing-conversion__card h4 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.59rem;
+
+  font-weight: 800;
+}
+
+.marketing-conversion__card p {
+  margin: 4px 0 0;
+
+  color: #929bab;
+
+  font-size: 0.48rem;
+
+  line-height: 1.55;
+}
+
+/* =========================================================
+   BOTTOM STRIP
+========================================================= */
+
+.marketing-conversion__strip {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  max-width: 1080px;
+
+  margin: 21px auto 0;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 10px;
+
+  background: #ffffff;
+
+  overflow: hidden;
+}
+
+.marketing-conversion__strip div {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  min-height: 43px;
+
+  padding: 7px 10px;
+
+  border-right: 1px solid rgba(7, 27, 74, 0.06);
+
+  color: #68758a;
+
+  font-size: 0.51rem;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+.marketing-conversion__strip div:last-child {
+  border-right: none;
+}
+
+.marketing-conversion__strip span {
+  color: #ff8500;
+
+  font-size: 0.45rem;
+
+  font-weight: 900;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .marketing-conversion {
+    padding: 90px 0 100px;
+  }
+
+  .marketing-conversion__layout {
+    grid-template-columns: 1fr;
+
+    max-width: 700px;
+
+    gap: 35px;
+  }
+
+  .marketing-conversion__content {
+    padding: 0;
+  }
+
+  .marketing-conversion__description {
+    max-width: 650px;
+  }
+
+  .marketing-conversion__strip {
+    max-width: 700px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .marketing-conversion {
+    padding: 72px 0 78px;
+  }
+
+  .marketing-conversion__container {
+    width: calc(100% - 28px);
+  }
+
+  .marketing-conversion__header {
+    margin-bottom: 38px;
+  }
+
+  .marketing-conversion__eyebrow {
+    font-size: 0.56rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .marketing-conversion__eyebrow::before,
+  .marketing-conversion__eyebrow::after {
+    width: 17px;
+  }
+
+  .marketing-conversion__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .marketing-conversion__intro {
+    font-size: 0.79rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-conversion__journey {
+    padding: 15px;
+
+    border-radius: 12px;
+  }
+
+  .marketing-conversion__journey-head {
+    padding-bottom: 12px;
+  }
+
+  .marketing-conversion__journey-head strong {
+    font-size: 0.62rem;
+  }
+
+  .marketing-conversion__steps {
+    padding-top: 14px;
+  }
+
+  .marketing-conversion__step {
+    grid-template-columns:
+      35px minmax(0, 1fr) 22px;
+
+    gap: 9px;
+
+    min-height: 54px;
+
+    padding: 6px 8px;
+  }
+
+  .marketing-conversion__step-icon {
+    width: 28px;
+    height: 28px;
+
+    font-size: 0.64rem;
+  }
+
+  .marketing-conversion__step-content strong {
+    font-size: 0.57rem;
+  }
+
+  .marketing-conversion__step-content small {
+    font-size: 0.44rem;
+  }
+
+  .marketing-conversion__content-label {
+    font-size: 0.5rem;
+  }
+
+  .marketing-conversion__content h3 {
+    font-size: 1.4rem;
+  }
+
+  .marketing-conversion__description {
+    font-size: 0.61rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-conversion__cards {
+    grid-template-columns: 1fr;
+
+    gap: 8px;
+  }
+
+  .marketing-conversion__card {
+    padding: 10px;
+  }
+
+  .marketing-conversion__card h4 {
+    font-size: 0.57rem;
+  }
+
+  .marketing-conversion__card p {
+    font-size: 0.47rem;
+  }
+
+  .marketing-conversion__strip {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    margin-top: 13px;
+  }
+
+  .marketing-conversion__strip div {
+    min-height: 40px;
+
+    font-size: 0.46rem;
+  }
+
+  .marketing-conversion__strip div:nth-child(2) {
+    border-right: none;
+  }
+
+  .marketing-conversion__strip div:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(7, 27, 74, 0.06);
+  }
+
+  .marketing-conversion__strip div:last-child {
+    border-right: none;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-conversion__step,
+  .marketing-conversion__card {
+    transition: none !important;
+  }
+}
+ 

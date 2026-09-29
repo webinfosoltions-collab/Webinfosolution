@@ -1,0 +1,1 @@
+import WorkHero from '../components/portfolio/WorkHero/WorkHero';import ProjectGrid from '../components/portfolio/ProjectGrid/ProjectGrid';export default function Portfolio(){return <><WorkHero/><ProjectGrid/></>}

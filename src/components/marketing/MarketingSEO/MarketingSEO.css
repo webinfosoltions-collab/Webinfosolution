@@ -1,0 +1,612 @@
+ 
+/* =========================================================
+   MARKETING SEO
+   Premium SEO / Organic Growth Section
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.marketing-seo {
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+.marketing-seo__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.marketing-seo__header {
+  max-width: 720px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.marketing-seo__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 9px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.62rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.17em;
+
+  text-transform: uppercase;
+}
+
+.marketing-seo__eyebrow::before,
+.marketing-seo__eyebrow::after {
+  content: "";
+
+  width: 21px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.55;
+}
+
+/* =========================================================
+   MAIN SECTION HEADING
+========================================================= */
+
+.marketing-seo__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.marketing-seo__title span {
+  color: #ff8500;
+}
+
+.marketing-seo__intro {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: #718097;
+
+  font-size: 0.87rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   SEO PILLARS
+========================================================= */
+
+.marketing-seo__pillars {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 17px;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   PILLAR CARD
+========================================================= */
+
+.marketing-seo__pillar {
+  position: relative;
+
+  min-height: 330px;
+
+  padding: 27px 25px;
+
+  border: 1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 15px;
+
+  background: #ffffff;
+
+  box-shadow:
+    0 12px 35px rgba(7, 27, 74, 0.045);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.marketing-seo__pillar::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+
+  width: 0;
+  height: 2px;
+
+  background: #ff8500;
+
+  transition: width 0.35s ease;
+}
+
+.marketing-seo__pillar:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(255, 133, 0, 0.2);
+
+  box-shadow:
+    0 18px 40px rgba(7, 27, 74, 0.08);
+}
+
+.marketing-seo__pillar:hover::after {
+  width: 100%;
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.marketing-seo__pillar-top {
+  display: flex;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.marketing-seo__number {
+  color: #ff8500;
+
+  font-size: 0.55rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.05em;
+}
+
+.marketing-seo__icon {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin-left: 14px;
+
+  border-radius: 9px;
+
+  background: #fff8f1;
+
+  color: #ff8500;
+
+  font-size: 0.95rem;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.marketing-seo__pillar:hover .marketing-seo__icon {
+  background: #ff8500;
+
+  color: #ffffff;
+}
+
+.marketing-seo__arrow {
+  margin-left: auto;
+
+  color: #a2aab8;
+
+  font-size: 0.82rem;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.marketing-seo__pillar:hover .marketing-seo__arrow {
+  color: #ff8500;
+
+  transform: translate(2px, -2px);
+}
+
+/* =========================================================
+   CARD CONTENT
+========================================================= */
+
+.marketing-seo__pillar h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.98rem;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+}
+
+.marketing-seo__pillar > p {
+  margin: 10px 0 23px;
+
+  color: #778398;
+
+  font-size: 0.64rem;
+
+  line-height: 1.75;
+}
+
+/* =========================================================
+   CARD ITEMS
+========================================================= */
+
+.marketing-seo__items {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 10px;
+
+  padding-top: 17px;
+
+  border-top: 1px solid rgba(7, 27, 74, 0.07);
+}
+
+.marketing-seo__items div {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+}
+
+.marketing-seo__items svg {
+  flex: 0 0 auto;
+
+  color: #ff8500;
+
+  font-size: 0.65rem;
+}
+
+.marketing-seo__items span {
+  color: #536077;
+
+  font-size: 0.59rem;
+
+  font-weight: 650;
+}
+
+/* =========================================================
+   OPTIMIZATION STRIP
+========================================================= */
+
+.marketing-seo__optimization {
+  display: grid;
+
+  grid-template-columns:
+    0.75fr 1.75fr;
+
+  align-items: center;
+
+  gap: 30px;
+
+  max-width: 1080px;
+
+  margin: 20px auto 0;
+
+  padding: 20px 24px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 12px;
+
+  background: #f8faff;
+}
+
+/* =========================================================
+   OPTIMIZATION HEADING
+========================================================= */
+
+.marketing-seo__optimization-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.marketing-seo__search-icon {
+  width: 38px;
+  height: 38px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 8px;
+
+  background: #ffffff;
+
+  color: #ff8500;
+
+  font-size: 0.85rem;
+
+  box-shadow:
+    0 5px 15px rgba(7, 27, 74, 0.04);
+}
+
+.marketing-seo__optimization-heading > div:last-child {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 3px;
+}
+
+.marketing-seo__optimization-heading span {
+  color: #ff8500;
+
+  font-size: 0.48rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.1em;
+}
+
+.marketing-seo__optimization-heading strong {
+  color: #071b4a;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+}
+
+/* =========================================================
+   OPTIMIZATION ITEMS
+========================================================= */
+
+.marketing-seo__optimization-list {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+}
+
+.marketing-seo__optimization-list div {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 6px;
+
+  padding: 7px 10px;
+
+  border: 1px solid rgba(7, 27, 74, 0.065);
+
+  border-radius: 6px;
+
+  background: #ffffff;
+
+  color: #68758a;
+
+  font-size: 0.52rem;
+
+  font-weight: 650;
+
+  transition:
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+.marketing-seo__optimization-list div:hover {
+  border-color: rgba(255, 133, 0, 0.25);
+
+  color: #071b4a;
+}
+
+.marketing-seo__optimization-list span {
+  width: 4px;
+  height: 4px;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+}
+
+/* =========================================================
+   NOTE
+========================================================= */
+
+.marketing-seo__note {
+  max-width: 720px;
+
+  margin: 25px auto 0;
+
+  color: #9aa2b0;
+
+  font-size: 0.52rem;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+  .marketing-seo {
+    padding: 90px 0 100px;
+  }
+
+  .marketing-seo__pillars {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+  }
+
+  .marketing-seo__pillar {
+    min-height: auto;
+  }
+
+  .marketing-seo__optimization {
+    grid-template-columns: 1fr;
+
+    max-width: 650px;
+
+    gap: 17px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .marketing-seo {
+    padding: 72px 0 78px;
+  }
+
+  .marketing-seo__container {
+    width: calc(100% - 28px);
+  }
+
+  .marketing-seo__header {
+    margin-bottom: 38px;
+  }
+
+  .marketing-seo__eyebrow {
+    font-size: 0.56rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .marketing-seo__eyebrow::before,
+  .marketing-seo__eyebrow::after {
+    width: 17px;
+  }
+
+  .marketing-seo__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+  }
+
+  .marketing-seo__intro {
+    font-size: 0.79rem;
+
+    line-height: 1.7;
+  }
+
+  .marketing-seo__pillars {
+    gap: 12px;
+  }
+
+  .marketing-seo__pillar {
+    padding: 22px 19px;
+
+    border-radius: 12px;
+  }
+
+  .marketing-seo__pillar-top {
+    margin-bottom: 19px;
+  }
+
+  .marketing-seo__pillar h3 {
+    font-size: 0.9rem;
+  }
+
+  .marketing-seo__pillar > p {
+    font-size: 0.61rem;
+
+    margin-bottom: 19px;
+  }
+
+  .marketing-seo__items {
+    gap: 8px;
+
+    padding-top: 14px;
+  }
+
+  .marketing-seo__items span {
+    font-size: 0.55rem;
+  }
+
+  .marketing-seo__optimization {
+    padding: 17px;
+
+    border-radius: 10px;
+  }
+
+  .marketing-seo__optimization-list {
+    gap: 7px;
+  }
+
+  .marketing-seo__optimization-list div {
+    padding: 6px 8px;
+
+    font-size: 0.48rem;
+  }
+
+  .marketing-seo__note {
+    font-size: 0.49rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .marketing-seo__pillar,
+  .marketing-seo__icon,
+  .marketing-seo__arrow,
+  .marketing-seo__optimization-list div {
+    transition: none !important;
+  }
+}
+ 

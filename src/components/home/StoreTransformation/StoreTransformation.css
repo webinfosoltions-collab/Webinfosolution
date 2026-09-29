@@ -1,0 +1,437 @@
+/* =========================================================
+   STORE TRANSFORMATION
+========================================================= */
+
+.store-transform-section {
+  position: relative;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.store-transform-head {
+  width: 100%;
+  max-width: 850px;
+
+  margin: 0 auto 32px;
+
+  text-align: center;
+}
+
+.store-transform-head .eyebrow {
+  display: inline-block;
+
+  margin-bottom: 9px;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.14em;
+}
+
+.store-transform-head h2 {
+  max-width: 780px;
+
+  margin: 0 auto;
+
+  font-size: clamp(1.65rem, 3vw, 2.4rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+
+/* =========================================================
+   COMPARISON WRAPPER
+========================================================= */
+
+.store-transform-demo {
+  width: 100%;
+
+  max-width: 980px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================================================
+   COMPARISON
+========================================================= */
+
+.compare {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 8.3;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background: #fff;
+
+  border: 1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow:
+    0 22px 60px rgba(15, 23, 42, 0.13);
+}
+
+
+/* =========================================================
+   BASE IMAGE
+========================================================= */
+
+.compare > .compare-image {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =========================================================
+   AFTER IMAGE
+========================================================= */
+
+.after-wrap {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  overflow: hidden;
+
+  z-index: 2;
+
+  border-right: 2px solid #fff;
+
+  box-sizing: border-box;
+}
+
+.after-wrap .compare-after-image {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 980px;
+  max-width: none;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+
+/* =========================================================
+   DIVIDER
+========================================================= */
+
+.divider {
+  position: absolute;
+
+  top: 0;
+  bottom: 0;
+
+  width: 3px;
+
+  background: #fff;
+
+  transform: translateX(-50%);
+
+  z-index: 5;
+
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+
+/* =========================================================
+   DIVIDER BUTTON
+========================================================= */
+
+.divider-button {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 2px;
+
+  border-radius: 50%;
+
+  background: var(--orange);
+
+  color: #fff;
+
+  font-size: 23px;
+
+  font-weight: 900;
+
+  box-shadow:
+    0 8px 22px rgba(0, 0, 0, 0.20);
+
+  pointer-events: none;
+}
+
+.divider-button span {
+  line-height: 1;
+
+  margin-top: -2px;
+}
+
+
+/* =========================================================
+   RANGE SLIDER
+========================================================= */
+
+.compare > input {
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  margin: 0;
+
+  opacity: 0;
+
+  cursor: ew-resize;
+
+  z-index: 10;
+}
+
+
+/* =========================================================
+   LABELS
+========================================================= */
+
+.label {
+  position: absolute;
+
+  top: 18px;
+
+  z-index: 7;
+
+  padding: 8px 12px;
+
+  border-radius: 9px;
+
+  font-size: 0.68rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.06em;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.label.before {
+  left: 18px;
+
+  background: var(--navy);
+
+  color: #fff;
+}
+
+.label.after {
+  right: 18px;
+
+  background: var(--orange);
+
+  color: #fff;
+}
+
+
+/* =========================================================
+   TRANSFORMATION TAGS
+========================================================= */
+
+.transform-tags {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 9px;
+
+  margin-top: 22px;
+}
+
+.transform-tags span {
+  padding: 8px 13px;
+
+  background: #fff;
+
+  border-radius: 999px;
+
+  border: 1px solid var(--border);
+
+  color: var(--navy);
+
+  font-size: 0.76rem;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  box-shadow:
+    0 4px 14px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .store-transform-head {
+    margin-bottom: 26px;
+  }
+
+  .store-transform-demo {
+    max-width: 900px;
+  }
+
+  .compare {
+    border-radius: 19px;
+
+    aspect-ratio: 16 / 8.8;
+  }
+
+  .after-wrap .compare-after-image {
+    width: 900px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .store-transform-head {
+    margin-bottom: 22px;
+
+    padding: 0 8px;
+  }
+
+  .store-transform-head h2 {
+    font-size: 1.55rem;
+
+    line-height: 1.2;
+  }
+
+  .store-transform-head .eyebrow {
+    font-size: 0.61rem;
+  }
+
+  .compare {
+    aspect-ratio: 4 / 3;
+
+    border-radius: 16px;
+  }
+
+  .after-wrap .compare-after-image {
+    width: calc(100vw - 28px);
+
+    max-width: none;
+  }
+
+  .divider-button {
+    width: 40px;
+    height: 40px;
+
+    font-size: 20px;
+  }
+
+  .label {
+    top: 12px;
+
+    padding: 6px 9px;
+
+    font-size: 0.59rem;
+
+    border-radius: 7px;
+  }
+
+  .label.before {
+    left: 12px;
+  }
+
+  .label.after {
+    right: 12px;
+  }
+
+  .transform-tags {
+    gap: 7px;
+
+    margin-top: 18px;
+  }
+
+  .transform-tags span {
+    padding: 7px 10px;
+
+    font-size: 0.68rem;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .store-transform-head h2 {
+    font-size: 1.4rem;
+  }
+
+  .compare {
+    border-radius: 14px;
+  }
+
+  .divider-button {
+    width: 36px;
+    height: 36px;
+
+    font-size: 18px;
+  }
+
+}

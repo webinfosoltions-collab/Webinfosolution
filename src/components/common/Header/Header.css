@@ -1,0 +1,985 @@
+/* =========================================================
+   WEBINFOSOLUTION HEADER - FINAL FIX
+   HEADER ALWAYS VISIBLE
+========================================================= */
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header-ws {
+  position: fixed !important;
+
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+
+  width: 100% !important;
+
+  padding: 16px 0 !important;
+
+  z-index: 999999 !important;
+
+  background: transparent !important;
+
+  box-sizing: border-box !important;
+
+  pointer-events: none !important;
+
+  transition:
+    padding 0.3s ease,
+    background 0.3s ease !important;
+}
+
+
+/* =========================================================
+   HEADER CONTENT
+========================================================= */
+
+.header-inner-ws {
+  position: relative !important;
+
+  width: calc(100% - 30px) !important;
+
+  max-width: 1240px !important;
+
+  min-height: 64px !important;
+
+  margin: 0 auto !important;
+
+  padding: 7px 10px 7px 18px !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: space-between !important;
+
+  gap: 20px !important;
+
+  box-sizing: border-box !important;
+
+  border-radius: 18px !important;
+
+  pointer-events: auto !important;
+
+  z-index: 999999 !important;
+}
+
+
+/* =========================================================
+   HERO HEADER
+   SAME PREMIUM STYLE
+========================================================= */
+
+.hero-header-ws .header-inner-ws {
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.09),
+      rgba(255, 107, 53, 0.06),
+      rgba(0, 0, 0, 0.62)
+    ) !important;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.22) !important;
+
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.50),
+    0 0 35px rgba(255, 107, 53, 0.08) !important;
+
+  backdrop-filter: blur(18px) saturate(135%) !important;
+
+  -webkit-backdrop-filter: blur(18px) saturate(135%) !important;
+}
+
+
+/* =========================================================
+   INNER PAGES
+   WHITE + VISIBLE
+========================================================= */
+
+.inner-header-ws .header-inner-ws {
+
+  background: #ffffff !important;
+
+  border:
+    1px solid rgba(15, 23, 42, 0.12) !important;
+
+  box-shadow:
+    0 8px 30px rgba(15, 23, 42, 0.10) !important;
+
+  backdrop-filter: blur(16px) !important;
+
+  -webkit-backdrop-filter: blur(16px) !important;
+}
+
+
+/* =========================================================
+   SCROLL
+========================================================= */
+
+.header-ws.scrolled-ws {
+
+  padding: 9px 0 !important;
+
+  background: transparent !important;
+}
+
+
+/* =========================================================
+   SCROLLED HERO
+   WHITE HEADER AFTER SCROLL
+========================================================= */
+
+.hero-header-ws.scrolled-ws .header-inner-ws {
+
+  background: rgba(255, 255, 255, 0.97) !important;
+
+  border:
+    1px solid rgba(15, 23, 42, 0.10) !important;
+
+  box-shadow:
+    0 8px 30px rgba(15, 23, 42, 0.10) !important;
+
+  backdrop-filter: blur(18px) !important;
+
+  -webkit-backdrop-filter: blur(18px) !important;
+}
+
+
+/* =========================================================
+   INNER PAGE SCROLL
+========================================================= */
+
+.inner-header-ws.scrolled-ws .header-inner-ws {
+
+  background: #ffffff !important;
+
+  border:
+    1px solid rgba(15, 23, 42, 0.10) !important;
+
+  box-shadow:
+    0 8px 30px rgba(15, 23, 42, 0.10) !important;
+}
+
+
+/* =========================================================
+   HERO BORDER GLOW
+========================================================= */
+
+.hero-header-ws .header-inner-ws::before {
+
+  content: "" !important;
+
+  position: absolute !important;
+
+  inset: -1px !important;
+
+  border-radius: 18px !important;
+
+  padding: 1px !important;
+
+  background:
+    linear-gradient(
+      110deg,
+      rgba(255, 107, 53, 0.75),
+      rgba(255, 255, 255, 0.18),
+      transparent,
+      rgba(255, 107, 53, 0.25)
+    ) !important;
+
+  pointer-events: none !important;
+
+  z-index: -1 !important;
+
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
+    linear-gradient(#fff 0 0) !important;
+
+  -webkit-mask-composite: xor !important;
+
+  mask-composite: exclude !important;
+}
+
+
+/* =========================================================
+   INNER PAGE TOP ACCENT
+========================================================= */
+
+.inner-header-ws .header-inner-ws::before {
+
+  content: "" !important;
+
+  position: absolute !important;
+
+  top: -1px !important;
+
+  left: 12% !important;
+
+  width: 76% !important;
+
+  height: 2px !important;
+
+  border-radius: 20px !important;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(255, 107, 53, 0.65),
+      transparent
+    ) !important;
+
+  pointer-events: none !important;
+}
+
+
+/* =========================================================
+   LOGO
+========================================================= */
+
+.brand-ws {
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  flex-shrink: 0 !important;
+
+  position: relative !important;
+
+  z-index: 20 !important;
+
+  text-decoration: none !important;
+}
+
+
+.brand-ws img {
+
+  display: block !important;
+
+  width: auto !important;
+
+  height: 42px !important;
+
+  max-width: 190px !important;
+
+  object-fit: contain !important;
+}
+
+
+/* =========================================================
+   HERO LOGO
+========================================================= */
+
+.hero-header-ws .brand-ws img {
+
+  filter:
+    drop-shadow(
+      0 3px 12px rgba(0, 0, 0, 0.75)
+    ) !important;
+}
+
+
+/* =========================================================
+   INNER PAGE LOGO
+========================================================= */
+
+.inner-header-ws .brand-ws img {
+
+  filter: none !important;
+}
+
+
+/* =========================================================
+   DESKTOP NAV
+========================================================= */
+
+.desktop-nav-ws {
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  gap: 3px !important;
+
+  margin-left: auto !important;
+
+  position: relative !important;
+
+  z-index: 20 !important;
+}
+
+
+/* =========================================================
+   NAV COMMON
+========================================================= */
+
+.desktop-nav-ws > a,
+.nav-btn-ws {
+
+  position: relative !important;
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  gap: 6px !important;
+
+  min-height: 40px !important;
+
+  padding: 0 11px !important;
+
+  background: transparent !important;
+
+  border: none !important;
+
+  border-radius: 8px !important;
+
+  font-family: inherit !important;
+
+  font-size: 12px !important;
+
+  font-weight: 650 !important;
+
+  line-height: 1 !important;
+
+  text-decoration: none !important;
+
+  white-space: nowrap !important;
+
+  cursor: pointer !important;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease !important;
+}
+
+
+/* =========================================================
+   HERO NAV
+========================================================= */
+
+.hero-header-ws .desktop-nav-ws > a,
+.hero-header-ws .nav-btn-ws {
+
+  color: #ffffff !important;
+
+  text-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.90) !important;
+}
+
+
+/* =========================================================
+   HERO AFTER SCROLL
+========================================================= */
+
+.hero-header-ws.scrolled-ws .desktop-nav-ws > a,
+.hero-header-ws.scrolled-ws .nav-btn-ws {
+
+  color: #182230 !important;
+
+  text-shadow: none !important;
+}
+
+
+/* =========================================================
+   INNER PAGE NAV
+========================================================= */
+
+.inner-header-ws .desktop-nav-ws > a,
+.inner-header-ws .nav-btn-ws {
+
+  color: #182230 !important;
+
+  text-shadow: none !important;
+}
+
+
+/* =========================================================
+   HERO HOVER
+========================================================= */
+
+.hero-header-ws .desktop-nav-ws > a:hover,
+.hero-header-ws .nav-btn-ws:hover {
+
+  color: #ff6b35 !important;
+
+  background:
+    rgba(255, 255, 255, 0.08) !important;
+}
+
+
+/* =========================================================
+   NORMAL PAGE HOVER
+========================================================= */
+
+.inner-header-ws .desktop-nav-ws > a:hover,
+.inner-header-ws .nav-btn-ws:hover,
+.hero-header-ws.scrolled-ws .desktop-nav-ws > a:hover,
+.hero-header-ws.scrolled-ws .nav-btn-ws:hover {
+
+  color: #ff6b35 !important;
+
+  background:
+    rgba(255, 107, 53, 0.08) !important;
+}
+
+
+/* =========================================================
+   ACTIVE LINK
+========================================================= */
+
+.desktop-nav-ws > a.active {
+
+  color: #ff6b35 !important;
+}
+
+
+.desktop-nav-ws > a.active::after {
+
+  content: "" !important;
+
+  position: absolute !important;
+
+  left: 12px !important;
+
+  right: 12px !important;
+
+  bottom: 4px !important;
+
+  height: 2px !important;
+
+  border-radius: 20px !important;
+
+  background: #ff6b35 !important;
+
+  box-shadow:
+    0 0 8px rgba(255, 107, 53, 0.40) !important;
+}
+
+
+/* =========================================================
+   SHOPIFY ICON
+========================================================= */
+
+.shopify-nav-ws svg {
+
+  color: #95bf47 !important;
+
+  font-size: 15px !important;
+}
+
+
+/* =========================================================
+   SERVICES
+========================================================= */
+
+.mega-wrap-ws {
+
+  position: relative !important;
+
+  display: flex !important;
+
+  align-items: center !important;
+}
+
+
+.nav-btn-ws svg {
+
+  font-size: 8px !important;
+
+  transition:
+    transform 0.25s ease !important;
+}
+
+
+.mega-wrap-ws:hover .nav-btn-ws svg {
+
+  transform: rotate(180deg) !important;
+}
+
+
+/* =========================================================
+   MEGA MENU
+========================================================= */
+
+.mega-ws {
+
+  position: absolute !important;
+
+  top: calc(100% + 13px) !important;
+
+  left: 50% !important;
+
+  transform: translateX(-50%) !important;
+
+  width: 670px !important;
+
+  padding: 20px !important;
+
+  display: grid !important;
+
+  grid-template-columns: 220px 1fr !important;
+
+  gap: 20px !important;
+
+  box-sizing: border-box !important;
+
+  background:
+    rgba(8, 8, 8, 0.97) !important;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.13) !important;
+
+  border-radius: 15px !important;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.70) !important;
+
+  backdrop-filter: blur(22px) !important;
+
+  -webkit-backdrop-filter: blur(22px) !important;
+
+  z-index: 999999 !important;
+}
+
+
+/* =========================================================
+   MEGA SHOPIFY
+========================================================= */
+
+.mega-shopify-ws {
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  align-items: flex-start !important;
+
+  padding: 18px !important;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 107, 53, 0.13),
+      rgba(255, 255, 255, 0.035)
+    ) !important;
+
+  border:
+    1px solid rgba(255, 107, 53, 0.20) !important;
+
+  border-radius: 11px !important;
+}
+
+
+.mega-shopify-ws > svg {
+
+  color: #95bf47 !important;
+
+  font-size: 25px !important;
+
+  margin-bottom: 12px !important;
+}
+
+
+.mega-shopify-ws span {
+
+  color: #ff6b35 !important;
+
+  font-size: 10px !important;
+
+  font-weight: 700 !important;
+
+  text-transform: uppercase !important;
+}
+
+
+.mega-shopify-ws strong {
+
+  margin-top: 7px !important;
+
+  color: #ffffff !important;
+
+  font-size: 14px !important;
+
+  line-height: 1.35 !important;
+}
+
+
+.mega-shopify-ws a {
+
+  margin-top: 15px !important;
+
+  color: #ffffff !important;
+
+  font-size: 11px !important;
+
+  font-weight: 700 !important;
+
+  text-decoration: none !important;
+}
+
+
+.mega-shopify-ws a:hover {
+
+  color: #ff6b35 !important;
+}
+
+
+/* =========================================================
+   MEGA LINKS
+========================================================= */
+
+.mega-links-ws {
+
+  display: grid !important;
+
+  grid-template-columns: 1fr 1fr !important;
+
+  gap: 5px !important;
+
+  align-content: center !important;
+}
+
+
+.mega-links-ws a {
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  min-height: 38px !important;
+
+  padding: 0 11px !important;
+
+  color: #d8dce2 !important;
+
+  border-radius: 7px !important;
+
+  font-size: 11px !important;
+
+  text-decoration: none !important;
+}
+
+
+.mega-links-ws a:hover {
+
+  color: #ffffff !important;
+
+  background:
+    rgba(255, 107, 53, 0.10) !important;
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.header-cta-ws {
+
+  display: inline-flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  flex-shrink: 0 !important;
+
+  min-height: 43px !important;
+
+  padding: 0 18px !important;
+
+  color: #ffffff !important;
+
+  background:
+    linear-gradient(
+      135deg,
+      #ff6b35,
+      #f4511e
+    ) !important;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.15) !important;
+
+  border-radius: 9px !important;
+
+  font-size: 11px !important;
+
+  font-weight: 800 !important;
+
+  text-decoration: none !important;
+
+  white-space: nowrap !important;
+
+  box-shadow:
+    0 8px 25px rgba(255, 107, 53, 0.24) !important;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+.mobile-toggle-ws {
+
+  display: none !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  width: 43px !important;
+
+  height: 43px !important;
+
+  color: #ffffff !important;
+
+  background:
+    rgba(0, 0, 0, 0.55) !important;
+
+  border:
+    1px solid rgba(255, 255, 255, 0.25) !important;
+
+  border-radius: 9px !important;
+
+  font-size: 17px !important;
+
+  cursor: pointer !important;
+}
+
+
+/* NORMAL PAGE MOBILE */
+
+.inner-header-ws .mobile-toggle-ws,
+.hero-header-ws.scrolled-ws .mobile-toggle-ws {
+
+  color: #182230 !important;
+
+  background: #ffffff !important;
+
+  border:
+    1px solid rgba(15, 23, 42, 0.12) !important;
+}
+
+
+/* =========================================================
+   MOBILE PANEL
+========================================================= */
+
+.mobile-panel-ws {
+
+  position: absolute !important;
+
+  top: 100% !important;
+
+  left: 0 !important;
+
+  right: 0 !important;
+
+  width: 100% !important;
+
+  overflow: hidden !important;
+
+  background: #ffffff !important;
+
+  border-top:
+    1px solid rgba(15, 23, 42, 0.08) !important;
+
+  border-bottom:
+    1px solid rgba(15, 23, 42, 0.08) !important;
+
+  box-shadow:
+    0 20px 45px rgba(15, 23, 42, 0.12) !important;
+
+  z-index: 999999 !important;
+}
+
+
+.mobile-links-ws {
+
+  display: flex !important;
+
+  flex-direction: column !important;
+
+  padding-top: 15px !important;
+
+  padding-bottom: 18px !important;
+}
+
+
+.mobile-links-ws > a {
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  min-height: 45px !important;
+
+  padding: 0 8px !important;
+
+  color: #182230 !important;
+
+  border-bottom:
+    1px solid rgba(15, 23, 42, 0.07) !important;
+
+  font-size: 13px !important;
+
+  font-weight: 600 !important;
+
+  text-decoration: none !important;
+}
+
+
+.mobile-links-ws > a:hover,
+.mobile-links-ws > a.active {
+
+  color: #ff6b35 !important;
+}
+
+
+.mobile-cta-ws {
+
+  display: flex !important;
+
+  align-items: center !important;
+
+  justify-content: center !important;
+
+  min-height: 45px !important;
+
+  margin-top: 14px !important;
+
+  color: #ffffff !important;
+
+  background: #ff6b35 !important;
+
+  border-radius: 8px !important;
+
+  font-size: 12px !important;
+
+  font-weight: 800 !important;
+
+  text-decoration: none !important;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1050px) {
+
+  .desktop-nav-ws {
+    gap: 1px !important;
+  }
+
+  .desktop-nav-ws > a,
+  .nav-btn-ws {
+    padding: 0 7px !important;
+    font-size: 10.5px !important;
+  }
+
+  .header-cta-ws {
+    padding: 0 13px !important;
+    font-size: 10px !important;
+  }
+
+  .brand-ws img {
+    height: 38px !important;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 820px) {
+
+  .header-ws {
+    padding: 10px 0 !important;
+  }
+
+
+  .header-ws.scrolled-ws {
+    padding: 8px 0 !important;
+  }
+
+
+  .header-inner-ws {
+
+    width: calc(100% - 20px) !important;
+
+    min-height: 56px !important;
+
+    padding:
+      6px
+      8px
+      6px
+      14px !important;
+
+    border-radius: 15px !important;
+  }
+
+
+  .brand-ws img {
+
+    height: 37px !important;
+
+    max-width: 170px !important;
+  }
+
+
+  .desktop-nav-ws,
+  .header-cta-ws {
+
+    display: none !important;
+  }
+
+
+  .mobile-toggle-ws {
+
+    display: inline-flex !important;
+  }
+
+
+  .mega-ws {
+    display: none !important;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .brand-ws img {
+
+    height: 34px !important;
+
+    max-width: 155px !important;
+  }
+
+
+  .mobile-toggle-ws {
+
+    width: 40px !important;
+
+    height: 40px !important;
+
+    font-size: 15px !important;
+  }
+
+}

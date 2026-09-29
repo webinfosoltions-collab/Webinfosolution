@@ -1,0 +1,549 @@
+/* =========================================================
+   PREMIUM PROCESS SECTION
+========================================================= */
+
+.wis-process-section {
+  position: relative;
+  overflow: hidden;
+
+  padding: 85px 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      #f8faff 0%,
+      #ffffff 100%
+    );
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.wis-process-head {
+  max-width: 650px;
+
+  margin: 0 auto 65px;
+
+  text-align: center;
+}
+
+.wis-process-head .eyebrow {
+  display: inline-flex;
+
+  color: var(--orange);
+
+  font-weight: 800;
+}
+
+.wis-process-head h2 {
+  margin: 10px 0 13px;
+
+  color: var(--navy);
+
+  font-size:
+    clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+}
+
+.wis-process-head h2 span {
+  color: var(--orange);
+}
+
+.wis-process-head p {
+  max-width: 570px;
+
+  margin: 0 auto;
+
+  color:
+    rgba(7, 27, 74, 0.58);
+
+  font-size: 0.82rem;
+
+  line-height: 1.75;
+}
+
+
+/* =========================================================
+   PROCESS WRAPPER
+========================================================= */
+
+.wis-process {
+  position: relative;
+
+  max-width: 1180px;
+
+  margin: auto;
+
+  padding-top: 4px;
+}
+
+
+/* =========================================================
+   TIMELINE LINE
+========================================================= */
+
+.wis-process-line,
+.wis-process-progress {
+  position: absolute;
+
+  top: 29px;
+
+  left: 9%;
+
+  right: 9%;
+
+  height: 3px;
+
+  border-radius: 99px;
+
+  transform-origin: left center;
+}
+
+
+/* Background */
+
+.wis-process-line {
+  background:
+    rgba(7, 27, 74, 0.09);
+}
+
+
+/* Orange progress */
+
+.wis-process-progress {
+  background:
+    linear-gradient(
+      90deg,
+      var(--orange),
+      #ffad4d,
+      var(--orange)
+    );
+
+  box-shadow:
+    0 0 12px rgba(255, 133, 0, 0.22);
+}
+
+
+/* =========================================================
+   GRID
+========================================================= */
+
+.wis-process-grid {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(5, 1fr);
+
+  gap: 18px;
+}
+
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.wis-process-step {
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   NUMBER CIRCLE
+========================================================= */
+
+.wis-process-number {
+  position: relative;
+
+  z-index: 4;
+
+  width: 58px;
+  height: 58px;
+
+  display: grid;
+
+  place-items: center;
+
+  border-radius: 50%;
+
+  border:
+    4px solid #ffffff;
+
+  background:
+    var(--navy);
+
+  color:
+    #ffffff;
+
+  font-size: 0.75rem;
+
+  font-weight: 900;
+
+  box-shadow:
+    0 8px 22px rgba(7, 27, 74, 0.18);
+
+  transition:
+    background 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wis-process-step:hover .wis-process-number {
+  background:
+    var(--orange);
+
+  box-shadow:
+    0 8px 25px rgba(255, 133, 0, 0.28);
+}
+
+
+/* =========================================================
+   CARD
+========================================================= */
+
+.wis-process-card {
+  width: 100%;
+
+  min-height: 190px;
+
+  box-sizing: border-box;
+
+  margin-top: 22px;
+
+  padding: 22px 18px;
+
+  border:
+    1px solid rgba(7, 27, 74, 0.08);
+
+  border-radius: 16px;
+
+  background:
+    rgba(255, 255, 255, 0.92);
+
+  box-shadow:
+    0 12px 35px rgba(7, 27, 74, 0.055);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.wis-process-card:hover {
+  transform:
+    translateY(-7px);
+
+  border-color:
+    rgba(255, 133, 0, 0.30);
+
+  box-shadow:
+    0 20px 45px rgba(7, 27, 74, 0.09),
+    0 5px 20px rgba(255, 133, 0, 0.06);
+}
+
+
+/* =========================================================
+   STEP LABEL
+========================================================= */
+
+.wis-process-index {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color:
+    var(--orange);
+
+  font-size: 0.55rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.12em;
+}
+
+
+/* =========================================================
+   TITLE
+========================================================= */
+
+.wis-process-card h3 {
+  margin:
+    0 0 9px;
+
+  color:
+    var(--navy);
+
+  font-size:
+    0.93rem;
+
+  line-height:
+    1.3;
+
+  font-weight:
+    900;
+}
+
+
+/* =========================================================
+   DESCRIPTION
+========================================================= */
+
+.wis-process-card p {
+  margin: 0;
+
+  color:
+    rgba(7, 27, 74, 0.57);
+
+  font-size:
+    0.69rem;
+
+  line-height:
+    1.7;
+}
+
+
+/* =========================================================
+   BOTTOM FLOW
+========================================================= */
+
+.wis-process-flow {
+  display:
+    flex;
+
+  justify-content:
+    center;
+
+  align-items:
+    center;
+
+  flex-wrap:
+    wrap;
+
+  gap:
+    9px;
+
+  margin-top:
+    35px;
+
+  color:
+    rgba(7, 27, 74, 0.55);
+
+  font-size:
+    0.61rem;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    0.07em;
+}
+
+.wis-process-flow b {
+  color:
+    var(--orange);
+
+  font-size:
+    0.85rem;
+}
+
+.wis-process-flow strong {
+  color:
+    var(--orange);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+
+  .wis-process-section {
+    padding: 70px 0;
+  }
+
+  .wis-process-grid {
+    grid-template-columns:
+      repeat(3, 1fr);
+
+    row-gap:
+      35px;
+  }
+
+  .wis-process-line,
+  .wis-process-progress {
+    display: none;
+  }
+
+  .wis-process-card {
+    min-height:
+      175px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+  .wis-process-section {
+    padding: 60px 0;
+  }
+
+  .wis-process-head {
+    margin-bottom:
+      40px;
+  }
+
+  .wis-process-head h2 {
+    font-size:
+      1.55rem;
+  }
+
+  .wis-process-head p {
+    font-size:
+      0.75rem;
+  }
+
+  .wis-process-grid {
+    display:
+      flex;
+
+    flex-direction:
+      column;
+
+    gap:
+      18px;
+  }
+
+  .wis-process-step {
+    display:
+      grid;
+
+    grid-template-columns:
+      48px 1fr;
+
+    align-items:
+      start;
+
+    gap:
+      14px;
+  }
+
+  .wis-process-number {
+    width:
+      48px;
+
+    height:
+      48px;
+
+    border-width:
+      3px;
+
+    font-size:
+      0.66rem;
+  }
+
+  .wis-process-card {
+    min-height:
+      auto;
+
+    margin-top:
+      0;
+
+    padding:
+      17px;
+
+    border-radius:
+      14px;
+  }
+
+  .wis-process-card h3 {
+    font-size:
+      0.88rem;
+  }
+
+  .wis-process-card p {
+    font-size:
+      0.67rem;
+  }
+
+  .wis-process-flow {
+    margin-top:
+      28px;
+
+    gap:
+      6px;
+
+    font-size:
+      0.52rem;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .wis-process-head h2 {
+    font-size:
+      1.4rem;
+  }
+
+  .wis-process-step {
+    grid-template-columns:
+      42px 1fr;
+
+    gap:
+      10px;
+  }
+
+  .wis-process-number {
+    width:
+      42px;
+
+    height:
+      42px;
+  }
+
+  .wis-process-card {
+    padding:
+      15px;
+  }
+
+  .wis-process-flow {
+    font-size:
+      0.48rem;
+  }
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .wis-process-card,
+  .wis-process-number {
+    transition:
+      none !important;
+  }
+}

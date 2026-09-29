@@ -1,0 +1,661 @@
+/* =========================================================
+   FEATURED WORK
+   FULL WIDTH CAROUSELS
+========================================================= */
+
+.featured-work {
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HEADING
+========================================================= */
+
+.featured-work .section-head {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.featured-work .section-head h2 {
+  color: #071b4a;
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.2;
+  margin: 12px auto 0;
+}
+
+.featured-work .section-head .accent {
+  color: #ff8500;
+}
+
+.featured-work .eyebrow {
+  color: #ff8500;
+}
+
+
+/* =========================================================
+   FULL WIDTH CAROUSEL
+========================================================= */
+
+.featured-work .work-carousel {
+  width: 100vw;
+
+  position: relative;
+
+  left: 50%;
+  right: 50%;
+
+  margin-left: -50vw;
+  margin-right: -50vw;
+
+  overflow: hidden;
+
+  padding: 18px 0 32px;
+
+  margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   TRACK
+========================================================= */
+
+.featured-work .work-track {
+  display: flex;
+
+  width: max-content;
+
+  gap: 20px;
+
+  align-items: stretch;
+
+  will-change: transform;
+}
+
+
+/* =========================================================
+   TOP CAROUSEL
+   LEFT → RIGHT
+========================================================= */
+
+.featured-work .carousel-left .work-track {
+  animation: featuredLeftRight 40s linear infinite;
+}
+
+
+/* =========================================================
+   BOTTOM CAROUSEL
+   RIGHT → LEFT
+========================================================= */
+
+.featured-work .carousel-right .work-track {
+  animation: featuredRightLeft 35s linear infinite;
+}
+
+
+/* =========================================================
+   PAUSE ON HOVER
+========================================================= */
+
+.featured-work .work-carousel:hover .work-track {
+  animation-play-state: paused;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes featuredLeftRight {
+
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+
+}
+
+@keyframes featuredRightLeft {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+
+}
+
+
+/* =========================================================
+   WORK CARD
+   NARROWER + TALLER
+========================================================= */
+
+.featured-work .work-card {
+
+  position: relative;
+
+  flex: 0 0 330px;
+
+  width: 330px;
+
+  height: 430px;
+
+  display: block;
+
+  background: #ffffff;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  border: 1px solid rgba(7, 27, 74, 0.10);
+
+  box-shadow:
+    0 12px 40px rgba(7, 27, 74, 0.08);
+
+  text-decoration: none;
+
+  isolation: isolate;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+
+/* =========================================================
+   FULL IMAGE AREA
+========================================================= */
+
+.featured-work .work-img {
+
+  position: absolute;
+
+  inset: 0;
+
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+
+  background: #f5f6f8;
+
+  z-index: 1;
+}
+
+
+/* =========================================================
+   PROJECT IMAGE
+   FULL IMAGE — NO CROP
+========================================================= */
+
+.featured-work .work-img img {
+
+  width: 100%;
+
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  object-position: center;
+
+  transition:
+    transform 0.6s ease,
+    filter 0.4s ease;
+}
+
+
+/* =========================================================
+   CARD HOVER
+========================================================= */
+
+.featured-work .work-card:hover {
+
+  transform: translateY(-8px);
+
+  border-color: rgba(255, 133, 0, 0.55);
+
+  box-shadow:
+    0 24px 65px rgba(7, 27, 74, 0.16),
+    0 10px 30px rgba(255, 133, 0, 0.12);
+}
+
+
+/* =========================================================
+   IMAGE HOVER
+========================================================= */
+
+.featured-work .work-card:hover .work-img img {
+
+  transform: scale(1.025);
+
+  filter: brightness(0.70);
+}
+
+
+/* =========================================================
+   HOVER INFORMATION
+========================================================= */
+
+.featured-work .work-info {
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  min-height: 55%;
+
+  padding: 25px 23px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  opacity: 0;
+
+  visibility: hidden;
+
+  transform: translateY(30px);
+
+  transition:
+    opacity 0.35s ease,
+    visibility 0.35s ease,
+    transform 0.4s ease;
+
+  z-index: 3;
+}
+
+
+/* =========================================================
+   HOVER OVERLAY
+========================================================= */
+
+.featured-work .work-info-overlay {
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(7, 27, 74, 0.98) 0%,
+      rgba(7, 27, 74, 0.91) 45%,
+      rgba(7, 27, 74, 0.50) 75%,
+      rgba(7, 27, 74, 0) 100%
+    );
+
+  z-index: -1;
+}
+
+
+/* =========================================================
+   CONTENT
+========================================================= */
+
+.featured-work .work-info-content {
+
+  position: relative;
+
+  width: 100%;
+
+  z-index: 2;
+}
+
+
+/* =========================================================
+   SHOW CONTENT ON HOVER
+========================================================= */
+
+.featured-work .work-card:hover .work-info {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   PROJECT META
+========================================================= */
+
+.featured-work .work-info small {
+
+  display: block;
+
+  color: #ff8500;
+
+  font-size: 0.76rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.02em;
+
+  margin-bottom: 8px;
+}
+
+
+/* =========================================================
+   PROJECT TITLE
+========================================================= */
+
+.featured-work .work-info h3 {
+
+  color: #ffffff;
+
+  font-size: 1.28rem;
+
+  line-height: 1.25;
+
+  margin: 0 0 14px;
+
+  font-weight: 800;
+}
+
+
+/* =========================================================
+   TAG ROW
+========================================================= */
+
+.featured-work .tag-row {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-bottom: 2px;
+}
+
+
+/* =========================================================
+   TAG
+========================================================= */
+
+.featured-work .tag {
+
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 6px 10px;
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: #ffffff;
+
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  font-size: 0.69rem;
+
+  font-weight: 700;
+
+  backdrop-filter: blur(5px);
+}
+
+
+/* =========================================================
+   FIRST TAG
+========================================================= */
+
+.featured-work .tag:first-child {
+
+  background: #ff8500;
+
+  color: #ffffff;
+
+  border-color: #ff8500;
+}
+
+
+/* =========================================================
+   CASE STUDY
+========================================================= */
+
+.featured-work .work-info b {
+
+  display: block;
+
+  color: #ffffff;
+
+  margin-top: 16px;
+
+  font-size: 0.90rem;
+
+  font-weight: 800;
+
+  transition:
+    color 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.featured-work .work-card:hover .work-info b {
+
+  color: #ff8500;
+
+  transform: translateX(4px);
+}
+
+
+/* =========================================================
+   FOCUS
+========================================================= */
+
+.featured-work .work-card:focus-visible {
+
+  outline: 3px solid #ff8500;
+
+  outline-offset: 4px;
+}
+
+.featured-work .work-card:focus-visible .work-info {
+
+  opacity: 1;
+
+  visibility: visible;
+
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  .featured-work .work-card {
+
+    flex-basis: 290px;
+
+    width: 290px;
+
+    height: 380px;
+
+    border-radius: 22px;
+  }
+
+  .featured-work .work-info {
+
+    min-height: 58%;
+
+    padding: 21px;
+  }
+
+  .featured-work .work-info h3 {
+
+    font-size: 1.17rem;
+  }
+
+  .featured-work .work-track {
+
+    gap: 18px;
+  }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .featured-work .section-head {
+
+    padding: 0 15px;
+
+    margin-bottom: 30px;
+  }
+
+  .featured-work .work-carousel {
+
+    padding: 8px 0 20px;
+
+    margin-bottom: 16px;
+  }
+
+  .featured-work .work-card {
+
+    flex-basis: 270px;
+
+    width: 270px;
+
+    height: 350px;
+
+    border-radius: 20px;
+  }
+
+  .featured-work .work-info {
+
+    min-height: 64%;
+
+    padding: 18px;
+  }
+
+  .featured-work .work-info h3 {
+
+    font-size: 1.06rem;
+
+    margin-bottom: 10px;
+  }
+
+  .featured-work .work-info small {
+
+    font-size: 0.69rem;
+
+    margin-bottom: 6px;
+  }
+
+  .featured-work .tag {
+
+    padding: 5px 8px;
+
+    font-size: 0.63rem;
+  }
+
+  .featured-work .work-info b {
+
+    margin-top: 12px;
+
+    font-size: 0.81rem;
+  }
+
+  .featured-work .work-track {
+
+    gap: 15px;
+  }
+
+  .featured-work .carousel-left .work-track,
+  .featured-work .carousel-right .work-track {
+
+    animation-duration: 42s;
+  }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+
+  .featured-work .work-card {
+
+    flex-basis: 250px;
+
+    width: 250px;
+
+    height: 325px;
+  }
+
+  .featured-work .work-info {
+
+    padding: 16px;
+  }
+
+  .featured-work .work-info h3 {
+
+    font-size: 1rem;
+  }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .featured-work .carousel-left .work-track,
+  .featured-work .carousel-right .work-track {
+
+    animation: none;
+  }
+
+  .featured-work .work-card,
+  .featured-work .work-card:hover {
+
+    transform: none;
+  }
+
+  .featured-work .work-card:hover .work-img img {
+
+    transform: none;
+  }
+
+  .featured-work .work-info {
+
+    transition: none;
+  }
+
+}

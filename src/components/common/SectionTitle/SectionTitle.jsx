@@ -1,0 +1,1 @@
+import './SectionTitle.css';export default function SectionTitle({label,title,children,center=false}){return <div className={`section-head ${center?'center':''}`}><span className="eyebrow">{label}</span><h2 dangerouslySetInnerHTML={{__html:title}} />{children&&<p className="lead">{children}</p>}</div>}

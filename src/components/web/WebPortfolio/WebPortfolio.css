@@ -1,0 +1,601 @@
+/* =========================================================
+   WEB PORTFOLIO
+   Selected Work
+
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.web-portfolio {
+  position: relative;
+
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.web-portfolio__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.web-portfolio__header {
+  max-width: 720px;
+
+  margin: 0 auto 52px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.web-portfolio__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.65rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.web-portfolio__eyebrow::before,
+.web-portfolio__eyebrow::after {
+  content: "";
+
+  width: 22px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.65;
+}
+
+/* =========================================================
+   SECTION TITLE
+========================================================= */
+
+.web-portfolio__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.web-portfolio__title span {
+  color: #ff8500;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.web-portfolio__intro {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: #68738a;
+
+  font-size: 0.92rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   PORTFOLIO GRID
+========================================================= */
+
+.web-portfolio__grid {
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 22px;
+
+  max-width: 1080px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   PORTFOLIO CARD
+========================================================= */
+
+.web-portfolio-card {
+  position: relative;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(7, 27, 74, 0.09);
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 30px rgba(7, 27, 74, 0.045);
+
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.web-portfolio-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(255, 133, 0, 0.32);
+
+  box-shadow:
+    0 20px 45px rgba(7, 27, 74, 0.1);
+}
+
+/* =========================================================
+   IMAGE
+========================================================= */
+
+.web-portfolio-card__image-wrap {
+  position: relative;
+
+  width: 100%;
+
+  aspect-ratio: 16 / 10;
+
+  overflow: hidden;
+
+  background: #eef2f8;
+}
+
+.web-portfolio-card__image {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.65s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.web-portfolio-card:hover
+.web-portfolio-card__image {
+  transform: scale(1.055);
+}
+
+/* =========================================================
+   IMAGE OVERLAY
+========================================================= */
+
+.web-portfolio-card__image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(7, 27, 74, 0.48);
+
+  opacity: 0;
+
+  transition: opacity 0.35s ease;
+}
+
+.web-portfolio-card:hover
+.web-portfolio-card__image-overlay {
+  opacity: 1;
+}
+
+.web-portfolio-card__image-overlay span {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  padding: 10px 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.45);
+
+  border-radius: 7px;
+
+  background: rgba(255, 255, 255, 0.1);
+
+  color: #ffffff;
+
+  font-size: 0.67rem;
+
+  font-weight: 700;
+
+  backdrop-filter: blur(6px);
+}
+
+.web-portfolio-card__image-overlay svg {
+  font-size: 0.78rem;
+}
+
+/* =========================================================
+   CATEGORY BADGE
+========================================================= */
+
+.web-portfolio-card__badge {
+  position: absolute;
+
+  left: 13px;
+  bottom: 13px;
+
+  display: inline-flex;
+
+  align-items: center;
+
+  padding: 6px 10px;
+
+  border-radius: 5px;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  font-size: 0.58rem;
+
+  line-height: 1;
+
+  font-weight: 800;
+
+  box-shadow:
+    0 5px 15px rgba(7, 27, 74, 0.12);
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease;
+}
+
+.web-portfolio-card:hover
+.web-portfolio-card__badge {
+  background: #ff8500;
+
+  color: #ffffff;
+}
+
+/* =========================================================
+   CARD BODY
+========================================================= */
+
+.web-portfolio-card__body {
+  padding: 20px 20px 21px;
+}
+
+/* =========================================================
+   CARD TOP
+========================================================= */
+
+.web-portfolio-card__top {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 10px;
+
+  margin-bottom: 11px;
+}
+
+.web-portfolio-card__number {
+  color: #ff8500;
+
+  font-size: 0.6rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.08em;
+}
+
+.web-portfolio-card__technology {
+  color: #8a94a7;
+
+  font-size: 0.58rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.04em;
+
+  text-transform: uppercase;
+}
+
+/* =========================================================
+   CARD TITLE
+========================================================= */
+
+.web-portfolio-card__body h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 1rem;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: -0.015em;
+}
+
+/* =========================================================
+   CARD DESCRIPTION
+========================================================= */
+
+.web-portfolio-card__body p {
+  margin: 9px 0 17px;
+
+  color: #737e92;
+
+  font-size: 0.68rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   PROJECT LINK
+========================================================= */
+
+.web-portfolio-card__link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: #071b4a;
+
+  font-size: 0.66rem;
+
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    color 0.25s ease,
+    gap 0.25s ease;
+}
+
+.web-portfolio-card__link:hover {
+  color: #ff8500;
+
+  gap: 10px;
+}
+
+.web-portfolio-card__link svg {
+  font-size: 0.75rem;
+
+  color: #ff8500;
+}
+
+.web-portfolio-card__link--disabled {
+  cursor: default;
+
+  opacity: 0.72;
+}
+
+/* =========================================================
+   BOTTOM STATEMENT
+========================================================= */
+
+.web-portfolio__bottom {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 17px;
+
+  max-width: 700px;
+
+  margin: 48px auto 0;
+}
+
+.web-portfolio__bottom-line {
+  width: 55px;
+  height: 1px;
+
+  flex: 0 0 auto;
+
+  background: rgba(255, 133, 0, 0.25);
+}
+
+.web-portfolio__bottom p {
+  margin: 0;
+
+  color: #6d788d;
+
+  font-size: 0.7rem;
+
+  line-height: 1.55;
+
+  font-weight: 600;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 950px) {
+  .web-portfolio {
+    padding: 90px 0 100px;
+  }
+
+  .web-portfolio__grid {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+
+    max-width: 760px;
+
+    gap: 18px;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+  .web-portfolio {
+    padding: 72px 0 78px;
+  }
+
+  .web-portfolio__container {
+    width: calc(100% - 28px);
+  }
+
+  .web-portfolio__header {
+    margin-bottom: 36px;
+  }
+
+  .web-portfolio__eyebrow {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .web-portfolio__eyebrow::before,
+  .web-portfolio__eyebrow::after {
+    width: 17px;
+  }
+
+  /* REQUIRED HEADING SIZE */
+
+  .web-portfolio__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.15;
+  }
+
+  .web-portfolio__intro {
+    margin-top: 13px;
+
+    font-size: 0.84rem;
+
+    line-height: 1.7;
+  }
+
+  .web-portfolio__grid {
+    grid-template-columns: 1fr;
+
+    gap: 16px;
+
+    max-width: 460px;
+  }
+
+  .web-portfolio-card__image-wrap {
+    aspect-ratio: 16 / 9;
+  }
+
+  .web-portfolio-card__body {
+    padding: 18px 17px 19px;
+  }
+
+  .web-portfolio-card__body h3 {
+    font-size: 0.92rem;
+  }
+
+  .web-portfolio-card__body p {
+    font-size: 0.64rem;
+
+    line-height: 1.6;
+  }
+
+  .web-portfolio__bottom {
+    gap: 9px;
+
+    margin-top: 32px;
+  }
+
+  .web-portfolio__bottom-line {
+    width: 25px;
+  }
+
+  .web-portfolio__bottom p {
+    font-size: 0.61rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .web-portfolio__container {
+    width: calc(100% - 24px);
+  }
+
+  .web-portfolio-card__body {
+    padding: 16px;
+  }
+
+  .web-portfolio-card__body h3 {
+    font-size: 0.88rem;
+  }
+
+  .web-portfolio-card__body p {
+    font-size: 0.61rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .web-portfolio-card,
+  .web-portfolio-card__image,
+  .web-portfolio-card__image-overlay,
+  .web-portfolio-card__badge,
+  .web-portfolio-card__link {
+    transition: none !important;
+  }
+}

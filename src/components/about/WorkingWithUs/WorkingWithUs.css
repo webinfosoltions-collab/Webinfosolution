@@ -1,0 +1,224 @@
+/* =========================================================
+   WORKING WITH US
+========================================================= */
+
+.working-with-us {
+  width: 100%;
+  background: #f7f8fa;
+  color: #071b4a;
+  padding: 58px 0;
+}
+
+.working-with-us__container {
+  width: min(1000px, calc(100% - 40px));
+  margin: auto;
+}
+
+
+/* HEADER */
+
+.working-with-us__header {
+  text-align: center;
+}
+
+.working-with-us__header span {
+  display: block;
+  margin-bottom: 8px;
+
+  font-size: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+
+  color: #ff8500;
+}
+
+.working-with-us__header h2 {
+  margin: 0;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+  line-height: 1.1;
+
+  color: #071b4a;
+}
+
+.working-with-us__header h2 b {
+  color: #ff8500;
+}
+
+.working-with-us__header i {
+  display: block;
+
+  width: 34px;
+  height: 2px;
+
+  margin: 13px auto 0;
+
+  background: #ff8500;
+}
+
+
+/* INTRO */
+
+.working-with-us__intro {
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 40px;
+
+  max-width: 850px;
+
+  margin: 35px auto 30px;
+}
+
+.working-with-us__intro h3 {
+  margin: 0;
+
+  max-width: 480px;
+
+  font-size: clamp(1.55rem, 3vw, 2.35rem);
+  line-height: 1.05;
+
+  letter-spacing: -0.04em;
+
+  color: #071b4a;
+}
+
+.working-with-us__intro h3 b {
+  color: #ff8500;
+}
+
+.working-with-us__intro p {
+  max-width: 290px;
+
+  margin: 0;
+
+  font-size: 0.68rem;
+  line-height: 1.7;
+
+  color: rgba(7, 27, 74, 0.5);
+}
+
+
+/* LIST */
+
+.working-with-us__list {
+  border-top: 1px solid rgba(7, 27, 74, 0.12);
+}
+
+.working-with-us__item {
+  display: grid;
+
+  grid-template-columns: 55px 1fr 25px;
+
+  align-items: center;
+
+  min-height: 78px;
+
+  border-bottom: 1px solid rgba(7, 27, 74, 0.12);
+
+  transition: 0.25s ease;
+}
+
+.working-with-us__item:hover {
+  padding-left: 8px;
+  background: #ffffff;
+}
+
+.working-with-us__number {
+  font-size: 0.5rem;
+  font-weight: 800;
+
+  color: #ff8500;
+}
+
+.working-with-us__item h4 {
+  margin: 0 0 3px;
+
+  font-size: 0.9rem;
+  font-weight: 800;
+
+  color: #071b4a;
+}
+
+.working-with-us__item p {
+  margin: 0;
+
+  font-size: 0.62rem;
+  line-height: 1.5;
+
+  color: rgba(7, 27, 74, 0.48);
+}
+
+.working-with-us__item strong {
+  font-size: 1rem;
+  font-weight: 300;
+
+  color: rgba(7, 27, 74, 0.25);
+
+  transition: 0.25s ease;
+}
+
+.working-with-us__item:hover strong {
+  color: #ff8500;
+  transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .working-with-us {
+    padding: 48px 0;
+  }
+
+  .working-with-us__container {
+    width: calc(100% - 30px);
+  }
+
+  .working-with-us__intro {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 13px;
+
+    margin: 30px auto 27px;
+  }
+
+  .working-with-us__intro h3 {
+    font-size: 1.8rem;
+  }
+
+  .working-with-us__intro p {
+    max-width: 100%;
+
+    font-size: 0.64rem;
+  }
+
+  .working-with-us__item {
+    grid-template-columns: 34px 1fr 20px;
+
+    min-height: 74px;
+  }
+
+  .working-with-us__item:hover {
+    padding-left: 0;
+  }
+
+  .working-with-us__item h4 {
+    font-size: 0.82rem;
+  }
+
+  .working-with-us__item p {
+    font-size: 0.59rem;
+  }
+
+  .working-with-us__number {
+    font-size: 0.46rem;
+  }
+}

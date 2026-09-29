@@ -1,0 +1,534 @@
+ 
+/* =========================================================
+   WEB PROCESS
+   How We Work
+   Navy  : #071b4a
+   Orange: #ff8500
+========================================================= */
+
+.web-process {
+  position: relative;
+
+  width: 100%;
+
+  padding: 110px 0 115px;
+
+  background: #ffffff;
+
+  color: #071b4a;
+
+  overflow: hidden;
+}
+
+/* =========================================================
+   CONTAINER
+========================================================= */
+
+.web-process__container {
+  width: min(1160px, calc(100% - 40px));
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.web-process__header {
+  max-width: 730px;
+
+  margin: 0 auto 72px;
+
+  text-align: center;
+}
+
+/* =========================================================
+   EYEBROW
+========================================================= */
+
+.web-process__eyebrow {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 13px;
+
+  color: #ff8500;
+
+  font-size: 0.65rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.18em;
+
+  text-transform: uppercase;
+}
+
+.web-process__eyebrow::before,
+.web-process__eyebrow::after {
+  content: "";
+
+  width: 22px;
+  height: 1px;
+
+  background: #ff8500;
+
+  opacity: 0.6;
+}
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.web-process__title {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+  line-height: 1.15;
+
+  letter-spacing: -0.035em;
+
+  font-weight: 800;
+
+  text-align: center;
+}
+
+.web-process__title span {
+  color: #ff8500;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+
+.web-process__intro {
+  max-width: 650px;
+
+  margin: 15px auto 0;
+
+  color: #68738a;
+
+  font-size: 0.92rem;
+
+  line-height: 1.75;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TIMELINE
+========================================================= */
+
+.web-process__timeline {
+  position: relative;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(6, minmax(0, 1fr));
+
+  gap: 18px;
+
+  max-width: 1120px;
+
+  margin: 0 auto;
+}
+
+/* =========================================================
+   CONNECTING LINE
+========================================================= */
+
+.web-process__line {
+  position: absolute;
+
+  top: 27px;
+
+  left: 8.3%;
+  right: 8.3%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(255, 133, 0, 0.12),
+      rgba(255, 133, 0, 0.4),
+      rgba(255, 133, 0, 0.12)
+    );
+
+  z-index: 0;
+}
+
+/* =========================================================
+   STEP
+========================================================= */
+
+.web-process-step {
+  position: relative;
+
+  z-index: 1;
+
+  min-width: 0;
+
+  text-align: center;
+}
+
+/* =========================================================
+   MARKER
+========================================================= */
+
+.web-process-step__marker {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 auto 25px;
+
+  border-radius: 50%;
+
+  background: #ffffff;
+
+  border: 1px solid rgba(255, 133, 0, 0.35);
+
+  box-shadow:
+    0 0 0 7px #ffffff,
+    0 7px 22px rgba(7, 27, 74, 0.08);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.web-process-step__marker span {
+  color: #ff8500;
+
+  font-size: 0.67rem;
+
+  font-weight: 800;
+
+  letter-spacing: 0.03em;
+}
+
+/* =========================================================
+   STEP HOVER
+========================================================= */
+
+.web-process-step:hover .web-process-step__marker {
+  transform: translateY(-4px);
+
+  border-color: #ff8500;
+
+  box-shadow:
+    0 0 0 7px #ffffff,
+    0 10px 28px rgba(255, 133, 0, 0.14);
+}
+
+/* =========================================================
+   STEP CONTENT
+========================================================= */
+
+.web-process-step__content {
+  padding: 0 5px;
+}
+
+.web-process-step__content h3 {
+  margin: 0;
+
+  color: #071b4a;
+
+  font-size: 0.98rem;
+
+  line-height: 1.3;
+
+  font-weight: 800;
+
+  letter-spacing: -0.015em;
+}
+
+.web-process-step__content p {
+  margin: 9px 0 0;
+
+  color: #707b90;
+
+  font-size: 0.69rem;
+
+  line-height: 1.65;
+}
+
+/* =========================================================
+   BOTTOM NOTE
+========================================================= */
+
+.web-process__note {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 9px;
+
+  max-width: 720px;
+
+  margin: 60px auto 0;
+
+  padding: 13px 18px;
+
+  border: 1px solid rgba(7, 27, 74, 0.07);
+
+  border-radius: 9px;
+
+  background: #f9fafd;
+}
+
+.web-process__note-dot {
+  width: 6px;
+  height: 6px;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: #ff8500;
+}
+
+.web-process__note p {
+  margin: 0;
+
+  color: #717c91;
+
+  font-size: 0.7rem;
+
+  line-height: 1.5;
+
+  text-align: center;
+}
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+  .web-process {
+    padding: 90px 0 100px;
+  }
+
+  .web-process__header {
+    margin-bottom: 60px;
+  }
+
+  .web-process__timeline {
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
+
+    row-gap: 55px;
+  }
+
+  .web-process__line {
+    display: none;
+  }
+
+  .web-process-step__marker {
+    margin-bottom: 20px;
+  }
+
+  .web-process-step__content p {
+    max-width: 220px;
+
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+  .web-process {
+    padding: 72px 0 78px;
+  }
+
+  .web-process__container {
+    width: calc(100% - 28px);
+  }
+
+  .web-process__header {
+    margin-bottom: 43px;
+  }
+
+  .web-process__eyebrow {
+    font-size: 0.58rem;
+
+    letter-spacing: 0.13em;
+  }
+
+  .web-process__eyebrow::before,
+  .web-process__eyebrow::after {
+    width: 17px;
+  }
+
+  /* REQUIRED SECTION HEADING SIZE */
+
+  .web-process__title {
+    font-size: clamp(1.7rem, 3vw, 2.35rem);
+
+    line-height: 1.15;
+  }
+
+  .web-process__intro {
+    margin-top: 13px;
+
+    font-size: 0.84rem;
+
+    line-height: 1.7;
+  }
+
+  /* =====================================================
+     MOBILE VERTICAL TIMELINE
+  ===================================================== */
+
+  .web-process__timeline {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 0;
+
+    padding-left: 2px;
+  }
+
+  .web-process__timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 29px;
+
+    width: 1px;
+
+    background:
+      linear-gradient(
+        to bottom,
+        rgba(255, 133, 0, 0.12),
+        rgba(255, 133, 0, 0.4),
+        rgba(255, 133, 0, 0.12)
+      );
+  }
+
+  .web-process-step {
+    display: grid;
+
+    grid-template-columns: 59px minmax(0, 1fr);
+
+    gap: 18px;
+
+    min-height: 120px;
+
+    text-align: left;
+  }
+
+  .web-process-step__marker {
+    position: relative;
+
+    z-index: 2;
+
+    width: 55px;
+    height: 55px;
+
+    margin: 0;
+
+    box-shadow:
+      0 0 0 6px #ffffff,
+      0 7px 20px rgba(7, 27, 74, 0.07);
+  }
+
+  .web-process-step__content {
+    padding: 5px 0 25px;
+  }
+
+  .web-process-step__content h3 {
+    font-size: 1rem;
+  }
+
+  .web-process-step__content p {
+    max-width: 100%;
+
+    margin: 7px 0 0;
+
+    font-size: 0.76rem;
+
+    line-height: 1.65;
+  }
+
+  .web-process__note {
+    margin-top: 25px;
+
+    padding: 12px 14px;
+  }
+
+  .web-process__note p {
+    font-size: 0.67rem;
+  }
+}
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 380px) {
+  .web-process__container {
+    width: calc(100% - 24px);
+  }
+
+  .web-process-step {
+    grid-template-columns: 51px minmax(0, 1fr);
+
+    gap: 14px;
+  }
+
+  .web-process__timeline::before {
+    left: 27px;
+  }
+
+  .web-process-step__marker {
+    width: 50px;
+    height: 50px;
+  }
+
+  .web-process-step__content {
+    padding-top: 3px;
+  }
+
+  .web-process-step__content h3 {
+    font-size: 0.95rem;
+  }
+
+  .web-process-step__content p {
+    font-size: 0.72rem;
+  }
+}
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .web-process-step__marker {
+    transition: none !important;
+  }
+}
+
